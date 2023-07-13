@@ -178,6 +178,7 @@ body {
   color: hsla(var(--clr-oscuro));
   background-color: hsla(var(--clr-claro));
   min-height: 100vh;
+  background-color: red;
 }
 
 /* Font family */

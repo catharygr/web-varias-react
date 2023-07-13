@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Botones from "./componentes/Botones";
 
 function App({ color, texto }) {

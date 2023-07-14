@@ -221,25 +221,6 @@ button:hover {
   transition: 0.3s ease-in-out;
 }
 
-footer {
-  text-align: center;
-  background-color: white;
-  box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.349);
-  font-size: 0.9em;
-  width: 100vw;
-  align-self: flex-end;
-}
-
-footer > a {
-  font-size: 0.9em;
-  color: var(--roxo-escuro);
-  text-decoration: none;
-}
-
-footer > a:hover {
-  text-decoration: underline;
-}
-
 @media (max-width: 620px) {
   main {
     display: flex;
@@ -281,7 +262,7 @@ footer > a:hover {
     font-size: 1em;
   }
 
-  .summary {
+  .sumario {
     position: relative;
     display: flex;
     align-items: center;
@@ -350,10 +331,5 @@ footer > a:hover {
     border: 0;
     width: 85%;
     margin: 10px 0px 30px 0;
-  }
-
-  footer {
-    z-index: 1;
-    align-self: flex-end;
   }
 }

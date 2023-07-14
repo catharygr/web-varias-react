@@ -33,7 +33,7 @@ export default function Resultados() {
         <div className="estrellas-yellow">
           <span className="estrellas-color-yellow">
             <img
-              src="../assets/imagenes/icon-memory.svg"
+              src="/assets/imagenes/icon-memory.svg"
               alt="Ícono de memoria"
             />
             Memoria
@@ -43,7 +43,10 @@ export default function Resultados() {
 
         <div className="estrellas-green">
           <span className="estrellas-color-green">
-            <img src="" alt="Ícono de chatbox" />
+            <img
+              src="/assets/imagenes/icon-verbal.svg"
+              alt="Ícono de chatbox"
+            />
             Verbal
           </span>
           <span className="fraccion">61 / 100</span>

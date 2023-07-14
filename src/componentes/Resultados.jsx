@@ -1,6 +1,11 @@
 import "./Resultados.css";
+import data from "../data.js";
 
 export default function Resultados() {
+  const { reaccion, memoria, verbal, visual } = data;
+
+  const mapeo = data.map((item) => (item = item));
+
   return (
     <main>
       <section className="card">
@@ -27,7 +32,7 @@ export default function Resultados() {
             />
             Reacción
           </span>
-          <span className="fraccion">80 / 100</span>
+          <span className="fraccion">{reaccion}</span>
         </div>
 
         <div className="estrellas-yellow">
@@ -38,7 +43,7 @@ export default function Resultados() {
             />
             Memoria
           </span>
-          <span className="fraccion">92 / 100</span>
+          <span className="fraccion">{memoria}</span>
         </div>
 
         <div className="estrellas-green">
@@ -49,7 +54,7 @@ export default function Resultados() {
             />
             Verbal
           </span>
-          <span className="fraccion">61 / 100</span>
+          <span className="fraccion">{verbal}</span>
         </div>
 
         <div className="estrellas-blue">
@@ -57,9 +62,9 @@ export default function Resultados() {
             <img src="assets/imagenes/icon-visual.svg" alt="Ícono de ojo" />
             Visual
           </span>
-          <span className="fraccion">72 / 100</span>
+          <span className="fraccion">{visual}</span>
         </div>
-
+        {mapeo}
         <button>
           <a href="#">Continuar</a>
         </button>

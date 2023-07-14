@@ -117,6 +117,7 @@ img {
   z-index: 0;
 }
 
+/* Sumario */
 .sumario > h1 {
   display: flex;
   align-self: flex-start;

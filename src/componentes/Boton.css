@@ -20,3 +20,8 @@
   background-color: hsla(var(--clr-oscuro));
   color: hsla(var(--clr-acento));
 }
+
+.btn-container {
+  width: 50%;
+  margin: 3rem auto;
+}

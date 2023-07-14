@@ -1,5 +1,5 @@
 import "./Resultados.css";
-// import { data } from "../data/data";
+// import { data } from "../data.js";
 
 export default function Resultados() {
   return (

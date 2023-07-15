@@ -59,9 +59,9 @@ body {
 #daniel-clifford .personal-info,
 #jonathan-walters .personal-info,
 #patrick-abrams .personal-info,
-#daniel-clifford .description,
-#jonathan-walters .description,
-#patrick-abrams .description {
+#daniel-clifford .descriccion,
+#jonathan-walters .descriccion,
+#patrick-abrams .descriccion {
   color: hsl(0, 0%, 100%);
 }
 
@@ -80,13 +80,13 @@ body {
   font-size: 14px;
 }
 
-.tarjetas .thumbnail {
+.tarjetas .miniatura {
   border-radius: 50%;
   width: 35px;
   height: 100%;
 }
 
-.tarjetas .thumbnail.online {
+.tarjetas .miniatura.online {
   border: 2px solid color-mix(in srgb, hsl(263, 55%, 52%) 75%, hsl(0, 0%, 100%));
 }
 
@@ -94,7 +94,7 @@ body {
   margin-left: 20px;
 }
 
-.tarjetas .personal-info .job {
+.tarjetas .personal-info .trabajo {
   opacity: 50%;
 }
 
@@ -106,7 +106,7 @@ body {
   position: relative;
 }
 
-.tarjetas .description {
+.tarjetas .descriccion {
   opacity: 70%;
   font-weight: 500;
   font-size: 15px;

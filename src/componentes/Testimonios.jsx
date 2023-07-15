@@ -10,7 +10,7 @@ export default function Testimonios() {
           <img className="miniatura online" src="./images/image-daniel.jpg" />
           <div className="personal-info">
             <p className="name-surname">Daniel Clifford</p>
-            <p className="job">Verified Graduate</p>
+            <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
         <p className="testimonial">
@@ -18,7 +18,7 @@ export default function Testimonios() {
           current, if not more so, in the company I joined. I honestly feel I
           got every penny’s worth.
         </p>
-        <p className="description">
+        <p className="descriccion">
           “ I was an EMT for many years before I joined the bootcamp. I’ve been
           looking to make a transition and have heard some people who had an
           amazing experience here. I signed up for the free intro course and
@@ -33,13 +33,13 @@ export default function Testimonios() {
           <img className="miniatura" src="./images/image-jonathan.jpg" />
           <div className="personal-info">
             <p className="name-surname">Jonathan Walters</p>
-            <p className="job">Verified Graduate</p>
+            <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
         <p className="testimonial">
           The team was very supportive and kept me motivated
         </p>
-        <p className="description">
+        <p className="descriccion">
           “ I started as a total newbie with virtually no coding skills. I now
           work as a mobile engineer for a big company. This was one of the best
           investments I’ve made in myself. ”
@@ -50,13 +50,13 @@ export default function Testimonios() {
           <img className="miniatura" src="./images/image-kira.jpg" />
           <div className="personal-info">
             <p className="name-surname">Kira Whittle</p>
-            <p className="job">Verified Graduate</p>
+            <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
         <p className="testimonial">
           Such a life-changing experience. Highly recommended!
         </p>
-        <p className="description">
+        <p className="descriccion">
           “ Before joining the bootcamp, I’ve never written a line of code. I
           needed some structure from professionals who can help me learn
           programming step by step. I was encouraged to enroll by a former
@@ -66,7 +66,7 @@ export default function Testimonios() {
           project, in particular, was outstanding. It took my learning to the
           next level in a way that no tutorial could ever have. In fact, I’ve
           often referred to it during interviews as an example of my developent
-          experience. It certainly helped me land a job as a full-stack
+          experience. It certainly helped me land a trabajo as a full-stack
           developer after receiving multiple offers. 100% recommend! ”
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function Testimonios() {
           <img className="miniatura online" src="./images/image-patrick.jpg" />
           <div className="personal-info">
             <p className="name-surname">Patrick Abrams</p>
-            <p className="job">Verified Graduate</p>
+            <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
         <p className="testimonial">
@@ -83,7 +83,7 @@ export default function Testimonios() {
           Getting guidance from them and learning from their experiences was
           easy.
         </p>
-        <p className="description">
+        <p className="descriccion">
           “ The staff seem genuinely concerned about my progress which I find
           really refreshing. The program gave me the confidence necessary to be
           able to go out in the world and present myself as a capable junior
@@ -97,15 +97,15 @@ export default function Testimonios() {
           <img className="miniatura" src="./images/image-jeanette.jpg" />
           <div className="personal-info">
             <p className="name-surname">Jeanette Harmon</p>
-            <p className="job">Verified Graduate</p>
+            <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
         <p className="testimonial">
           An overall wonderful and rewarding experience
         </p>
-        <p className="description">
-          “ Thank you for the wonderful experience! I now have a job I really
-          enjoy, and make a good living while doing something I love. ”
+        <p className="descriccion">
+          “ Thank you for the wonderful experience! I now have a trabajo I
+          really enjoy, and make a good living while doing something I love. ”
         </p>
       </div>
     </main>

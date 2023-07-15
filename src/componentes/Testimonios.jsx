@@ -1,3 +1,5 @@
+import "./Testimonios.css";
+
 export default function Testimonios() {
   return (
     <main className="container">

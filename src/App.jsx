@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import Resultados from "./componentes/Resultados";
 
 function App() {

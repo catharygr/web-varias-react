@@ -23,7 +23,7 @@ export default function Resultados() {
         <div className="estrellas-red">
           <span className="estrellas-color-red">
             <img
-              src="assets/imagenes/icon-reaction.svg"
+              src="assets/imagenes/resultados/icon-reaction.svg"
               alt="Ícono de reaccion"
             />
             Reacción
@@ -34,7 +34,7 @@ export default function Resultados() {
         <div className="estrellas-yellow">
           <span className="estrellas-color-yellow">
             <img
-              src="/assets/imagenes/icon-memory.svg"
+              src="/assets/imagenes/resultados/icon-memory.svg"
               alt="Ícono de memoria"
             />
             Memoria
@@ -45,7 +45,7 @@ export default function Resultados() {
         <div className="estrellas-green">
           <span className="estrellas-color-green">
             <img
-              src="/assets/imagenes/icon-verbal.svg"
+              src="/assets/imagenes/resultados/icon-verbal.svg"
               alt="Ícono de chatbox"
             />
             Verbal
@@ -55,7 +55,10 @@ export default function Resultados() {
 
         <div className="estrellas-blue">
           <span className="estrellas-color-blue">
-            <img src="assets/imagenes/icon-visual.svg" alt="Ícono de ojo" />
+            <img
+              src="assets/imagenes/resultados/icon-visual.svg"
+              alt="Ícono de ojo"
+            />
             Visual
           </span>
           <span className="fraccion">72 / 100</span>

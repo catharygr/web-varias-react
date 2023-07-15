@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import Resultados from "./componentes/Resultados";
 
+import Testimonios from "./componentes/Testimonios";
 function App() {
   return (
     <div className="btn-container">
-      <Resultados />
+      <Testimonios />
     </div>
   );
 }

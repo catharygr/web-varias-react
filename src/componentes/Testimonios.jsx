@@ -3,13 +3,16 @@ export default function Testimonios() {
     <main className="container">
       <div className="tarjetas" id="daniel-clifford">
         <img
-          src="./assets/imagenes/bg-pattern-quotation.svg"
+          src="/assets/imagenes/testimonios/bg-pattern-quotation.svg"
           className="comillas"
         />
         <div className="header">
-          <img className="miniatura online" src="./images/image-daniel.jpg" />
+          <img
+            className="miniatura online"
+            src="/assets/imagenes/testimonios/image-daniel.jpg"
+          />
           <div className="personal-info">
-            <p className="name-surname">Daniel Clifford</p>
+            <p className="nombre-apellido">Daniel Clifford</p>
             <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
@@ -30,9 +33,12 @@ export default function Testimonios() {
       </div>
       <div className="tarjetas" id="jonathan-walters">
         <div className="header">
-          <img className="miniatura" src="./images/image-jonathan.jpg" />
+          <img
+            className="miniatura"
+            src="/assets/imagenes/testimonios/image-jonathan.jpg"
+          />
           <div className="personal-info">
-            <p className="name-surname">Jonathan Walters</p>
+            <p className="nombre-apellido">Jonathan Walters</p>
             <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
@@ -47,9 +53,12 @@ export default function Testimonios() {
       </div>
       <div className="tarjetas shadow" id="kira-whittle">
         <div className="header">
-          <img className="miniatura" src="./images/image-kira.jpg" />
+          <img
+            className="miniatura"
+            src="/assets/imagenes/testimonios/image-kira.jpg"
+          />
           <div className="personal-info">
-            <p className="name-surname">Kira Whittle</p>
+            <p className="nombre-apellido">Kira Whittle</p>
             <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
@@ -72,9 +81,12 @@ export default function Testimonios() {
       </div>
       <div className="tarjetas" id="patrick-abrams">
         <div className="header">
-          <img className="miniatura online" src="./images/image-patrick.jpg" />
+          <img
+            className="miniatura online"
+            src="/assets/imagenes/testimonios/image-patrick.jpg"
+          />
           <div className="personal-info">
-            <p className="name-surname">Patrick Abrams</p>
+            <p className="nombre-apellido">Patrick Abrams</p>
             <p className="trabajo">Verified Graduate</p>
           </div>
         </div>
@@ -94,9 +106,12 @@ export default function Testimonios() {
       </div>
       <div className="tarjetas shadow" id="jeanette-harmon">
         <div className="header">
-          <img className="miniatura" src="./images/image-jeanette.jpg" />
+          <img
+            className="miniatura"
+            src="/assets/imagenes/testimonios/image-jeanette.jpg"
+          />
           <div className="personal-info">
-            <p className="name-surname">Jeanette Harmon</p>
+            <p className="nombre-apellido">Jeanette Harmon</p>
             <p className="trabajo">Verified Graduate</p>
           </div>
         </div>

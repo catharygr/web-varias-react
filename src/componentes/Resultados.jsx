@@ -22,7 +22,7 @@ export default function Resultados() {
         <div className="estrellas-red">
           <span className="estrellas-color-red">
             <img
-              src="assets/imagenes/resultados/icon-reaction.svg"
+              src="/assets/imagenes/resultados/icon-reaction.svg"
               alt="Ícono de reaccion"
             />
             Reacción

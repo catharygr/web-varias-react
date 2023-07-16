@@ -15,7 +15,7 @@ export default function Testimonios() {
           />
           <div className="personal-info">
             <p className="nombre-apellido">Daniel Clifford</p>
-            <p className="trabajo">Verified Graduate</p>
+            <p className="trabajo">Graduadon verificado</p>
           </div>
         </div>
         <p className="testimonial">

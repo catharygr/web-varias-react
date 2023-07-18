@@ -15,22 +15,24 @@ export default function Testimonios() {
           />
           <div className="personal-info">
             <p className="nombre-apellido">Daniel Clifford</p>
-            <p className="trabajo">Graduadon verificado</p>
+            <p className="trabajo">Graduado verificado</p>
           </div>
         </div>
         <p className="testimonial">
-          I received a job offer mid-course, and the subjects I learned were
-          current, if not more so, in the company I joined. I honestly feel I
-          got every penny’s worth.
+          Recibí una oferta de trabajo en medio del curso, y las asignaturas que
+          aprendí eran actuales, si no más, en la empresa a la que me uní.
+          Honestamente, siento que valió cada centavo.
         </p>
         <p className="descriccion">
-          “ I was an EMT for many years before I joined the bootcamp. I’ve been
-          looking to make a transition and have heard some people who had an
-          amazing experience here. I signed up for the free intro course and
-          found it incredibly fun! I enrolled shortly thereafter. The next 12
-          weeks was the best - and most grueling - time of my life. Since
-          completing the course, I’ve successfully switched careers, working as
-          a Software Engineer at a VR startup. ”
+          "Fui técnico de emergencias médicas (EMT) durante muchos años antes de
+          unirme al bootcamp. Estaba buscando hacer una transición y había
+          escuchado a algunas personas que tuvieron una experiencia increíble
+          aquí. Me inscribí en el curso introductorio gratuito y ¡lo encontré
+          increíblemente divertido! Poco después me matriculé. Las siguientes 12
+          semanas fueron el mejor -y más agotador- momento de mi vida. Desde que
+          completé el curso, he logrado cambiar de carrera exitosamente y ahora
+          trabajo como Ingeniero de Software en una startup de realidad
+          virtual."
         </p>
       </div>
       <div className="tarjetas" id="jonathan-walters">
@@ -41,16 +43,17 @@ export default function Testimonios() {
           />
           <div className="personal-info">
             <p className="nombre-apellido">Jonathan Walters</p>
-            <p className="trabajo">Verified Graduate</p>
+            <p className="trabajo">Graduado verificado</p>
           </div>
         </div>
         <p className="testimonial">
-          The team was very supportive and kept me motivated
+          El equipo fue muy solidario y me mantuvo motivado.
         </p>
         <p className="descriccion">
-          “ I started as a total newbie with virtually no coding skills. I now
-          work as a mobile engineer for a big company. This was one of the best
-          investments I’ve made in myself. ”
+          "Comencé como un novato total con prácticamente ninguna habilidad de
+          programación. Ahora trabajo como ingeniero móvil para una gran
+          empresa. Esta fue una de las mejores inversiones que he hecho en mí
+          mismo."
         </p>
       </div>
       <div className="tarjetas shadow" id="kira-whittle">
@@ -61,24 +64,27 @@ export default function Testimonios() {
           />
           <div className="personal-info">
             <p className="nombre-apellido">Kira Whittle</p>
-            <p className="trabajo">Verified Graduate</p>
+            <p className="trabajo">Graduado verificado</p>
           </div>
         </div>
         <p className="testimonial">
-          Such a life-changing experience. Highly recommended!
+          ¡Una experiencia que cambia la vida por completo! ¡Altamente
+          recomendado!
         </p>
         <p className="descriccion">
-          “ Before joining the bootcamp, I’ve never written a line of code. I
-          needed some structure from professionals who can help me learn
-          programming step by step. I was encouraged to enroll by a former
-          student of theirs who can only say wonderful things about the program.
-          The entire curriculum and staff did not disappoint. They were very
-          hands-on and I never had to wait long for assistance. The agile team
-          project, in particular, was outstanding. It took my learning to the
-          next level in a way that no tutorial could ever have. In fact, I’ve
-          often referred to it during interviews as an example of my developent
-          experience. It certainly helped me land a trabajo as a full-stack
-          developer after receiving multiple offers. 100% recommend! ”
+          Antes de unirme al bootcamp, nunca había escrito una línea de código.
+          Necesitaba una estructura proporcionada por profesionales que pudieran
+          ayudarme a aprender programación paso a paso. Me animaron a
+          inscribirme a través de un antiguo estudiante suyo que solo podía
+          decir cosas maravillosas sobre el programa. Todo el plan de estudios y
+          el personal no defraudaron. Fueron muy prácticos y nunca tuve que
+          esperar mucho tiempo para recibir ayuda. El proyecto del equipo ágil,
+          en particular, fue excepcional. Llevó mi aprendizaje al siguiente
+          nivel de una manera que ningún tutorial podría haber logrado. De
+          hecho, a menudo lo he mencionado en entrevistas como ejemplo de mi
+          experiencia en desarrollo. Sin duda, me ayudó a conseguir un trabajo
+          como desarrollador full-stack después de recibir múltiples ofertas.
+          ¡Recomendado al 100%!
         </p>
       </div>
       <div className="tarjetas" id="patrick-abrams">
@@ -89,21 +95,21 @@ export default function Testimonios() {
           />
           <div className="personal-info">
             <p className="nombre-apellido">Patrick Abrams</p>
-            <p className="trabajo">Verified Graduate</p>
+            <p className="trabajo">Graduado verificado</p>
           </div>
         </div>
         <p className="testimonial">
-          Awesome teaching support from TAs who did the bootcamp themselves.
-          Getting guidance from them and learning from their experiences was
-          easy.
+          Excelente apoyo docente por parte de los asistentes de enseñanza que
+          hicieron el bootcamp ellos mismos. Obtener orientación de ellos y
+          aprender de sus experiencias fue fácil.
         </p>
         <p className="descriccion">
-          “ The staff seem genuinely concerned about my progress which I find
-          really refreshing. The program gave me the confidence necessary to be
-          able to go out in the world and present myself as a capable junior
-          developer. The standard is above the rest. You will get the personal
-          attention you need from an incredible community of smart and amazing
-          people. ”
+          El personal parece estar genuinamente preocupado por mi progreso, lo
+          cual encuentro realmente refrescante. El programa me brindó la
+          confianza necesaria para poder salir al mundo y presentarme como un
+          desarrollador junior capaz. El nivel es superior al resto. Obtendrás
+          la atención personal que necesitas de una increíble comunidad de
+          personas inteligentes y sorprendentes.
         </p>
       </div>
       <div className="tarjetas shadow" id="jeanette-harmon">
@@ -114,15 +120,15 @@ export default function Testimonios() {
           />
           <div className="personal-info">
             <p className="nombre-apellido">Jeanette Harmon</p>
-            <p className="trabajo">Verified Graduate</p>
+            <p className="trabajo">Graduado verificado</p>
           </div>
         </div>
         <p className="testimonial">
-          An overall wonderful and rewarding experience
+          En general, una experiencia maravillosa y gratificante.
         </p>
         <p className="descriccion">
-          “ Thank you for the wonderful experience! I now have a trabajo I
-          really enjoy, and make a good living while doing something I love. ”
+          ¡Gracias por la maravillosa experiencia! Ahora tengo un trabajo que
+          realmente disfruto y gano un buen salario mientras hago algo que amo.
         </p>
       </div>
     </main>

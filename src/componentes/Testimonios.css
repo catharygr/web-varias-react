@@ -131,17 +131,17 @@ body {
     grid-column: 4 / span 2;
   }
 
-  .tarjeta-cinco {
-    grid-column: 1 / span 2;
+  .tarjeta-tres {
+    grid-row: 3;
+    grid-column: 1 / span 5;
   }
 
   .tarjeta-cuatro {
     grid-column: 3 / span 3;
   }
 
-  .tarjeta-tres {
-    grid-row: 3;
-    grid-column: 1 / span 5;
+  .tarjeta-cinco {
+    grid-column: 1 / span 2;
   }
 }
 

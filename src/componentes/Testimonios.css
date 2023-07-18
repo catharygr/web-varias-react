@@ -26,42 +26,42 @@ body {
   top: 0;
 }
 
-#daniel-clifford {
+.tarjeta-uno {
   position: relative;
   grid-column: 1 / span 2;
   grid-row: 1;
   background-color: hsl(263, 55%, 52%);
 }
-#jonathan-walters {
+.tarjeta-dos {
   grid-column: 3;
   grid-row: 1;
   background-color: hsl(217, 19%, 35%);
 }
-#kira-whittle {
+.tarjeta-tres {
   grid-column: 4;
   grid-row: 1 / span 2;
   background-color: hsl(0, 0%, 100%);
 }
-#patrick-abrams {
+.tarjeta-cuatro {
   grid-column: 2 / span 2;
   grid-row: 2;
   background-color: hsl(219, 29%, 14%);
 }
-#jeanette-harmon {
+.tarjeta-cinco {
   grid-row: 2;
   grid-column: 1;
   background-color: hsl(0, 0%, 100%);
 }
 
-#daniel-clifford .testimonial,
-#jonathan-walters .testimonial,
-#patrick-abrams .testimonial,
-#daniel-clifford .personal-info,
-#jonathan-walters .personal-info,
-#patrick-abrams .personal-info,
-#daniel-clifford .descriccion,
-#jonathan-walters .descriccion,
-#patrick-abrams .descriccion {
+.tarjeta-uno .testimonial,
+.tarjeta-dos .testimonial,
+.tarjeta-cuatro .testimonial,
+.tarjeta-uno .personal-info,
+.tarjeta-dos .personal-info,
+.tarjeta-cuatro .personal-info,
+.tarjeta-uno .descriccion,
+.tarjeta-dos .descriccion,
+.tarjeta-cuatro .descriccion {
   color: hsl(0, 0%, 100%);
 }
 
@@ -123,23 +123,23 @@ body {
     right: 50px;
   }
 
-  #daniel-clifford {
+  .tarjeta-uno {
     grid-column: 1 / span 3;
   }
 
-  #jonathan-walters {
+  .tarjeta-dos {
     grid-column: 4 / span 2;
   }
 
-  #jeanette-harmon {
+  .tarjeta-cinco {
     grid-column: 1 / span 2;
   }
 
-  #patrick-abrams {
+  .tarjeta-cuatro {
     grid-column: 3 / span 3;
   }
 
-  #kira-whittle {
+  .tarjeta-tres {
     grid-row: 3;
     grid-column: 1 / span 5;
   }

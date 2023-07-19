@@ -164,7 +164,7 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-2rem);
+  /* transform: translateY(-2rem); */
   padding: 1rem;
   border-radius: 10px;
   background-color: white;

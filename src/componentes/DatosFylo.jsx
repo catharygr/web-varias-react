@@ -71,7 +71,7 @@ export default function DatosFylo() {
 
         <div className="tercera-seccion">
           <div>
-            <span>{maxData * 10 - usedData} GB</span> Left
+            <span>{maxData * 10 - usedData}</span> GB Left
           </div>
         </div>
       </div>

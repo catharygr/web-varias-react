@@ -185,7 +185,6 @@ h1 span {
 .tercera-seccion div span {
   font-size: 1.8rem;
   color: var(--clr-Very-Dark-Blue);
-  padding: 1rem;
 }
 
 @media (max-width: 370px) {

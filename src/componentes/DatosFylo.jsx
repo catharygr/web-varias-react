@@ -1,6 +1,29 @@
+import { useState, useEffect } from "react";
 import "./DatosFylo.css";
 
 export default function DatosFylo() {
+  // Estado para almacenar la cantidad de datos usados en MB
+  const [usedData, setUsedData] = useState(0);
+  const maxData = 100;
+
+  // Función para aumentar 200 MB cada vez que se hace clic en el icono de subir
+  function handleUploadClick() {
+    setUsedData((prevUsedData) => Math.min(prevUsedData + 200, maxData * 10));
+  }
+
+  // Función para aumentar el progreso en 10 MB cada segundo
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setUsedData((prevUsedData) => Math.min(prevUsedData + 10, maxData * 10));
+    }, 500);
+
+    // Limpieza del intervalo cuando el componente se desmonte
+    return () => clearInterval(interval);
+  }, []);
+
+  // Cálculo del porcentaje de progreso
+  const progressPercentage = (usedData / (maxData * 10)) * 100;
+
   return (
     <main>
       <div className="primera-seccion">
@@ -22,7 +45,7 @@ export default function DatosFylo() {
               alt="Imagen de carpeta"
             />
           </div>
-          <div className="icon">
+          <div className="icon" onClick={handleUploadClick}>
             <img
               src="/assets/imagenes/datos-fylo/icon-upload.svg"
               alt="Imagen de la nube"
@@ -33,21 +56,24 @@ export default function DatosFylo() {
       <div className="segunda-tercera">
         <div className="segunda-seccion">
           <h1>
-            You’ve used <span>815 GB</span> of your storage
+            You’ve used <span>{usedData} GB</span> of your storage
           </h1>
           <div className="bar">
-            <div className="progress">
+            <div
+              className="progreso"
+              style={{ width: `${progressPercentage}%` }}
+            >
               <div className="indicator"></div>
             </div>
           </div>
           <div className="gb">
-            <span>0 GB</span> <span>1000 GB</span>
+            <span>0 GB</span> <span>{maxData} GB</span>
           </div>
         </div>
 
         <div className="tercera-seccion">
           <div>
-            <span>185</span> GB Left
+            <span>{maxData * 10 - usedData} MB</span> Left
           </div>
         </div>
       </div>

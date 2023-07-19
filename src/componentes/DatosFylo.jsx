@@ -3,21 +3,34 @@ import "./DatosFylo.css";
 export default function DatosFylo() {
   return (
     <main>
-      <div className="first-section">
-        <img className="logo" src="images/logo.svg" alt="Fylo logo" />
+      <div className="primera-seccion">
+        <img
+          className="logo"
+          src="/assets/imagenes/datos-fylo/logo.svg"
+          alt="Fylo logo"
+        />
         <div className="icons">
           <div className="icon">
-            <img src="images/icon-document.svg" alt="Document image" />
+            <img
+              src="/assets/imagenes/datos-fylo/icon-document.svg"
+              alt="Imagen"
+            />
           </div>
           <div className="icon">
-            <img src="images/icon-folder.svg" alt="Folder image" />
+            <img
+              src="/assets/imagenes/datos-fylo/icon-folder.svg"
+              alt="Imagen de carpeta"
+            />
           </div>
           <div className="icon">
-            <img src="images/icon-upload.svg" alt="Cloud image" />
+            <img
+              src="/assets/imagenes/datos-fylo/icon-upload.svg"
+              alt="Imagen de la nube"
+            />
           </div>
         </div>
       </div>
-      <div className="second-third">
+      <div className="segunda-tercera">
         <div className="second-section">
           <h1>
             You’ve used <span>815 GB</span> of your storage

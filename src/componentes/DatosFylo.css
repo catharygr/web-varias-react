@@ -1,22 +1,9 @@
-/* 
-    CSS RESET 
-*/
-
-/* Better box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Delete default margin, padding and font style */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font: inherit;
 }
 
-/* Responsive images etc. */
 img,
 picture,
 svg,
@@ -24,10 +11,6 @@ video {
   display: block;
   max-width: 100%;
 }
-
-/*
-  VARIABLES
-*/
 
 :root {
   --grd-Gradient-first: hsl(6, 100%, 80%);
@@ -43,10 +26,6 @@ video {
   --fw-Bold: 700;
 }
 
-/*
-  BODY
-*/
-
 body {
   min-height: 100vh;
   display: flex;
@@ -61,10 +40,6 @@ body {
   background-size: cover;
 }
 
-/*
-  MAIN
-*/
-
 main {
   margin: auto;
   display: flex;
@@ -75,19 +50,12 @@ main {
   padding: 1rem;
 }
 
-/*
-  SECTIONS
-*/
-
-/* First, Second */
-
-.first-section,
-.second-section {
+.primera-seccion,
+.segunda-seccion {
   box-shadow: 8px 8px 24px 10px var(--clr-Very-Dark-Blue);
 }
 
-/* First */
-.first-section {
+.tercera-seccion {
   height: 13rem;
   width: 21rem;
 
@@ -126,7 +94,6 @@ main {
   background-color: var(--clr-Very-Dark-Blue);
 }
 
-/* Second, Third */
 .second-third {
   display: flex;
   flex-direction: column;
@@ -134,8 +101,7 @@ main {
   justify-content: center;
 }
 
-/* Second */
-.second-section {
+.segunda-seccion {
   height: 10rem;
   width: 21rem;
 
@@ -174,7 +140,7 @@ h1 span {
   background-color: #141f4c;
 }
 
-.progress {
+.progreso {
   height: 0.95rem;
   width: 81.5%;
 
@@ -194,7 +160,7 @@ h1 span {
   );
 }
 
-.indicator {
+.indicasor {
   height: 0.75rem;
   width: 0.75rem;
 
@@ -216,8 +182,7 @@ h1 span {
   width: 100%;
 }
 
-/* Third */
-.third-section {
+/* .tercera-seccion {
   height: 4.5rem;
   width: 12.5rem;
 
@@ -232,9 +197,9 @@ h1 span {
   border-radius: 10px;
 
   background-color: white;
-}
+} */
 
-.third-section div {
+/* .tercera-seccion div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -245,31 +210,24 @@ h1 span {
   font-weight: var(--fw-Bold);
   text-transform: uppercase;
   color: var(--clr-Grayish-Blue);
-}
+} */
 
-.third-section div span {
+/* .tercera-seccion div span {
   font-size: 2.4rem;
   color: var(--clr-Very-Dark-Blue);
-}
-/*
-  MOBILE S
-*/
+} */
 
 @media (max-width: 370px) {
-  .first-section {
+  .primera-seccion {
     width: 100%;
   }
-  .second-section {
+  .segunda-seccion {
     width: 100%;
   }
-  .third-section {
+  .tercera-seccion {
     width: 70%;
   }
 }
-
-/*
-  DESKTOP
-*/
 
 @media (min-width: 1024px) {
   main {
@@ -277,16 +235,16 @@ h1 span {
     align-items: flex-end;
   }
 
-  .first-section {
+  .primera-seccion {
     height: 14rem;
     padding: 3rem;
   }
 
-  .second-third {
+  .segunda-tercera {
     flex-direction: column-reverse;
   }
 
-  .second-section {
+  .segunda-seccion {
     width: 30rem;
     height: 9rem;
 
@@ -295,7 +253,7 @@ h1 span {
     text-align: start;
   }
 
-  .third-section {
+  .tercera-seccion {
     height: 4rem;
     width: 11rem;
 
@@ -304,7 +262,7 @@ h1 span {
     transform: translateX(110px) translateY(20px);
   }
 
-  .third-section::after {
+  /* .tercera-seccion::after {
     content: "";
     display: block;
     position: absolute;
@@ -318,7 +276,7 @@ h1 span {
 
     top: 4rem;
     left: 9.5rem;
-  }
+  } */
 }
 
 @media (min-width: 1440px) {
@@ -327,17 +285,4 @@ h1 span {
       var(--clr-Very-Dark-Blue);
     background-size: contain;
   }
-}
-
-/*
-  FOOTER
-*/
-
-footer {
-  font-size: 0.6875rem;
-  text-align: center;
-  color: var(--clr-Pale-Blue);
-}
-footer a {
-  color: hsl(228, 45%, 44%);
 }

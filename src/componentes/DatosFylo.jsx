@@ -3,26 +3,8 @@ import "./DatosFylo.css";
 
 export default function DatosFylo() {
   // Estado para almacenar la cantidad de datos usados en MB
-  const [usedData, setUsedData] = useState(0);
+  const [usedData, setUsedData] = useState(185);
   const maxData = 100;
-
-  // Función para aumentar 200 MB cada vez que se hace clic en el icono de subir
-  function handleUploadClick() {
-    setUsedData((prevUsedData) => Math.min(prevUsedData + 200, maxData * 10));
-  }
-
-  // Función para aumentar el progreso en 10 MB cada segundo
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setUsedData((prevUsedData) => Math.min(prevUsedData + 10, maxData * 10));
-    }, 500);
-
-    // Limpieza del intervalo cuando el componente se desmonte
-    return () => clearInterval(interval);
-  }, []);
-
-  // Cálculo del porcentaje de progreso
-  const progressPercentage = (usedData / (maxData * 10)) * 100;
 
   return (
     <main>
@@ -56,7 +38,7 @@ export default function DatosFylo() {
       <div className="segunda-tercera">
         <div className="segunda-seccion">
           <h1>
-            You’ve used <span>{usedData} GB</span> of your storage
+            Has usado <span>815 GB</span> de tu almacenamiento
           </h1>
           <div className="bar">
             <div
@@ -73,7 +55,7 @@ export default function DatosFylo() {
 
         <div className="tercera-seccion">
           <div>
-            <span>{maxData * 10 - usedData} MB</span> Left
+            <span>185 MB</span> Left
           </div>
         </div>
       </div>

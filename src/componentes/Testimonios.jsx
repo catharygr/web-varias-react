@@ -3,7 +3,6 @@ import "./Testimonios.css";
 export default function Testimonios() {
   const testimoniosData = [
     {
-      id: "tarjeta-uno",
       nombre: "Daniel Clifford",
       trabajo: "Graduado verificado",
       testimonial:
@@ -13,7 +12,6 @@ export default function Testimonios() {
       imagen: "/assets/imagenes/testimonios/image-daniel.jpg",
     },
     {
-      id: "tarjeta-dos",
       nombre: "Jonathan Walters",
       trabajo: "Graduado verificado",
       testimonial: "El equipo fue muy solidario y me mantuvo motivado.",
@@ -22,7 +20,6 @@ export default function Testimonios() {
       imagen: "/assets/imagenes/testimonios/image-jonathan.jpg",
     },
     {
-      id: "tarjeta-tres",
       nombre: "Kira Whittle",
       trabajo: "Graduado verificado",
       testimonial:
@@ -32,7 +29,6 @@ export default function Testimonios() {
       imagen: "/assets/imagenes/testimonios/image-kira.jpg",
     },
     {
-      id: "tarjeta-cuatro",
       nombre: "Patrick Abrams",
       trabajo: "Graduado verificado",
       testimonial:
@@ -42,7 +38,6 @@ export default function Testimonios() {
       imagen: "/assets/imagenes/testimonios/image-patrick.jpg",
     },
     {
-      id: "tarjeta-cinco",
       nombre: "Jeanette Harmon",
       trabajo: "Graduado verificado",
       testimonial: "En general, una experiencia maravillosa y gratificante.",

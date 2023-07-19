@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 
-import Testimonios from "./componentes/Testimonios";
+import DatosFylo from "./componentes/DatosFylo";
+
 function App() {
   return (
-    <div className="btn-container">
-      <Testimonios />
-    </div>
+    <>
+      <DatosFylo />
+    </>
   );
 }
 

@@ -31,7 +31,7 @@ export default function DatosFylo() {
         </div>
       </div>
       <div className="segunda-tercera">
-        <div className="second-section">
+        <div className="segunda-seccion">
           <h1>
             You’ve used <span>815 GB</span> of your storage
           </h1>
@@ -45,7 +45,7 @@ export default function DatosFylo() {
           </div>
         </div>
 
-        <div className="third-section">
+        <div className="tercera-seccion">
           <div>
             <span>185</span> GB Left
           </div>

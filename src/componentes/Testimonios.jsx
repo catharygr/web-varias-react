@@ -55,12 +55,14 @@ export default function Testimonios() {
   return (
     <main className="container">
       {testimoniosData.map((tarjeta, index) => (
-        <div className={`tarjeta-${index}`} key={index}>
-          <img
-            src="/assets/imagenes/testimonios/bg-pattern-quotation.svg"
-            className="comillas"
-            alt="Comillas"
-          />
+        <div className={`tarjeta-${index} tarjetas`} key={index}>
+          {index === 0 && (
+            <img
+              src="/assets/imagenes/testimonios/bg-pattern-quotation.svg"
+              className="comillas"
+              alt="Comillas"
+            />
+          )}
           <div className="header">
             <img
               className="miniatura online"

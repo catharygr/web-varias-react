@@ -164,13 +164,13 @@ svg:hover path {
   fill: hsl(171, 66%, 44%);
 }
 
-.attribution {
+.atribucion {
   font-size: 1.5rem;
   text-align: center;
   color: var(--neutral-800-grayish-blue);
 }
 
-.attribution a {
+.atribucion a {
   color: hsl(171, 66%, 44%);
 }
 
@@ -221,6 +221,20 @@ svg:hover path {
     width: 100%;
   }
 
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    height: 10vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    margin: 0;
+    align-self: center;
+  }
+
   .links {
     display: flex;
     flex-direction: row;
@@ -232,7 +246,7 @@ svg:hover path {
   .social-media {
     align-items: center;
   }
-  .attribution-container {
+  .atribucion-container {
     margin-top: 2em;
     margin-bottom: 0;
   }

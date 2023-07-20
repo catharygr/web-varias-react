@@ -1,3 +1,4 @@
+import PortaFooter from "./PortaFooter";
 import "./PortaPapeles.css";
 
 export default function PortaPapeles() {
@@ -168,6 +169,7 @@ export default function PortaPapeles() {
           <button className="mac-btn">Descargar para Mac.</button>
         </section>
       </main>
+      <PortaFooter />
     </>
   );
 }

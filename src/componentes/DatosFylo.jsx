@@ -18,7 +18,7 @@ export default function DatosFylo() {
     }, 500);
     return () => clearInterval(interval);
   }, []);
-
+  console.log(usedData);
   // Cálculo del porcentaje de progreso
   const progresoPorcentaje = (usedData / (maxData * 10)) * 100;
 

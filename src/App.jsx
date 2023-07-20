@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import DatosFylo from "./componentes/DatosFylo";
+import PortaPapeles from "./componentes/PortaPapeles";
 
 function App() {
   return (
     <>
-      <DatosFylo />
+      <PortaPapeles />
     </>
   );
 }

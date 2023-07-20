@@ -1,3 +1,5 @@
+import "./PortaPapeles.css";
+
 export default function PortaPapeles() {
   return (
     <>

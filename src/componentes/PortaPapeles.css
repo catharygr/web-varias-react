@@ -61,7 +61,7 @@ h3 {
   top: 0;
 }
 
-.hero-section {
+.hero-seccion {
   position: relative;
   margin-top: 5em;
 }
@@ -72,9 +72,9 @@ h3 {
   margin: 2em auto;
 }
 
-.hero__title,
-.hero__paragraph,
-.section-title,
+.hero__titulo,
+.hero__parrafo,
+.seccion-titulo,
 h3,
 p {
   margin: 1em 0;
@@ -122,26 +122,15 @@ section {
   margin-bottom: 5em;
 }
 
-.supercharge-section img {
+.potenciar-seccion img {
   width: 55px;
   height: 45px;
   margin: 2em auto;
 }
 
-.companies-section img {
+.empresas-seccion img {
   width: 60%;
   margin: 1em auto;
-}
-
-footer {
-  background-color: hsl(0, 0%, 89%);
-  padding: 2em;
-}
-
-.footer__logo {
-  width: 70px;
-  height: 70px;
-  margin: 2em auto;
 }
 
 .links {
@@ -200,24 +189,24 @@ svg:hover path {
     background-size: contain;
   }
 
-  .keep-track-section img,
-  .access-section img {
+  .mantener-registro-seccion img,
+  .acceso-seccion img {
     margin-top: 4em;
   }
 
-  .keep-track-section img {
+  .mantener-registro-seccion img {
     margin-left: -15em;
   }
 
-  .column {
+  .columna {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
   }
 
-  .column-item h3,
-  .column-item p {
+  .columna-item h3,
+  .columna-item p {
     text-align: left;
     margin: 0;
   }
@@ -228,22 +217,8 @@ svg:hover path {
     gap: 2em;
   }
 
-  .companies-section img {
+  .empresas-seccion img {
     width: 100%;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 4em;
-    height: 10vh;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .footer__logo {
-    margin: 0;
-    align-self: center;
   }
 
   .links {

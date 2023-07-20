@@ -7,130 +7,165 @@ export default function PortaPapeles() {
         <div className="img-container"></div>
       </header>
       <main>
-        <section className="hero-section">
-          <img src="./images/logo.svg" alt="company logo" className="logo" />
-          <h1 className="hero__title">A history of everything you copy</h1>
-          <p className="hero__paragraph">
-            Clipboard allows you to track and organize everything you copy.
-            Instantly access your clipboard on all your devices.
+        <section className="hero-seccion">
+          <img
+            src="/assets/imagenes/portapapeles/logo.svg"
+            alt="Logo de la compañía Clipboard."
+            className="logo"
+          />
+          <h1 className="hero__titulo">Un historial de todo lo que copias.</h1>
+          <p className="hero__parrafo">
+            Clipboard te permite rastrear y organizar todo lo que copias. Accede
+            instantáneamente a tu portapapeles en todos tus dispositivos.
           </p>
-          <button className="ios-btn">Download for iOS</button>
-          <button className="mac-btn">Download for Mac</button>
+          <button className="ios-btn">Descargar para iOS.</button>
+          <button className="mac-btn">Descargar para Mac.</button>
         </section>
 
-        <section className="keep-track-section">
-          <h2 className="section-title">Keep track of your snippets</h2>
+        <section className="mantener-registro-seccion">
+          <h2 className="seccion-titulo">
+            Mantén un registro de tus fragmentos.
+          </h2>
           <p>
-            Clipboard instantly stores any item you copy in the cloud, meaning
-            you can access your snippets immediately on all your devices. Our
-            Mac and iOS apps will help you organize everything.
+            Puedes acceder a tus fragmentos de inmediato en todos tus
+            dispositivos. Nuestras aplicaciones para Mac e iOS te ayudarán a
+            organizarlo todo.
           </p>
           <div className="flex-container">
-            <img src="./images/image-computer.png" alt="computer" />
-            <div className="column">
-              <div className="column-item">
-                <h3>Quick Search</h3>
+            <img
+              src="/assets/imagenes/portapapeles/image-computer.png"
+              alt="Ordenador"
+            />
+            <div className="columna">
+              <div className="columna-item">
+                <h3>Búsqueda rápida.</h3>
                 <p>
-                  Easily search your snippets by content, category, web address,
-                  application, and more.
+                  Busca fácilmente tus fragmentos por contenido, categoría,
+                  dirección web, aplicación y más.
                 </p>
               </div>
-              <div className="column-item">
-                <h3>iCLoud Sync</h3>
+              <div className="columna-item">
+                <h3>Sincronización con iCloud.</h3>
                 <p>
-                  Instantly saves and syncs snippets across all your devices.
+                  Guarda y sincroniza al instante tus fragmentos en todos tus
+                  dispositivos.
                 </p>
               </div>
-              <div className="column-item">
-                <h3>Complete History</h3>
+              <div className="columna-item">
+                <h3>Historial completo.</h3>
                 <p>
-                  Retrieve any snippets from the first moment you started using
-                  the app.
+                  Recupera cualquier fragmento desde el primer momento en que
+                  comenzaste a usar la aplicación.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="access-section">
-          <h2 className="section-title">Access Clipboard anywhere</h2>
+        <section className="acceso-seccion">
+          <h2 className="seccion-titulo">
+            Accede al Portapapeles en cualquier lugar.
+          </h2>
           <p>
-            Whether you're on the go, or at your computer, you can access all
-            your Clipboard snippets in a few simple clicks.
+            Ya sea que estés en movimiento o en tu computadora, puedes acceder a
+            todos tus fragmentos del Portapapeles con unos simples clics.
           </p>
           <img
-            src="./images/image-devices.png"
-            alt="tablet and mobile device"
+            src="/assets/imagenes/portapapeles/image-devices.png"
+            alt="Tableta y dispositivo móvil."
           />
         </section>
 
-        <section className="supercharge-section">
-          <h2 className="section-title">Supercharge your workflow</h2>
-          <p>We've got the tools to boost your productivity.</p>
+        <section className="ponteciar-section">
+          <h2 className="seccion-titulo">Potencia tu flujo de trabajo.</h2>
+          <p>Tenemos las herramientas para aumentar tu productividad.</p>
           <div className="flex-container">
-            <div className="row-item">
-              <img src="./images/icon-blacklist.svg" alt="icon list" />
-              <h3>Create blacklists</h3>
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/icon-blacklist.svg"
+                alt="Lista de iconos."
+              />
+              <h3>Crear listas negras.</h3>
               <p>
-                Ensure sensitive information never makes its way to your
-                clipboard by excluding certain sources.
+                Asegura que la información confidencial nunca llegue a tu
+                portapapeles mediante la exclusión de ciertas fuentes.
               </p>
             </div>
 
-            <div className="row-item">
-              <img src="./images/icon-text.svg" alt="letter A icon" />
-              <h3>Plain text snippets</h3>
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/icon-text.svg"
+                alt="Icono de la letra A."
+              />
+              <h3>Fragmentos de texto plano.</h3>
               <p>
-                Remove unwanted formatting from copied text for a consistent
-                look.
+                Elimina el formato no deseado del texto copiado para obtener una
+                apariencia consistente.
               </p>
             </div>
 
-            <div className="row-item">
-              <img src="./images/icon-preview.svg" alt="icon eye" />
-              <h3>Sneak preview</h3>
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/icon-preview.svg"
+                alt="Icono de ojo."
+              />
+              <h3>Vista previa.</h3>
               <p>
-                Quick preview of all snippets on your Clipboard for easy access.
+                Vista previa rápida de todos los fragmentos en tu Portapapeles
+                para un acceso sencillo.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="companies-section">
+        <section className="empresas-seccion">
           <div className="flex-container">
-            <div className="row-item">
-              <img src="./images/logo-google.png" alt="logo google" />
-            </div>
-
-            <div className="row-item">
-              <img src="./images/logo-ibm.png" alt="logo ibm" />
-            </div>
-
-            <div className="row-item">
-              <img src="./images/logo-microsoft.png" alt="logo microsoft" />
-            </div>
-
-            <div className="row-item">
-              <img src="./images/logo-hp.png" alt="logo Hewlett Packard" />
-            </div>
-
-            <div className="row-item">
+            <div className="fila-item">
               <img
-                src="./images/logo-vector-graphics.png"
+                src="/assets/imagenes/portapapeles/logo-google.png"
+                alt="logo google"
+              />
+            </div>
+
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/logo-ibm.png"
+                alt="logo ibm"
+              />
+            </div>
+
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/logo-microsoft.png"
+                alt="logo microsoft"
+              />
+            </div>
+
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/logo-hp.png"
+                alt="logo Hewlett Packard"
+              />
+            </div>
+
+            <div className="fila-item">
+              <img
+                src="/assets/imagenes/portapapeles/logo-vector-graphics.png"
                 alt="logo Vector Graphics"
               />
             </div>
           </div>
         </section>
 
-        <section className="clipboard">
-          <h2 className="section-title">Clipboard for iOS and Mac OS</h2>
+        <section className="portapapeles">
+          <h2 className="seccion-titulo">Portapapeles para iOS y Mac OS.</h2>
           <p>
-            Available for free on the App Store. Download for Mac or iOS, sync
-            with iCloud and you are ready to start adding to your clipboard.
+            Disponible de forma gratuita en la App Store. Descarga para Mac o
+            iOS, sincroniza con iCloud y estarás listo para empezar a agregar a
+            tu portapapeles.
           </p>
-          <button className="ios-btn">Download for IOS</button>
-          <button className="mac-btn">Download for Mac</button>
+          <button className="ios-btn">Descargar para IOS.</button>
+          <button className="mac-btn">Descargar para Mac.</button>
         </section>
       </main>
     </>

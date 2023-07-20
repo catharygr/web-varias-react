@@ -110,6 +110,7 @@ main {
 h1 {
   margin-bottom: 0.3rem;
   font-weight: var(--fw-Light);
+  font-size: 1rem;
 }
 
 h1 span {
@@ -164,7 +165,7 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transform: translateY(-2rem); */
+  transform: translateY(-1.8rem);
   padding: 1rem;
   border-radius: 10px;
   background-color: white;

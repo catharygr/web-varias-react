@@ -1,10 +1,11 @@
 import PortaFooter from "./PortaFooter";
 import "./PortaPapeles.css";
+import { useState } from "react";
 
 export default function PortaPapeles() {
   // Estado para el contador y la lista de fragmentos
   const [contador, setContador] = useState(0);
-  const [fragmentos, setFragmentos] = useState([]);
+  console.log(contador);
 
   // Estado para el texto de los botones de descarga
   const [botonIOS, setBotonIOS] = useState("Descargar para iOS.");
@@ -15,15 +16,10 @@ export default function PortaPapeles() {
     setContador(contador + 1);
   }
 
-  // Función para agregar un nuevo fragmento a la lista
-  function agregarFragmento() {
-    setFragmentos([...fragmentos, `Fragmento ${fragmentos.length + 1}`]);
-  }
-
   // Función para cambiar el texto de los botones de descarga
   function cambiarTextoBotones() {
-    setBotonIOS("Descargando...");
-    setBotonMac("Descargando...");
+    setBotonIOS("Descargado para iOS");
+    setBotonMac("Descargado para Mac");
   }
   return (
     <>
@@ -43,9 +39,11 @@ export default function PortaPapeles() {
             instantáneamente a tu portapapeles en todos tus dispositivos.
           </p>
           <button onClick={cambiarTextoBotones} className="ios-btn">
-            Descargar para iOS.
+            {botonIOS}
           </button>
-          <button className="mac-btn">Descargar para Mac.</button>
+          <button onClick={cambiarTextoBotones} className="mac-btn">
+            {botonMac}
+          </button>
         </section>
 
         <section className="mantener-registro-seccion">
@@ -190,8 +188,14 @@ export default function PortaPapeles() {
             iOS, sincroniza con iCloud y estarás listo para empezar a agregar a
             tu portapapeles.
           </p>
-          <button className="ios-btn">Descargar para IOS.</button>
-          <button className="mac-btn">Descargar para Mac.</button>
+          <p>Contador: {contador}</p>
+          <button onClick={manejarClic} className="ios-btn">
+            Descargar para IOS.
+          </button>
+          <p>Contador: {contador}</p>
+          <button onClick={manejarClic} className="mac-btn">
+            Descargar para Mac.
+          </button>
         </section>
       </main>
       <PortaFooter />

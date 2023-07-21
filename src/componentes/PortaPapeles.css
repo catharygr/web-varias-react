@@ -133,6 +133,11 @@ section {
   margin: 1em auto;
 }
 
+footer {
+  background-color: hsl(0, 0%, 89%);
+  padding: 2em;
+}
+
 .footer__logo {
   width: 70px;
   height: 70px;
@@ -173,6 +178,7 @@ svg:hover path {
 .atribucion-container {
   display: flex;
   justify-content: center;
+  gap: 1em;
   margin-top: 2em;
   margin-bottom: 0;
 }
@@ -185,6 +191,7 @@ svg:hover path {
 
 .atribucion a {
   color: hsl(171, 66%, 44%);
+  margin: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -237,7 +244,6 @@ svg:hover path {
   .footer-container {
     display: flex;
     justify-content: space-between;
-    gap: 4em;
     height: 10vh;
     width: 90%;
     margin: 0 auto;

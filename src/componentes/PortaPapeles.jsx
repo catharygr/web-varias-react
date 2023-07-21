@@ -2,6 +2,29 @@ import PortaFooter from "./PortaFooter";
 import "./PortaPapeles.css";
 
 export default function PortaPapeles() {
+  // Estado para el contador y la lista de fragmentos
+  const [contador, setContador] = useState(0);
+  const [fragmentos, setFragmentos] = useState([]);
+
+  // Estado para el texto de los botones de descarga
+  const [botonIOS, setBotonIOS] = useState("Descargar para iOS.");
+  const [botonMac, setBotonMac] = useState("Descargar para Mac.");
+
+  // Función para manejar el clic del botón que incrementa el contador
+  function manejarClic() {
+    setContador(contador + 1);
+  }
+
+  // Función para agregar un nuevo fragmento a la lista
+  function agregarFragmento() {
+    setFragmentos([...fragmentos, `Fragmento ${fragmentos.length + 1}`]);
+  }
+
+  // Función para cambiar el texto de los botones de descarga
+  function cambiarTextoBotones() {
+    setBotonIOS("Descargando...");
+    setBotonMac("Descargando...");
+  }
   return (
     <>
       <header>
@@ -19,7 +42,9 @@ export default function PortaPapeles() {
             Clipboard te permite rastrear y organizar todo lo que copias. Accede
             instantáneamente a tu portapapeles en todos tus dispositivos.
           </p>
-          <button className="ios-btn">Descargar para iOS.</button>
+          <button onClick={cambiarTextoBotones} className="ios-btn">
+            Descargar para iOS.
+          </button>
           <button className="mac-btn">Descargar para Mac.</button>
         </section>
 

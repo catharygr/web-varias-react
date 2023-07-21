@@ -89,7 +89,8 @@ export default function PortaFooter() {
             >
               Frontend Mentor
             </a>
-            Hecho por:<a href="https://bubulazi.com/">bubulazi.com</a>.
+
+            <a href="https://bubulazi.com/"> bubulazi.com</a>
           </p>
         </div>
       </footer>

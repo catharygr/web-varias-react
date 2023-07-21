@@ -77,7 +77,7 @@ export default function PortaPapeles() {
           />
         </section>
 
-        <section className="ponteciar-section">
+        <section className="potenciar-seccion">
           <h2 className="seccion-titulo">Potencia tu flujo de trabajo.</h2>
           <p>Tenemos las herramientas para aumentar tu productividad.</p>
           <div className="flex-container">

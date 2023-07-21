@@ -13,22 +13,25 @@ export default function PortaFooter() {
             className="footer__logo"
           />
           <div className="links">
-            <div className="filas-item">
+            <div className="fila-item">
               <a href="#">FAQs</a>
             </div>
-            <div className="filas-item">
+            <div className="fila-item">
               <a href="#">Contact Us</a>
             </div>
-            <div className="filas-item">
+            <div className="fila-item">
               <a href="#">Privacy Policy</a>
             </div>
-            <div className="filas-item">
+            <div className="fila-item">
               <a href="#">Install Guide</a>
             </div>
           </div>
 
           <div className="social-media">
-            <a href="https://facebook.com" aria-label="Go to Facebook homepage">
+            <a
+              href="https://facebook.com"
+              aria-label="Ir a la página de inicio de Facebook."
+            >
               <svg
                 className="social-media-icon"
                 width="30"
@@ -42,7 +45,10 @@ export default function PortaFooter() {
                 />
               </svg>
             </a>
-            <a href="https://twitter.com" aria-label="Go to Twitter homepage">
+            <a
+              href="https://twitter.com"
+              aria-label="Ir a la página de inicio de Twitter."
+            >
               <svg
                 className="social-media-icon"
                 width="30"
@@ -58,7 +64,7 @@ export default function PortaFooter() {
             </a>
             <a
               href="https://instagram.com"
-              aria-label="Go to Instagram homepage"
+              aria-label="Ir a la página de inicio de Instagram."
             >
               <svg
                 className="social-media-icon"
@@ -82,8 +88,8 @@ export default function PortaFooter() {
               target="_blank"
             >
               Frontend Mentor
-            </a>{" "}
-            Hecho por <a href="#">bubulazi.com</a>.
+            </a>
+            Hecho por:<a href="https://bubulazi.com/">bubulazi.com</a>.
           </p>
         </div>
       </footer>

@@ -133,6 +133,12 @@ section {
   margin: 1em auto;
 }
 
+.footer__logo {
+  width: 70px;
+  height: 70px;
+  margin: 2em auto;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -164,6 +170,13 @@ svg:hover path {
   fill: hsl(171, 66%, 44%);
 }
 
+.atribucion-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
 .atribucion {
   font-size: 1.5rem;
   text-align: center;
@@ -185,7 +198,7 @@ svg:hover path {
   }
 
   .img-container {
-    background-image: url(./images/bg-header-desktop.png);
+    background-image: url(assets/imagenes/portapapeles/bg-header-desktop.png);
     background-size: contain;
   }
 
@@ -245,10 +258,6 @@ svg:hover path {
 
   .social-media {
     align-items: center;
-  }
-  .atribucion-container {
-    margin-top: 2em;
-    margin-bottom: 0;
   }
 
   .ios-btn,

@@ -3,24 +3,24 @@ import "./PortaPapeles.css";
 import { useState } from "react";
 
 export default function PortaPapeles() {
-  // Estado para el contador y la lista de fragmentos
-  const [contador, setContador] = useState(0);
-  console.log(contador);
+  // Estado para el contador de iOS y Mac
+  const [contadorIOS, setContadorIOS] = useState(0);
+  const [contadorMac, setContadorMac] = useState(0);
 
   // Estado para el texto de los botones de descarga
   const [botonIOS, setBotonIOS] = useState("Descargar para iOS.");
   const [botonMac, setBotonMac] = useState("Descargar para Mac.");
 
-  // Función para manejar el clic del botón que incrementa el contador
-  function manejarClic() {
-    setContador(contador + 1);
-  }
-
-  // Función para cambiar el texto de los botones de descarga
-  function cambiarTextoBotones() {
-    setBotonIOS("Descargado para iOS");
-    setBotonMac("Descargado para Mac");
-  }
+  // Función para manejar el clic en los botones de descarga
+  const manejarClicDescarga = (boton) => {
+    if (boton === "ios") {
+      setContadorIOS(contadorIOS + 1);
+      setBotonIOS("Descargado para iOS.");
+    } else if (boton === "mac") {
+      setContadorMac(contadorMac + 1);
+      setBotonMac("Descargado para Mac.");
+    }
+  };
   return (
     <>
       <header>
@@ -38,12 +38,8 @@ export default function PortaPapeles() {
             Clipboard te permite rastrear y organizar todo lo que copias. Accede
             instantáneamente a tu portapapeles en todos tus dispositivos.
           </p>
-          <button onClick={cambiarTextoBotones} className="ios-btn">
-            {botonIOS}
-          </button>
-          <button onClick={cambiarTextoBotones} className="mac-btn">
-            {botonMac}
-          </button>
+          <button className="ios-btn">{botonIOS}</button>
+          <button className="mac-btn">{botonMac}</button>
         </section>
 
         <section className="mantener-registro-seccion">
@@ -188,12 +184,18 @@ export default function PortaPapeles() {
             iOS, sincroniza con iCloud y estarás listo para empezar a agregar a
             tu portapapeles.
           </p>
-          <p>Contador: {contador}</p>
-          <button onClick={manejarClic} className="ios-btn">
+          <p>Contador IOS: {contadorIOS}</p>
+          <button
+            onClick={() => manejarClicDescarga("ios")}
+            className="ios-btn"
+          >
             Descargar para IOS.
           </button>
-          <p>Contador: {contador}</p>
-          <button onClick={manejarClic} className="mac-btn">
+          <p>Contador Mac: {contadorMac}</p>
+          <button
+            onClick={() => manejarClicDescarga("mac")}
+            className="mac-btn"
+          >
             Descargar para Mac.
           </button>
         </section>

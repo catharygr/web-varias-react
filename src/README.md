@@ -19,3 +19,13 @@ Características:
 4- Botón "subir" que aumenta los datos de forma instantánea.
 
 Tecnologías Utilizadas: React, JavaScript (ES6+), CSS
+
+## PortaPapeles
+
+PortaPapeles es una aplicación web que permite rastrear y organizar los elementos copiados en el portapapeles. La aplicación tiene una interfaz de usuario interactiva y fácil de usar, y está desarrollada con React.
+
+Tecnologías Utilizadas:
+
+React: Biblioteca JavaScript para construir interfaces de usuario.
+CSS: Lenguaje de estilo utilizado para el diseño de la interfaz.
+npm/yarn: Gestor de paquetes para instalar dependencias.

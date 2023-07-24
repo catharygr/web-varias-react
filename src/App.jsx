@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import PortaPapeles from "./componentes/PortaPapeles";
+import ChatApp from "./componentes/ChatApp";
 
 function App() {
   return (
     <>
-      <PortaPapeles />
+      <ChatApp />
     </>
   );
 }

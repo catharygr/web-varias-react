@@ -4,6 +4,7 @@ import "./ChatApp.css";
 export default function ChatApp() {
   return (
     <>
+      <h1>Hola</h1>
       <main>
         <section className="telefono-seccion">
           <div className="app-header">
@@ -73,12 +74,12 @@ export default function ChatApp() {
             through the chat.
           </p>
         </section>
-        <footer className="atribucion">
+        {/* <footer className="atribucion">
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor
           </a>
           . Hecho por <a href="#">Cathy</a>.
-        </footer>
+        </footer> */}
       </main>
     </>
   );

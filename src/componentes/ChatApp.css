@@ -1,3 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 html {
   font-size: 16px;
@@ -13,7 +85,7 @@ body {
   padding: 0px 20%;
 }
 
-body::before {
+/* body::before {
   content: "";
   width: 40vw;
   height: 80vh;
@@ -27,7 +99,7 @@ body::before {
     );
     border-radius: 0px 0px 50% 50%;
     z-index: -1;
-  }
+  } */
   
   main {
     display: flex;
@@ -37,18 +109,18 @@ body::before {
     width: 100vw;
   }
   
-  main seccion.texto-seccion h1 {
+  main section.texto-seccion h1 {
     font-size: 2rem;
     font-weight: 500;
     color: hsl(271, 36%, 24%);
     margin-bottom: 20px;
   }
   
-  main seccion.texto-seccion p {
+  main section.texto-seccion p {
     color: hsl(270, 7%, 64%);
   }
   
-  main seccion.telefono-seccion {
+  main section.telefono-seccion {
     background-colorerfiles270, 20%, 96%);
     border: 10px solid #fff;
     border-radius: 25px;
@@ -57,7 +129,7 @@ body::before {
     width: 55vw;
   }
   
-  main seccion.telefono-seccion::after {
+  main section.telefono-seccion::after {
     content: "";
     background-color: #fff;
     height: 4%;
@@ -69,7 +141,7 @@ body::before {
     border-radius: 0px 0px 10px 10px;
   }
   
-  main seccion.telefono-seccion div.app-header {
+  main section.telefono-seccion div.app-header {
     height: 12%;
     width: 90%;
     padding-left: 10%;
@@ -86,14 +158,14 @@ body::before {
       column-gap: 10px;
     }
     
-    main seccion.telefono-seccion div.app-header img {
+    main section.telefono-seccion div.app-header img {
       height: 40%;
       width: auto;
       border-radius: 50%;
       border: 2px #fff solid;
     }
     
-    main seccion.telefono-seccion div.app-header div.perfiles {
+    main section.telefono-seccion div.app-header div.perfiles {
       font-size: 0.7rem;
       color: #fff;
       display: flex;
@@ -102,11 +174,11 @@ body::before {
       flex-direction: column;
     }
     
-    main seccion.telefono-seccion div.app-header div.perfiles span:nth-child(1) {
+    main section.telefono-seccion div.app-header div.perfiles span:nth-child(1) {
       font-weight: 500;
     }
     
-    main seccion.telefono-seccion div.app-header div.perfiles span:nth-child(2) {
+    main section.telefono-seccion div.app-header div.perfiles span:nth-child(2) {
       font-size: 0.6rem;
       font-weight: 400;
       color: hsl(276, 100%, 81%);
@@ -144,7 +216,7 @@ body::before {
       align-self: flex-end;
     }
     
-    main div.app-interfaz span.pics-msg {
+    main div.app-interfaz span.foto-msg {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -153,7 +225,7 @@ body::before {
       column-gap: 10px;
     }
     
-    main div.app-interfaz span.pics-msg img {
+    main div.app-interfaz span.foto-msg img {
       width: 40px;
       height: auto;
       border-radius: 10px;

@@ -36,7 +36,7 @@ export default function ChatApp() {
                 alt="Foto de perro"
               />
             </span>
-            <span className="msg reciever-msg">
+            <span className="msg receptor-msg">
               Here are a few pictures. She’s a happy girl!
             </span>
             <span className="msg receptor-msg">Can you make it?</span>

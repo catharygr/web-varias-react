@@ -1,3 +1,5 @@
+/* Receteo */
+
 *,
 *::before,
 *::after {
@@ -242,7 +244,7 @@ main div.app-interfaz span.oferta {
   padding: 10px;
 }
 
-main div.app-interfa span.oferta span.precio {
+main div.app-interfaz span.oferta span.precio {
   font-weight: 500;
   font-size: 0.8rem;
 }

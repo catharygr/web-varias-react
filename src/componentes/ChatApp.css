@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -85,7 +85,7 @@ body {
   padding: 0px 20%;
 }
 
-/* body::before {
+body::before {
   content: "";
   width: 40vw;
   height: 80vh;
@@ -99,7 +99,7 @@ body {
     );
     border-radius: 0px 0px 50% 50%;
     z-index: -1;
-  } */
+  }
   
   main {
     display: flex;
@@ -280,4 +280,4 @@ body {
       
       footer a {
         color: hsl(228, 45%, 44%);
-      }
+      } */

@@ -12,15 +12,15 @@ export default function ChatApp() {
             />
             <div className="perfiles">
               <span className="perfiles-nombre">Samuel Green</span>
-              <span style={{ display: "block" }}>Disponible para caminar</span>
+              <span style={{ display: "block" }}>Disponible para pasear</span>
             </div>
           </div>
           <div className="app-interfaz">
             <span className="msg enviar-msg">
-              That sounds great. I’d be happy with that.
+              Eso suena genial. Estaría feliz con eso.
             </span>
             <span className="msg enviar-msg">
-              Could you send over some pictures of your dog, please?
+              ¿Podrías enviarme algunas fotos de tu perro, por favor?
             </span>
             <span className="foto-msg">
               <img
@@ -37,31 +37,31 @@ export default function ChatApp() {
               />
             </span>
             <span className="msg receptor-msg">
-              Here are a few pictures. She’s a happy girl!
+              Aquí tienes algunas fotos. ¡Ella es una perrita feliz!
             </span>
-            <span className="msg receptor-msg">Can you make it?</span>
+            <span className="msg receptor-msg">¿Puedes hacerlo?</span>
             <span className="msg enviar-msg">
-              She looks so happy! The time we discussed works. How long shall I
-              take her out for?
+              ¡Se ve tan feliz! El horario que discutimos funciona. ¿Cuánto
+              tiempo debo sacarla a pasear?
             </span>
             <span className="oferta oferta-1">
-              30 minute walk
+              Paseo de 30 minutos.
               <span className="precio">$29</span>
             </span>
             <span className="oferta oferta-2">
-              1 hour walk
+              Paseo de 1 hora.
               <span className="precio">$49</span>
             </span>
-            <div className="mensaje-area">Type a message…</div>
+            <div className="mensaje-area">Escribe un mensaje...</div>
           </div>
         </section>
         <section className="texto-seccion">
-          <h1>Simple booking</h1>
+          <h1>Reserva sencilla.</h1>
           <p>
-            Stay in touch with our dog walkers through the chat interface. This
-            makes it easy to discuss arrangements and make bookings. Once the
-            walk has been completed you can rate your walker and book again all
-            through the chat.
+            Mantente en contacto con nuestros paseadores de perros a través de
+            la interfaz de chat. Esto facilita discutir arreglos y hacer
+            reservas. Una vez que se haya completado el paseo, puedes calificar
+            a tu paseador y reservar nuevamente, todo a través del chat.
           </p>
           <footer className="atribucion">
             <a

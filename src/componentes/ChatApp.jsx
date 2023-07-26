@@ -71,7 +71,7 @@ export default function ChatApp() {
             >
               Frontend Mentor
             </a>
-            . Hecho por <a href="#">Cathy</a>.
+            . Hecho por <a href="https://bubulazi.com/">bubulazi.com</a>.
           </footer>
         </section>
       </main>

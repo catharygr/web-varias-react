@@ -50,10 +50,10 @@ body::before {
 
 main {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* column-gap: 15%; */
-  /* width: 100vw; */
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 15%;
+  width: 100vw;
 }
 
 main section.texto-seccion h1 {

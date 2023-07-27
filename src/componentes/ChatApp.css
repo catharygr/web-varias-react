@@ -1,7 +1,83 @@
-* {
+/* https://piccalil.li/blog/a-modern-css-reset  */
+
+/* Reseteo */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
+}
+
+/* Eliminar el margen predeterminado */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
+}
+
+/* Eliminar los estilos de listas en elementos ul, ol con un atributo de rol "list", lo que sugiere que se eliminarán los estilos predeterminados */
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Establecer valores predeterminados fundamentales de root */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Establecer valores predeterminados fundamentales del cuerpo (body) */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Los elementos "a" que no tienen una clase reciben estilos predeterminados */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Facilitar el trabajo con imágenes */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Heredar fuentes para inputs y botones */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Eliminar todas las animaciones, transiciones y desplazamiento suave para aquellas personas que prefieren no verlos */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -16,10 +92,10 @@ body {
 
 body::before {
   content: "";
-  width: 80vw;
-  height: 70vh;
+  width: 40vw;
+  height: 80vh;
   position: absolute;
-  left: -30%;
+  left: -10%;
   top: 0px;
   background-image: linear-gradient(
     to bottom,
@@ -33,7 +109,6 @@ body::before {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   column-gap: 15%;
   width: 100vw;
@@ -197,12 +272,12 @@ main div.app-interfaz div.mensaje-area {
   margin-top: 5px;
 }
 
-@media (min-width: 42rem) {
+/* @media (min-width: 42rem) {
   main {
     column-gap: 0px;
     justify-content: space-between;
   }
-}
+} */
 
 footer a {
   color: hsl(228, 45%, 44%);

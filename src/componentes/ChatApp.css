@@ -1,297 +1,332 @@
-/* https://piccalil.li/blog/a-modern-css-reset  */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
 
-/* Reseteo */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Eliminar el margen predeterminado */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+/*Reset all elements */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: boder-box;
 }
 
-/* Eliminar los estilos de listas en elementos ul, ol con un atributo de rol "list", lo que sugiere que se eliminarán los estilos predeterminados */
-
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/* Establecer valores predeterminados fundamentales de root */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Establecer valores predeterminados fundamentales del cuerpo (body) */
+/*Reset specific elements*/
+html,
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Los elementos "a" que no tienen una clase reciben estilos predeterminados */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Facilitar el trabajo con imágenes */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Heredar fuentes para inputs y botones */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Eliminar todas las animaciones, transiciones y desplazamiento suave para aquellas personas que prefieren no verlos */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-html {
-  font-size: 16px;
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
   font-family: "Rubik", sans-serif;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 20%;
-}
-
-body::before {
-  content: "";
-  width: 40vw;
-  height: 80vh;
-  position: absolute;
-  left: -10%;
-  top: 0px;
-  background-image: linear-gradient(
-    to bottom,
-    hsl(293, 100%, 63%),
-    hsl(264, 100%, 61%)
-  );
-  border-radius: 0px 0px 50% 50%;
-  z-index: -1;
+  font-size: 1rem;
+  background-color: hsl(270, 20%, 96%);
 }
 
 main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  column-gap: 15%;
-  width: 100vw;
 }
 
-main section.texto-seccion h1 {
-  font-size: 2rem;
-  font-weight: 500;
-  color: hsl(271, 36%, 24%);
-  margin-bottom: 20px;
-}
-
-main section.texto-seccion p {
-  color: hsl(270, 7%, 64%);
-}
-
-main section.telefono-seccion {
-  background-color: hsl(270, 20%, 96%);
-  border: 10px solid #fff;
-  border-radius: 25px;
-  position: relative;
-  height: 70vh;
-  width: 65vw;
-}
-
-main section.telefono-seccion::after {
-  content: "";
-  background-color: #fff;
-  height: 4%;
-  width: 60%;
+.primera-tarjeta {
+  height: 680px;
+  width: 490px;
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 0 0 470px 470px;
+  z-index: -1;
   position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 0px 0px 10px 10px;
+  left: -70px;
 }
 
-main section.telefono-seccion div.app-header {
-  height: 12%;
-  width: 90%;
-  padding-left: 10%;
-  padding-bottom: 5%;
+.display-movil {
+  height: 490px;
+  width: 230px;
+  background-color: hsl(0, 0%, 100%);
+  margin-left: 370px;
+  margin-top: 140px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
   background-image: linear-gradient(
     to right,
     hsl(264, 100%, 61%),
     hsl(293, 100%, 63%)
   );
-  border-radius: 10px 10px 0px 0px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  column-gap: 10px;
+  padding: 30px 5px 10px 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-main section.telefono-seccion div.app-header img {
-  height: 40%;
-  width: auto;
+ul > li > img {
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  border: 2px #fff solid;
+  margin-left: 4px;
+  border: solid 1px hsl(0, 0%, 100%);
 }
-
-main section.telefono-seccion div.app-header div.perfiles {
-  font-size: 0.7rem;
-  color: #fff;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-main section.telefono-seccion div.app-header div.perfiles span:nth-child(1) {
+ul > li > h3 {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+  opacity: 80%;
   font-weight: 500;
 }
 
-main section.telefono-seccion div.app-header div.perfiles span:nth-child(2) {
+ul > li > p {
   font-size: 0.6rem;
-  font-weight: 400;
-  color: hsl(276, 100%, 81%);
+  color: hsl(0, 0%, 100%);
+  opacity: 50%;
 }
 
-main div.app-interfaz {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.flecha {
+  border: solid hsl(0, 0%, 100%);
+  opacity: 80%;
+  border-width: 0 2px 2px 0;
+
+  padding: 3px;
+  margin-left: 10px;
+  margin-top: 8px;
+  height: 2px;
 }
 
-main span.enviar-msg,
-main span.receptor-msg {
-  font-size: 0.6rem;
-  display: block;
-  max-width: 60%;
-  margin: 5px 10px;
-  border-radius: 10px;
-  padding: 5px 7px;
+.izq {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
-main span.enviar-msg {
-  color: hsl(276, 55%, 52%);
-  background-color: hsl(293, 100%, 63%, 0.3);
-}
-
-main span.enviar-msg:nth-child(1) {
+.vl {
+  border-right: 3px hsl(0, 0%, 100%);
+  opacity: 70%;
+  height: 12px;
+  border-style: none;
+  border-right-style: dotted;
+  width: 0px;
+  margin-left: 60px;
   margin-top: 10px;
 }
 
-main span.receptor-msg {
-  color: #000;
-  background-color: #fff;
-  align-self: flex-end;
+.contenido-interno {
+  background-color: hsl(270, 20%, 96%);
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
 }
 
-main div.app-interfaz span.foto-msg {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  align-self: flex-end;
-  margin: 5px 10px;
-  column-gap: 10px;
+.arco-medio {
+  width: 140px;
+  height: 20px;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  margin-left: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-main div.app-interfaz span.foto-msg img {
+.encabezado-primero {
+  margin-left: 10px;
+}
+
+.para-izq {
+  background-color: hsla(276, 55%, 52%, 0.11);
+  width: 130px;
+  font-size: 0.5rem;
+  padding: 5px;
+  border-radius: 10px;
+  color: hsl(276, 55%, 52%);
+  line-height: 12px;
+  margin-left: 5px;
+}
+
+.para-primero {
+  margin: 10px 0px 10px 5px;
+}
+
+.dog-image {
   width: 40px;
-  height: auto;
+  margin-left: 5px;
+  margin-top: 15px;
   border-radius: 10px;
 }
 
-main div.app-interfaz span.oferta {
-  width: 70%;
-  height: 10%;
-  font-size: 0.6rem;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.image-div {
+  margin-left: 80px;
+}
+
+.para-derecha {
+  font-size: 0.5rem;
+  padding: 5px;
+  background-color: hsla(271, 15%, 43%, 0.075);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.para-ancho-derecho {
+  width: 110px;
+  margin-left: 100px;
+}
+
+.para-ancho-peque {
+  width: 65px;
+  margin-left: 145px;
+  margin-bottom: 10px;
+}
+
+.para-ultima {
+  width: 110px;
+}
+
+.minuto {
+  margin-left: 22px;
+}
+
+.pasear {
+  width: 150px;
+
+  font-size: 0.5rem;
+  color: hsla(0, 0%, 100%, 0.842);
   background-image: linear-gradient(
     to right,
     hsl(293, 100%, 63%),
     hsl(264, 100%, 61%)
   );
-  margin: 5px 10px;
+  padding: 10px;
+  margin-left: 5px;
   border-radius: 10px 10px 10px 5px;
-  padding: 10px;
 }
 
-main div.app-interfaz span.oferta span.precio {
-  font-weight: 500;
-  font-size: 0.8rem;
+.dolar {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 40px;
 }
 
-main div.app-interfaz div.mensaje-area {
-  width: calc(100% - 40px);
-  background-color: #fff;
-  text-align: left;
-  align-self: center;
-  color: hsl(206, 6%, 79%);
-  border-radius: 20px;
-  height: 10%;
+.circulo {
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  padding: 3px;
+  background: hsla(293, 100%, 63%, 0.87);
+  border: 1px solid hsla(0, 0%, 100%, 0.288);
+
+  position: absolute;
+}
+
+.subir {
+  margin-top: 21px;
+  margin-left: 15px;
+}
+.bajar {
+  margin-top: 64px;
+  margin-left: 16px;
+}
+
+.pasear-primero {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.tipo-mensaje {
+  margin-top: 15px;
+  margin-left: 8px;
   font-size: 0.6rem;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 13px;
+  background-color: hsl(0, 0%, 100%);
+  width: 190px;
+  border-radius: 15px;
+  color: hsl(206, 6%, 79%);
 }
 
-/* @media (min-width: 42rem) {
-  main {
-    column-gap: 0px;
-    justify-content: space-between;
-  }
-} */
+.container-segundo {
+  width: 32%;
+  height: 32%;
+  margin-left: 100px;
+  margin-top: 320px;
+  line-height: 1.4rem;
+}
 
-footer a {
+.para-tercero {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: hsl(270, 7%, 64%);
+}
+
+h1 {
+  color: rgba(18, 5, 75, 0.829);
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.enviar-btn {
+  height: 22px;
+  width: 22px;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 100%;
+  left: 575px;
+  top: 600px;
+  position: absolute;
+}
+
+.flecha {
+  border: solid hsl(0, 0%, 100%);
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.derecha {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.atribucion {
+  font-size: 11px;
+  text-align: center;
+}
+.atribucion a {
   color: hsl(228, 45%, 44%);
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 0.8em;
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  font-size: 0.9rem;
+@media only screen and (max-width: 500px) {
+  .container-segundo {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .primera-tarjeta {
+    margin-left: -240px;
+    height: 580px;
+  }
+
+  .display-movil {
+    height: 490px;
+    width: 230px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 100px;
+    margin-top: 140px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .para-tercera {
+    font-size: 1.1rem;
+    padding: 20px 30px 30px 30px;
+    line-height: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .display-movil {
+    margin-top: 70px;
+  }
 }

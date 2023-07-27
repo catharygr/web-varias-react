@@ -5,7 +5,7 @@ export default function ChatApp() {
   return (
     <>
       <main>
-        <section className="container">
+        <section className="container-primero">
           <div className="primera-tarjeta"></div>
           <div className="segunda-tarjeta">
             <div className="display-movil">
@@ -13,7 +13,7 @@ export default function ChatApp() {
                 <div className="arco-medio"></div>
 
                 <ul>
-                  <li className="flecha-izq"></li>
+                  <li className="flecha izq"></li>
                   <li>
                     {" "}
                     <img

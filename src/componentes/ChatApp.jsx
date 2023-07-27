@@ -12,7 +12,7 @@ export default function ChatApp() {
             />
             <div className="perfiles">
               <span className="perfiles-nombre">Samuel Green</span>
-              <span style={{ display: "block" }}>Disponible para pasear</span>
+              <span>Disponible para pasear</span>
             </div>
           </div>
           <div className="app-interfaz">

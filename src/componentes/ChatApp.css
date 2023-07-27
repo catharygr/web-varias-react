@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
 
-/*Reset all elements */
+/*Reseteo*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: boder-box;
 }
 
-/*Reset specific elements*/
 html,
 body {
   height: 100%;
@@ -122,7 +121,7 @@ ul > li > p {
   border-bottom-right-radius: 10px;
 }
 
-.encabezado-primero {
+.primer-encabezado {
   margin-left: 10px;
 }
 
@@ -141,18 +140,18 @@ ul > li > p {
   margin: 10px 0px 10px 5px;
 }
 
-.dog-image {
+.dog-imagen {
   width: 40px;
   margin-left: 5px;
   margin-top: 15px;
   border-radius: 10px;
 }
 
-.image-div {
+.imagen-div {
   margin-left: 80px;
 }
 
-.para-derecha {
+.para-derecho {
   font-size: 0.5rem;
   padding: 5px;
   background-color: hsla(271, 15%, 43%, 0.075);
@@ -171,7 +170,7 @@ ul > li > p {
   margin-bottom: 10px;
 }
 
-.para-ultima {
+.para-ultimo {
   width: 110px;
 }
 
@@ -276,12 +275,15 @@ h1 {
   margin-top: 6px;
 }
 
-.derecha {
+.derecho {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
 .atribucion {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
   font-size: 11px;
   text-align: center;
 }
@@ -296,16 +298,13 @@ h1 {
     text-align: center;
     margin-top: 100px;
   }
-
   main {
     flex-direction: column;
   }
-
   .primera-tarjeta {
     margin-left: -240px;
     height: 580px;
   }
-
   .display-movil {
     height: 490px;
     width: 230px;
@@ -315,17 +314,14 @@ h1 {
     padding: 10px;
     border-radius: 20px;
   }
-
-  .para-tercera {
+  .para-tercero {
     font-size: 1.1rem;
     padding: 20px 30px 30px 30px;
     line-height: 2rem;
   }
-
   h1 {
     font-size: 2.5rem;
   }
-
   .display-movil {
     margin-top: 70px;
   }

@@ -66,6 +66,8 @@ export default function ChatApp() {
                   ¡Se ve tan feliz! El horario que discutimos funciona. ¿Cuánto
                   tiempo debo sacarla a pasear?
                 </p>
+                <div className="circulo subir"></div>
+                <div className="circulo bajar"></div>
                 <div>
                   <p className="pasear pasear-primero">
                     <span>Paseo de 30 minutos.</span>{" "}

@@ -44,7 +44,7 @@ export default function ChatApp() {
                   />
                   <img
                     className="dog-imagen"
-                    src="i/assets/imagenes/chatapp/dog-image-2.jpg"
+                    src="/assets/imagenes/chatapp/dog-image-2.jpg"
                     alt="Imagen de un perro"
                   />
                   <img

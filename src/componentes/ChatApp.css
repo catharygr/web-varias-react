@@ -280,11 +280,16 @@ h1 {
 }
 
 .atribucion {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  font-size: 11px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  font-size: 0.8em;
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 1rem;
+  font-size: 0.9em;
 }
 .atribucion a {
   color: hsl(228, 45%, 44%);

@@ -5,7 +5,7 @@ export default function ChatApp() {
   return (
     <>
       <main>
-        <section className="container-primero">
+        <section>
           <div className="primera-tarjeta"></div>
           <div className="segunda-tarjeta">
             <div className="display-movil">
@@ -58,7 +58,6 @@ export default function ChatApp() {
                   Aquí tienes algunas fotos. ¡Ella es una perrita feliz!
                 </p>
                 <p className="para-derecho para-derecho-peque">
-                  {" "}
                   ¿Puedes hacerlo?
                 </p>
 
@@ -67,16 +66,12 @@ export default function ChatApp() {
                   ¡Se ve tan feliz! El horario que discutimos funciona. ¿Cuánto
                   tiempo debo sacarla a pasear?
                 </p>
-
-                <div className="circulo subir"></div>
-                <div className="circulo bajar"></div>
                 <div>
                   <p className="pasear pasear-primero">
-                    <span className="minuto">Paseo de 30 minutos.</span>{" "}
-                    <span className="dolar"> $29</span>
+                    <span>Paseo de 30 minutos.</span>{" "}
+                    <span className="dolar"> $29</span>{" "}
                   </p>
                   <p className="pasear">
-                    {" "}
                     <span className="minuto">Paseo de 1 hora.</span>{" "}
                     <span className="dolar">$49</span>{" "}
                   </p>
@@ -92,7 +87,7 @@ export default function ChatApp() {
         </section>
 
         <div className="container-segundo">
-          <h1> Reserva sencilla.</h1>
+          <h1> Reserva sencilla</h1>
 
           <p className="para-tercero">
             {" "}

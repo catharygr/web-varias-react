@@ -23,18 +23,18 @@ export default function ChatApp() {
                   </li>
                   <li className="primer-encabezado">
                     <h3> Samuel Green</h3>
-                    <p>Available to Walk</p>
+                    <p>Disponibilidad para pasear</p>
                   </li>
                   <li className="vl"></li>
                 </ul>
 
                 <p className="para-primero para-izq">
                   {" "}
-                  That sounds great. I’d be happy with that.
+                  Eso suena genial. Estaría feliz con eso.
                 </p>
                 <p className="para-segundo para-izq">
                   {" "}
-                  Could you send over some pictures of your dog, please?
+                  ¿Podrías enviarme algunas fotos de tu perro, por favor?
                 </p>
                 <div className="imagen-div">
                   <img
@@ -55,34 +55,34 @@ export default function ChatApp() {
                 </div>
 
                 <p className="para-derecho para-ancho-derecho">
-                  Here are a few pictures. She’s a happy girl!
+                  Aquí tienes algunas fotos. ¡Ella es una perrita feliz!
                 </p>
                 <p className="para-derecho para-derecho-peque">
                   {" "}
-                  Can you make it?
+                  ¿Puedes hacerlo?
                 </p>
 
                 <p className="para-ultimo para-izq">
                   {" "}
-                  She looks so happy! The time we discussed works. How long
-                  shall I take her out for?
+                  ¡Se ve tan feliz! El horario que discutimos funciona. ¿Cuánto
+                  tiempo debo sacarla a pasear?
                 </p>
 
                 <div className="circulo subir"></div>
                 <div className="circulo bajar"></div>
                 <div>
                   <p className="pasear pasear-primero">
-                    <span className="minuto">30 minute walk</span>{" "}
+                    <span className="minuto">Paseo de 30 minutos.</span>{" "}
                     <span className="dolar"> $29</span>
                   </p>
                   <p className="pasear">
                     {" "}
-                    <span className="minuto">30 minute walk</span>{" "}
+                    <span className="minuto">Paseo de 1 hora.</span>{" "}
                     <span className="dolar">$49</span>{" "}
                   </p>
                 </div>
 
-                <p className="tipo-mensaje">Type a message…</p>
+                <p className="tipo-mensaje">Escribe un mensaje...</p>
                 <div className="enviar-btn">
                   <i className="flecha derecho"></i>
                 </div>
@@ -92,14 +92,14 @@ export default function ChatApp() {
         </section>
 
         <div className="container-segundo">
-          <h1> Simple booking</h1>
+          <h1> Reserva sencilla.</h1>
 
           <p className="para-tercero">
             {" "}
-            Stay in touch with our dog walkers through the chat interface. This
-            makes it easy to discuss arrangements and make bookings. Once the
-            walk has been completed you can rate your walker and book again all
-            through the chat.
+            Mantente en contacto con nuestros paseadores de perros a través de
+            la interfaz de chat. Esto facilita discutir arreglos y hacer
+            reservas. Una vez que se haya completado el paseo, puedes calificar
+            a tu paseador y reservar nuevamente, todo a través del chat..
           </p>
         </div>
         <footer>

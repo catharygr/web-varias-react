@@ -129,7 +129,10 @@ export default function ChatApp() {
                 <li className="arrow left"></li>
                 <li>
                   {" "}
-                  <img src="images/avatar.jpg" alt="avatar-image" />
+                  <img
+                    src="/assets/imagenes/chatapp/avatar.jpg"
+                    alt="avatar-image"
+                  />
                 </li>
                 <li className="heading-first">
                   <h3> Samuel Green</h3>
@@ -149,17 +152,17 @@ export default function ChatApp() {
               <div className="image-div">
                 <img
                   className="dog-image"
-                  src="images/dog-image-1.jpg"
+                  src="/assets/imagenes/chatapp/dog-image-1.jpg"
                   alt="dog-image-1"
                 />{" "}
                 <img
                   className="dog-image"
-                  src="images/dog-image-2.jpg"
+                  src="/assets/imagenes/chatapp/dog-image-2.jpg"
                   alt="dog-image-2"
                 />
                 <img
                   className="dog-image"
-                  src="images/dog-image-3.jpg"
+                  src="/assets/imagenes/chatapp/dog-image-3.jpg"
                   alt="dog-image-3"
                 />
               </div>

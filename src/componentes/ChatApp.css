@@ -23,7 +23,7 @@ main {
   display: flex;
 }
 
-.primera-tarjeta {
+.tarjeta-primero {
   height: 680px;
   width: 490px;
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
@@ -304,7 +304,7 @@ h1 {
   main {
     flex-direction: column;
   }
-  .primera-tarjeta {
+  .tarjeta-primero {
     margin-left: -240px;
     height: 580px;
   }
@@ -487,11 +487,11 @@ ul > li > p {
   border-radius: 10px;
 }
 
-.image-div {
+.imagen-div {
   margin-left: 80px;
 }
 
-.para-right {
+.para-derecho {
   font-size: 0.5rem;
   padding: 5px;
   background-color: hsla(271, 15%, 43%, 0.075);
@@ -499,28 +499,27 @@ ul > li > p {
   border-radius: 10px;
 }
 
-.para-right-width {
+.para-ancho-derecho {
   width: 110px;
   margin-left: 100px;
 }
 
-.para-right-small {
+.para-derecho-peque {
   width: 65px;
   margin-left: 145px;
   margin-bottom: 10px;
 }
 
-.para-last {
+.para-ultimo {
   width: 110px;
 }
 
-.minute {
+.minuto {
   margin-left: 22px;
 }
 
-.walk {
+.pasear {
   width: 150px;
-
   font-size: 0.5rem;
   color: hsla(0, 0%, 100%, 0.842);
   background-image: linear-gradient(
@@ -533,13 +532,13 @@ ul > li > p {
   border-radius: 10px 10px 10px 5px;
 }
 
-.dollar {
+.dolar {
   font-size: 0.7rem;
   font-weight: 600;
   margin-left: 40px;
 }
 
-.circle {
+.circulo {
   border-radius: 100%;
   width: 5px;
   height: 5px;
@@ -550,21 +549,21 @@ ul > li > p {
   position: absolute;
 }
 
-.up {
+.subir {
   margin-top: 21px;
   margin-left: 15px;
 }
-.down {
+.bajar {
   margin-top: 64px;
   margin-left: 16px;
 }
 
-.walk-first {
+.pasear-primero {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.message-type {
+.tipo-mensaje {
   margin-top: 15px;
   margin-left: 8px;
   font-size: 0.6rem;
@@ -577,7 +576,7 @@ ul > li > p {
 
 /*#############################################--container-second--###########################*/
 
-.container-second {
+.container-segundo {
   width: 32%;
   height: 32%;
   margin-left: 100px;
@@ -585,7 +584,7 @@ ul > li > p {
   line-height: 1.4rem;
 }
 
-.para-third {
+.para-tercero {
   font-size: 0.9rem;
   margin-top: 20px;
   color: hsl(270, 7%, 64%);
@@ -600,7 +599,7 @@ h1 {
 
 /*#############################################--Summit-Button--###########################*/
 
-.summit-button {
+.enviar-btn {
   height: 22px;
   width: 22px;
   background-color: hsl(271, 36%, 24%);
@@ -610,7 +609,7 @@ h1 {
   position: absolute;
 }
 
-.arrow {
+.flecha {
   border: solid hsl(0, 0%, 100%);
   border-width: 0 2px 2px 0;
   padding: 3px;
@@ -619,29 +618,28 @@ h1 {
   margin-top: 6px;
 }
 
-.right {
+.derecho {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
 /***********************--Footer--*************************/
 
-.attribution {
+.atribucion {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+.atribucion a {
   color: hsl(228, 45%, 44%);
 }
 
 /*####################################--media-query--500px--##############################*/
 
 @media only screen and (max-width: 500px) {
-  .container-second {
+  .container-segundo {
     width: 100%;
     margin-left: 0px;
     text-align: center;
-
     margin-top: 100px;
   }
 
@@ -649,12 +647,12 @@ h1 {
     flex-direction: column;
   }
 
-  .card-first {
+  .primera-tarjeta {
     margin-left: -240px;
     height: 580px;
   }
 
-  .mobile-display {
+  .display-movil {
     height: 490px;
     width: 230px;
     background-color: hsl(0, 0%, 100%);
@@ -664,7 +662,7 @@ h1 {
     border-radius: 20px;
   }
 
-  .para-third {
+  .para-tercero {
     font-size: 1.1rem;
     padding: 20px 30px 30px 30px;
     line-height: 2rem;
@@ -674,7 +672,7 @@ h1 {
     font-size: 2.5rem;
   }
 
-  .mobile-display {
+  .display-movil {
     margin-top: 70px;
   }
 }

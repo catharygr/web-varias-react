@@ -284,12 +284,17 @@ h1 {
 
 /*--Footer--*/
 
-.atribucion {
-  font-size: 11px;
+atribucion {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-}
-.atribucion a {
-  color: hsl(228, 45%, 44%);
+  font-size: 0.8em;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(270, 7%, 64%);
+  padding: 1rem;
+  font-size: 0.9em;
 }
 
 /*-media-query--500px--*/
@@ -333,8 +338,5 @@ h1 {
 
   .display-movil {
     margin-top: 70px;
-  }
-  .atribucion {
-    margin-top: 50px;
   }
 }

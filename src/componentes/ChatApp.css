@@ -22,8 +22,11 @@ body {
   background-color: hsl(270, 20%, 96%);
 }
 
-main {
+.container-primero {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .tarjeta-primero {
@@ -238,17 +241,10 @@ ul > li > p {
 }
 
 .container-segundo {
-  width: 32%;
-  height: 32%;
-  margin-left: 100px;
-  margin-top: 320px;
-  line-height: 1.4rem;
-}
-
-.para-tercero {
-  font-size: 0.9rem;
-  margin-top: 20px;
-  color: hsl(270, 7%, 64%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
 h1 {
@@ -258,43 +254,28 @@ h1 {
   padding: 5px;
 }
 
-.enviar-btn {
-  height: 22px;
-  width: 22px;
-  background-color: hsl(271, 36%, 24%);
-  border-radius: 100%;
-  left: 575px;
-  top: 600px;
-  position: absolute;
-}
-
-.flecha {
-  border: solid hsl(0, 0%, 100%);
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  display: inline-block;
-  margin-left: 6px;
-  margin-top: 6px;
-}
-
-.derecho {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+.para-tercero {
+  font-size: 0.9rem;
+  color: hsl(270, 7%, 64%);
 }
 
 /*--Footer--*/
 
-atribucion {
+.atribucion {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
   font-size: 0.8em;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(270, 7%, 64%);
+  background-color: hsla(293, 100%, 63%, 0.87);
+  color: black;
   padding: 1rem;
   font-size: 0.9em;
+}
+
+.atribucion a {
+  color: hsl(0, 0%, 100%);
 }
 
 /*-media-query--500px--*/
@@ -305,10 +286,6 @@ atribucion {
     margin-left: 0px;
     text-align: center;
     margin-top: 100px;
-  }
-
-  main {
-    flex-direction: column;
   }
 
   .primera-tarjeta {
@@ -328,7 +305,7 @@ atribucion {
 
   .para-tercero {
     font-size: 1.1rem;
-    padding: 20px 30px 30px 30px;
+    /* padding: 20px 30px 30px 30px; */
     line-height: 2rem;
   }
 
@@ -338,5 +315,27 @@ atribucion {
 
   .display-movil {
     margin-top: 70px;
+  }
+  .enviar-btn {
+    height: 22px;
+    width: 22px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 100%;
+    left: 575px;
+    top: 600px;
+    position: absolute;
+  }
+  .flecha {
+    border: solid hsl(0, 0%, 100%);
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+
+  .derecho {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
   }
 }

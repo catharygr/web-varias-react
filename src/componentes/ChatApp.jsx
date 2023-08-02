@@ -109,7 +109,7 @@ export default function ChatApp() {
           >
             Frontend Mentor
           </a>
-          . hecho por <a href="https://bubulazi.com">bubulazi.com</a>.
+          . Desarrollado por: <a href="https://bubulazi.com">bubulazi.com</a>.
         </div>
       </footer>
     </main>

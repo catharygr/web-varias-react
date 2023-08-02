@@ -1,4 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
+*/
 
 /*Reseteo*/
 /* * {
@@ -360,7 +361,7 @@ main {
 
 /*################################--CSS-Classes--#######################################*/
 
-.card-first {
+.tarjeta-primero {
   height: 680px;
   width: 490px;
   background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
@@ -370,7 +371,7 @@ main {
   left: -70px;
 }
 
-.mobile-display {
+.display-movil {
   height: 490px;
   width: 230px;
   background-color: hsl(0, 0%, 100%);
@@ -417,18 +418,17 @@ ul > li > p {
   opacity: 50%;
 }
 
-.arrow {
+.flecha {
   border: solid hsl(0, 0%, 100%);
   opacity: 80%;
   border-width: 0 2px 2px 0;
-
   padding: 3px;
   margin-left: 10px;
   margin-top: 8px;
   height: 2px;
 }
 
-.left {
+.izq {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
@@ -444,14 +444,14 @@ ul > li > p {
   margin-top: 10px;
 }
 
-.inner-content {
+.contenido-interno {
   background-color: hsl(270, 20%, 96%);
   height: 100%;
   width: 100%;
   border-radius: 20px;
 }
 
-.half-arc {
+.arco-medio {
   width: 140px;
   height: 20px;
   background-color: hsl(0, 0%, 100%);
@@ -461,11 +461,11 @@ ul > li > p {
   border-bottom-right-radius: 10px;
 }
 
-.heading-first {
+.primer-encabezado {
   margin-left: 10px;
 }
 
-.para-left {
+.para-izq {
   background-color: hsla(276, 55%, 52%, 0.11);
   width: 130px;
   font-size: 0.5rem;
@@ -476,11 +476,11 @@ ul > li > p {
   margin-left: 5px;
 }
 
-.para-first {
+.para-primero {
   margin: 10px 0px 10px 5px;
 }
 
-.dog-image {
+.dog-imagen {
   width: 40px;
   margin-left: 5px;
   margin-top: 15px;

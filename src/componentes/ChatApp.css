@@ -239,6 +239,28 @@ ul > li > p {
   border-radius: 15px;
   color: hsl(206, 6%, 79%);
 }
+.enviar-btn {
+  height: 22px;
+  width: 22px;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 100%;
+  left: 575px;
+  top: 600px;
+  position: absolute;
+}
+.flecha {
+  border: solid hsl(0, 0%, 100%);
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+.derecho {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 
 .container-segundo {
   display: flex;
@@ -315,27 +337,5 @@ h1 {
 
   .display-movil {
     margin-top: 70px;
-  }
-  .enviar-btn {
-    height: 22px;
-    width: 22px;
-    background-color: hsl(271, 36%, 24%);
-    border-radius: 100%;
-    left: 575px;
-    top: 600px;
-    position: absolute;
-  }
-  .flecha {
-    border: solid hsl(0, 0%, 100%);
-    border-width: 0 2px 2px 0;
-    padding: 3px;
-    display: inline-block;
-    margin-left: 6px;
-    margin-top: 6px;
-  }
-
-  .derecho {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
   }
 }

@@ -1,349 +1,16 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
-*/
-
-/*Reseteo*/
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: boder-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
-  background-color: hsl(270, 20%, 96%);
-}
-
-main {
-  display: flex;
-}
-
-.tarjeta-primero {
-  height: 680px;
-  width: 490px;
-  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-  border-radius: 0 0 470px 470px;
-  z-index: -1;
-  position: absolute;
-  left: -70px;
-}
-
-.display-movil {
-  height: 490px;
-  width: 230px;
-  background-color: hsl(0, 0%, 100%);
-  margin-left: 370px;
-  margin-top: 140px;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-  background-image: linear-gradient(
-    to right,
-    hsl(264, 100%, 61%),
-    hsl(293, 100%, 63%)
-  );
-  padding: 30px 5px 10px 5px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-ul > li > img {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  margin-left: 4px;
-  border: solid 1px hsl(0, 0%, 100%);
-}
-ul > li > h3 {
-  font-size: 0.9rem;
-  color: hsl(0, 0%, 100%);
-  opacity: 80%;
-  font-weight: 500;
-}
-
-ul > li > p {
-  font-size: 0.6rem;
-  color: hsl(0, 0%, 100%);
-  opacity: 50%;
-}
-
-.flecha {
-  border: solid hsl(0, 0%, 100%);
-  opacity: 80%;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  margin-left: 10px;
-  margin-top: 8px;
-  height: 2px;
-}
-
-.izq {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.vl {
-  border-right: 3px hsl(0, 0%, 100%);
-  opacity: 70%;
-  height: 12px;
-  border-style: none;
-  border-right-style: dotted;
-  width: 0px;
-  margin-left: 60px;
-  margin-top: 10px;
-}
-
-.contenido-interno {
-  background-color: hsl(270, 20%, 96%);
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.arco-medio {
-  width: 140px;
-  height: 20px;
-  background-color: hsl(0, 0%, 100%);
-  position: absolute;
-  margin-left: 50px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.primer-encabezado {
-  margin-left: 10px;
-}
-
-.para-izq {
-  background-color: hsla(276, 55%, 52%, 0.11);
-  width: 130px;
-  font-size: 0.5rem;
-  padding: 5px;
-  border-radius: 10px;
-  color: hsl(276, 55%, 52%);
-  line-height: 12px;
-  margin-left: 5px;
-}
-
-.para-primero {
-  margin: 10px 0px 10px 5px;
-}
-
-.dog-imagen {
-  width: 40px;
-  margin-left: 5px;
-  margin-top: 15px;
-  border-radius: 10px;
-}
-
-.imagen-div {
-  margin-left: 80px;
-}
-
-.para-derecho {
-  font-size: 0.5rem;
-  padding: 5px;
-  background-color: hsla(271, 15%, 43%, 0.075);
-  margin-top: 10px;
-  border-radius: 10px;
-}
-
-.para-ancho-derecho {
-  width: 110px;
-  margin-left: 100px;
-}
-
-.para-derecho-peque {
-  width: 65px;
-  margin-left: 145px;
-  margin-bottom: 10px;
-}
-
-.para-ultimo {
-  width: 110px;
-}
-
-.minuto {
-  margin-left: 22px;
-}
-
-.pasear {
-  width: 150px;
-  font-size: 0.5rem;
-  color: hsla(0, 0%, 100%, 0.842);
-  background-image: linear-gradient(
-    to right,
-    hsl(293, 100%, 63%),
-    hsl(264, 100%, 61%)
-  );
-  padding: 10px;
-  margin-left: 5px;
-  border-radius: 10px 10px 10px 5px;
-}
-
-.dolar {
-  font-size: 0.7rem;
-  font-weight: 600;
-  margin-left: 40px;
-}
-
-.circulo {
-  border-radius: 100%;
-  width: 5px;
-  height: 5px;
-  padding: 3px;
-  background: hsla(293, 100%, 63%, 0.87);
-  border: 1px solid hsla(0, 0%, 100%, 0.288);
-  position: absolute;
-}
-
-.subir {
-  margin-top: 21px;
-  margin-left: 15px;
-}
-.bajar {
-  margin-top: 64px;
-  margin-left: 16px;
-}
-
-.pasear-primero {
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.tipo-mensaje {
-  margin-top: 15px;
-  margin-left: 8px;
-  font-size: 0.6rem;
-  padding: 13px;
-  background-color: hsl(0, 0%, 100%);
-  width: 190px;
-  border-radius: 15px;
-  color: hsl(206, 6%, 79%);
-}
-
-.container-segundo {
-  width: 32%;
-  height: 32%;
-  margin-left: 100px;
-  margin-top: 320px;
-  line-height: 1.4rem;
-}
-
-.para-tercero {
-  font-size: 0.9rem;
-  margin-top: 20px;
-  color: hsl(270, 7%, 64%);
-}
-
-h1 {
-  color: rgba(18, 5, 75, 0.829);
-  font-weight: 600;
-  font-size: 2rem;
-  padding: 5px;
-}
-
-.enviar-btn {
-  height: 22px;
-  width: 22px;
-  background-color: hsl(271, 36%, 24%);
-  border-radius: 100%;
-  left: 575px;
-  top: 600px;
-  position: absolute;
-}
-
-.flecha {
-  border: solid hsl(0, 0%, 100%);
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  display: inline-block;
-  margin-left: 6px;
-  margin-top: 6px;
-}
-
-.derecho {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.atribucion {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 0.8em;
-  background-color: var(--dark);
-  color: var(--white);
-  padding: 1rem;
-  font-size: 0.9em;
-}
-.atribucion a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media only screen and (max-width: 500px) {
-  .container-segundo {
-    width: 100%;
-    margin-left: 0px;
-    text-align: center;
-    margin-top: 100px;
-  }
-  main {
-    flex-direction: column;
-  }
-  .tarjeta-primero {
-    margin-left: -240px;
-    height: 580px;
-  }
-  .display-movil {
-    height: 490px;
-    width: 230px;
-    background-color: hsl(0, 0%, 100%);
-    margin-left: 100px;
-    margin-top: 140px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-  .para-tercero {
-    font-size: 1.1rem;
-    padding: 20px 30px 30px 30px;
-    line-height: 2rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  .display-movil {
-    margin-top: 70px;
-  }
-} */
-
-/*###############################--Google-Fonts--##############################*/
+/*--Google-Fonts--*/
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
 
-/*###############################--Google-Fonts--##############################*/
+/*--Google-Fonts--*/
 
-/*Reset all elements */
+/*Reseteo*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: boder-box;
 }
 
-/*Reset specific elements*/
 html,
 body {
   height: 100%;
@@ -358,8 +25,6 @@ body {
 main {
   display: flex;
 }
-
-/*################################--CSS-Classes--#######################################*/
 
 .tarjeta-primero {
   height: 680px;
@@ -380,8 +45,6 @@ main {
   padding: 10px;
   border-radius: 20px;
 }
-
-/*###################################---mobile-display--#######################*/
 
 ul {
   display: flex;
@@ -574,8 +237,6 @@ ul > li > p {
   color: hsl(206, 6%, 79%);
 }
 
-/*#############################################--container-second--###########################*/
-
 .container-segundo {
   width: 32%;
   height: 32%;
@@ -596,8 +257,6 @@ h1 {
   font-size: 2rem;
   padding: 5px;
 }
-
-/*#############################################--Summit-Button--###########################*/
 
 .enviar-btn {
   height: 22px;
@@ -623,7 +282,7 @@ h1 {
   -webkit-transform: rotate(-45deg);
 }
 
-/***********************--Footer--*************************/
+/*--Footer--*/
 
 .atribucion {
   font-size: 11px;
@@ -633,7 +292,7 @@ h1 {
   color: hsl(228, 45%, 44%);
 }
 
-/*####################################--media-query--500px--##############################*/
+/*-media-query--500px--*/
 
 @media only screen and (max-width: 500px) {
   .container-segundo {
@@ -674,5 +333,8 @@ h1 {
 
   .display-movil {
     margin-top: 70px;
+  }
+  .atribucion {
+    margin-top: 50px;
   }
 }

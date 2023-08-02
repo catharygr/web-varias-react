@@ -195,17 +195,17 @@ export default function ChatApp() {
 
               <p className="tipo-mensaje">Type a message…</p>
               <div className="enviar-btn">
-                <i className="arrow right"></i>
+                <i className="flecha derecho"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container-second">
+      <div className="container-segundo">
         <h1> Simple booking</h1>
 
-        <p className="para-third">
+        <p className="para-tercero">
           {" "}
           Stay in touch with our dog walkers through the chat interface. This
           makes it easy to discuss arrangements and make bookings. Once the walk
@@ -213,6 +213,15 @@ export default function ChatApp() {
           the chat.
         </p>
       </div>
+      <footer>
+        <div className="atribucion">
+          {" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . hecho por <a href="https://bubulazi.com">bubulazi.com</a>.
+        </div>
+      </footer>
     </main>
   );
 }

@@ -117,14 +117,14 @@ export default function ChatApp() {
   return (
     <main>
       <div className="container-primero">
-        <div className="card-first"></div>
-        <div className="card-second">
-          <div className="mobile-display">
-            <div className="inner-content">
-              <div className="half-arc"></div>
+        <div className="tarjeta-primero"></div>
+        <div className="tarjeta-segundo">
+          <div className="display-movil">
+            <div className="contenido-interno">
+              <div className="arco-medio"></div>
 
               <ul>
-                <li className="arrow left"></li>
+                <li className="flecha izq"></li>
                 <li>
                   {" "}
                   <img
@@ -132,66 +132,69 @@ export default function ChatApp() {
                     alt="avatar-image"
                   />
                 </li>
-                <li className="heading-first">
+                <li className="primer-encabezado">
                   <h3> Samuel Green</h3>
                   <p>Available to Walk</p>
                 </li>
                 <li className="vl"></li>
               </ul>
 
-              <p className="para-first para-left">
+              <p className="para-primero para-izq">
                 {" "}
                 That sounds great. I’d be happy with that.
               </p>
-              <p className="para-second para-left">
+              <p className="para-second para-izq">
                 {" "}
                 Could you send over some pictures of your dog, please?
               </p>
-              <div className="image-div">
+              <div className="imagen-div">
                 <img
-                  className="dog-image"
+                  className="dog-imagen"
                   src="/assets/imagenes/chatapp/dog-image-1.jpg"
                   alt="dog-image-1"
                 />{" "}
                 <img
-                  className="dog-image"
+                  className="dog-imagen"
                   src="/assets/imagenes/chatapp/dog-image-2.jpg"
                   alt="dog-image-2"
                 />
                 <img
-                  className="dog-image"
+                  className="dog-imagen"
                   src="/assets/imagenes/chatapp/dog-image-3.jpg"
                   alt="dog-image-3"
                 />
               </div>
 
-              <p className="para-right para-right-width">
+              <p className="para-derecho para-ancho-derecho">
                 Here are a few pictures. She’s a happy girl!
               </p>
-              <p className="para-right para-right-small"> Can you make it?</p>
+              <p className="para-derecho para-derecho-peque">
+                {" "}
+                Can you make it?
+              </p>
 
-              <p className="para-last para-left">
+              <p className="para-ultimo para-izq">
                 {" "}
                 She looks so happy! The time we discussed works. How long shall
                 I take her out for?
               </p>
 
-              <div className="circle up"></div>
-              <div className="circle down"></div>
+              <div className="circulo subir"></div>
+              <div className="circulo bajar"></div>
               <div>
-                <p className="walk walk-first">
-                  <span className="minute">30 minute walk</span>{" "}
-                  <span className="dollar"> $29</span>
+                <p className="pasear pasear-primero">
+                  <span className="minuto">30 minute walk</span>{" "}
+                  <span className="dolar"> $29</span>
                 </p>
-                <p className="walk">
+                <p className="pasear">
                   {" "}
-                  <span className="minute">30 minute walk</span>{" "}
-                  <span className="dollar">$49</span>{" "}
+                  <span className="minuto">30 minute walk</span>{" "}
+                  <span className="dolar">$49</span>{" "}
                 </p>
               </div>
 
-              <p className="message-type">Type a message…</p>
-              <div className="summit-button">
+              <p className="tipo-mensaje">Type a message…</p>
+              <div className="enviar-btn">
                 <i className="arrow right"></i>
               </div>
             </div>

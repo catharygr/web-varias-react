@@ -1,9 +1,9 @@
-import ChatApp from "./componentes/ChatApp";
+import Formulario from "./componentes/Formulario";
 
 function App() {
   return (
     <>
-      <ChatApp />
+      <Formulario />
     </>
   );
 }

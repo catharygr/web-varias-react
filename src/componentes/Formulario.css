@@ -24,3 +24,14 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+header {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #232836;
+}
+
+.formulario-contenido {
+  margin-top: 30px;
+}

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-target-blank */
 import "./ChatApp.css";
 export default function ChatApp() {
   return (
@@ -100,15 +99,6 @@ export default function ChatApp() {
           the chat.
         </p>
       </div>
-      {/* <footer>
-        <div className="attribution" style="padding:50px 20px 20px 20px;">
-          Challenge by{" "}
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-            Frontend Mentor
-          </a>
-          . Coded by <a href="https://bubulazi.com">bubulazi.com</a>.
-        </div>
-      </footer> */}
     </main>
   );
 }

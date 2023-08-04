@@ -20,18 +20,18 @@ export default function ChatApp() {
                 </li>
                 <li className="primer-encabezado">
                   <h3> Samuel Green</h3>
-                  <p>Available to Walk</p>
+                  <p>Disponible paseo</p>
                 </li>
                 <li className="vl"></li>
               </ul>
 
               <p className="para-primero para-izq">
                 {" "}
-                That sounds great. I’d be happy with that.
+                Genial.. estaremos feliz.
               </p>
               <p className="para-second para-izq">
                 {" "}
-                Could you send over some pictures of your dog, please?
+                Puedes mandar una foto? por favor..
               </p>
               <div className="imagen-div">
                 <img
@@ -52,30 +52,29 @@ export default function ChatApp() {
               </div>
 
               <p className="para-derecho para-ancho-derecho">
-                Here are a few pictures. She’s a happy girl!
+                Si claro.. te encantará. Es una perrita feliz,
               </p>
               <p className="para-derecho para-derecho-peque">
                 {" "}
-                Can you make it?
+                Puedes mandarla?
               </p>
 
               <p className="para-ultimo para-izq">
                 {" "}
-                She looks so happy! The time we discussed works. How long shall
-                I take her out for?
+                Ella es muy juguetona y le encanta pasear. Te encantará.
               </p>
 
               <div className="circulo subir"></div>
               <div className="circulo bajar"></div>
               <div>
                 <p className="pasear pasear-primero">
-                  <span className="minuto">30 minute walk</span>{" "}
-                  <span className="dolar"> $29</span>
+                  <span className="minuto">Pasear 30 min</span>{" "}
+                  <span className="dolar">29€</span>
                 </p>
                 <p className="pasear">
                   {" "}
-                  <span className="minuto">30 minute walk</span>{" "}
-                  <span className="dolar">$49</span>{" "}
+                  <span className="minuto">Pasear 1 hora</span>{" "}
+                  <span className="dolar">49€</span>{" "}
                 </p>
               </div>
 

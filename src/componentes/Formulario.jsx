@@ -2,11 +2,10 @@ import "./Formulario.css";
 
 export default function Formulario() {
   return (
-    <section className="formulario">
-      {/* Inscribirse formulario */}
-      <div className="formulario-inscribirse">
+    <section className="container-formulario">
+      <div className="formulario-loguear">
         <div className="formulario-contenido">
-          <header>Inscribirse</header>
+          <header>Iniciar sección</header>
           <form action="#">
             <div className="amigo  input-amigo">
               <label htmlFor="email">Email</label>
@@ -23,15 +22,20 @@ export default function Formulario() {
               <input type="password" name="password" id="password" />
               <i className="bx bx-hide fa-eye"></i>
             </div>
+            <div className="form-link">
+              <a href="#" className="olvidaste-password">
+                ¿Has olvidado tu contraseña
+              </a>
+            </div>
             <div className="amigo btn-amigo">
-              <button>Inscribirse</button>
+              <button>Iniciar sección</button>
             </div>
           </form>
           <div className="form-link">
             <span>
-              ¿Ya tiene una cuenta?
+              No tiene una cuenta
               <a href="#" className="link inscrirse-link">
-                Iniciar sección
+                Registrate
               </a>
             </span>
           </div>

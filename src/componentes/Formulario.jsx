@@ -2,23 +2,23 @@ import "./Formulario.css";
 
 export default function Formulario() {
   return (
-    <section className="container formulario">
-      <div className="formulario loguear">
-        <div className="formulario-contenido">
+    <section className="container forms">
+      <div className="form loguear">
+        <div className="form-contenido">
           <header>Iniciar sección</header>
           <form action="#">
             <div className="campo  input-campo">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email:</label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email"
+                placeholder="Escribe aqui tu email"
                 className="input"
               />
             </div>
             <div className="campo  input-campo">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Contraseña:</label>
               <input
                 type="password"
                 name="password"
@@ -60,23 +60,23 @@ export default function Formulario() {
           </a>
         </div>
       </div>
-      {/* Inscribirse en el formulario */}
+      {/* Inscribirse en el form */}
       <div className="form inscribirse">
         <div className="form-contenido">
           <header>Registrarse</header>
           <form action="#">
             <div className="campo input-campo">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email:</label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email"
+                placeholder="Escribe aqui tu email"
                 className="input"
               />
             </div>
             <div className="campo input-campo">
-              <label htmlFor="password">Contraseña</label>
+              <label htmlFor="password">Contraseña:</label>
               <input
                 type="password"
                 name="password"
@@ -86,7 +86,7 @@ export default function Formulario() {
               />
             </div>
             <div className="campo input-campo">
-              <label htmlFor="password">Confirmar contraseña</label>
+              <label htmlFor="password">Confirmar contraseña:</label>
               <input
                 type="password"
                 name="password"
@@ -96,7 +96,7 @@ export default function Formulario() {
               />
             </div>
             <div className="campo btn-campo">
-              <button>Registrarse</button>
+              <button>Regístrate</button>
             </div>
           </form>
           <div className="form-link">

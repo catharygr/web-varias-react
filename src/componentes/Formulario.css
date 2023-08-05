@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-formulario {
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@
   column-gap: 30px;
 }
 
-.formulario-loguear {
+.form {
   position: absolute;
   max-width: 430px;
   width: 100%;
@@ -23,15 +23,51 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+}
+
+.form .inscribirse {
+  opocity: 0;
+  pointer-events: none;
+}
+
+.forms .form .inscribirse {
+  opocity: 1;
+  pointer-events: auto;
+}
+
+.forms .form .loguear {
+  opocity: 0;
+  pointer-events: none;
 }
 
 header {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
   color: #232836;
+  text-align: center;
 }
 
-.formulario-contenido {
-  margin-top: 30px;
+.form .campo {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.campo input,
+.campo button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0 20px;
+  font-weight: 400;
+}
+
+.campo input {
+  outline: none;
+  padding: 0 1rem;
 }

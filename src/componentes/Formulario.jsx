@@ -48,14 +48,18 @@ export default function Formulario() {
         </div>
         <div className="linea"></div>
         <div className="media-opcion">
-          <a href="#" className="campo facebbok">
+          <a href="#" className="campo facebook">
             <i className="bx bxl-facebook-icon"></i>
             <span>Iniciar sección con Facebook</span>
           </a>
         </div>
         <div className="media-opcion">
           <a href="#" className="campo google">
-            <img src="images/google.png" alt="Logo de Google" />
+            <img
+              src="/assets/imagenes/formulario/google.png"
+              alt="Logo de Google"
+              className="google-img"
+            />
             <span>Iniciar sección con Gmail</span>
           </a>
         </div>
@@ -110,14 +114,18 @@ export default function Formulario() {
         </div>
         <div className="linea"></div>
         <div className="media-opcion">
-          <a href="#" className="campo facebbok">
+          <a href="#" className="campo facebook">
             <i className="bx bxl-facebook-icon"></i>
             <span>Iniciar sección con Facebook</span>
           </a>
         </div>
         <div className="media-opcion">
           <a href="#" className="campo google">
-            <img src="images/google.png" alt="Logo de Google" />
+            <img
+              src="/assets/imagenes/formulario/google.png"
+              alt="Logo de Google"
+              className="google-img"
+            />
             <span>Iniciar sección con Gmail</span>
           </a>
         </div>

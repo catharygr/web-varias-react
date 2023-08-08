@@ -31,12 +31,12 @@
   pointer-events: none;
 }
 
-.forms .form .inscribirse {
+.forms .mostrar-inscripcion .form .inscribirse {
   opocity: 1;
   pointer-events: auto;
 }
 
-.forms .form .loguear {
+.forms .mostrar-inscripcion .form .loguear {
   opocity: 0;
   pointer-events: none;
 }

@@ -1,10 +1,12 @@
 import "./Formulario.css";
+import { useState } from "react";
 
 export default function FormularioRegistro() {
   const [password, setPassword] = useState("");
   const [confirmarPassword, setConfirmarPassword] = useState("");
   const [error, setError] = useState(false);
 
+  console.log(password, confirmarPassword);
 
   function handleInputChange(e) {
     setPassword(e.target.value);
@@ -16,21 +18,20 @@ export default function FormularioRegistro() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if(password !== confirmarPassword){
+    if (password !== confirmarPassword) {
       setError("Las contraseñas no coinciden");
-  } else if (password.length < 8) {
+    } else if (password.length < 8) {
       setError("La contraseña debe tener al menos 6 caracteres");
+    } else {
+      setError(false);
+    }
   }
-
-
-
-
 
   return (
     <div className="form inscribirse">
       <div className="form-contenido">
         <header>Registrarse</header>
-        <form action="#">
+        <form onSubmit={handleSubmit}>
           <div className="campo input-campo">
             <label htmlFor="email">Email:</label>
             <input
@@ -50,17 +51,22 @@ export default function FormularioRegistro() {
               min={8}
               placeholder="Crear contraseña"
               className="password"
+              value={password}
+              onChange={handleInputChange}
             />
           </div>
+          {error && <div className="error">{error}</div>}
           <div className="campo input-campo">
             <label htmlFor="password">Confirmar contraseña:</label>
             <input
               type="password"
               name="password"
               id="password"
-              min={8q}
+              min={8}
               placeholder="Confirmar contraseña"
               className="password"
+              value={confirmarPassword}
+              onChange={handleConfirmarPassword}
             />
           </div>
           <div className="campo btn-campo">

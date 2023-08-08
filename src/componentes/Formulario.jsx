@@ -1,12 +1,49 @@
+/* eslint-disable no-undef */
 import "./Formulario.css";
+import { useState } from "react";
 
 export default function Formulario() {
+  const [isLogin, setIsLogin] = useState(true);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    confirmarPassword: "",
+  });
+
+  function handleLogin() {
+    setIsLogin(!isLogin);
+  }
+
+  function handleInputChange(e) {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Lógica para manejar el submit del formulario
+    const datos = new FormData(e.target);
+    const email = datos.get("email");
+    const password = datos.get("password");
+
+    if (isLogin) {
+      console.log("Iniciar sesión", email, password);
+    } else {
+      const confirmarPassword = formData.get("confirmarPassword");
+      console.log("Registrarse", email, password, confirmarPassword);
+    }
+    // Lógica para el registro
+  };
+
   return (
     <section className="container forms">
       <div className="form loguear">
         <div className="form-contenido">
           <header>Iniciar sección</header>
-          <form action="#">
+          <form onSubmit={handleSubmit}>
             <div className="campo  input-campo">
               <label htmlFor="email">Email:</label>
               <input
@@ -15,6 +52,8 @@ export default function Formulario() {
                 id="email"
                 placeholder="Escribe aqui tu email"
                 className="input"
+                value={formData.email}
+                onChange={handleInputChange}
               />
             </div>
             <div className="campo  input-campo">
@@ -25,6 +64,8 @@ export default function Formulario() {
                 id="password"
                 placeholder="Contrase˜ã"
                 className="password"
+                value={formData.password}
+                onChange={handleInputChange}
               />
               <i className="bx bx-ocultar eye-icon"></i>
             </div>
@@ -100,7 +141,7 @@ export default function Formulario() {
               />
             </div>
             <div className="campo btn-campo">
-              <button>Regístrate</button>
+              <button onClick={handleLogin}>Regístrate</button>
             </div>
           </form>
           <div className="form-link">

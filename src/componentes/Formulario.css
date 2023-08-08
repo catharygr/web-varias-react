@@ -48,6 +48,10 @@ header {
   text-align: center;
 }
 
+form {
+  margin-top: 1.5rem;
+}
+
 .form .campo {
   position: relative;
   height: 50px;
@@ -63,7 +67,6 @@ header {
   border: none;
   border-radius: 6px;
   font-size: 1rem;
-  padding: 0 20px;
   font-weight: 400;
 }
 
@@ -100,7 +103,7 @@ header {
 }
 
 .form-link {
-  margin-top: 1.5rem;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -125,7 +128,7 @@ header {
   width: 100%;
   height: 1px;
   background-color: #d4d4d4;
-  margin: 1.5rem 0;
+  margin: 36px 0;
 }
 
 .linea::before {
@@ -139,7 +142,7 @@ header {
   padding: 0 1rem;
 }
 
-.media-opciona a {
+.media-opcion a {
   display: flex;
   justify-content: space-between;
   align-items: center;

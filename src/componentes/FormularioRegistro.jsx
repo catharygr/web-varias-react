@@ -2,29 +2,50 @@ import "./Formulario.css";
 import { useState } from "react";
 
 export default function FormularioRegistro() {
-  const [password, setPassword] = useState("");
-  const [confirmarPassword, setConfirmarPassword] = useState("");
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+    confirmarPassword: "",
+  });
   const [error, setError] = useState(false);
 
-  console.log(password, confirmarPassword);
+  const { email, password, confirmarPassword } = form;
 
-  function handleInputChange(e) {
-    setPassword(e.target.value);
-  }
+  const handleInputChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+    setError(false);
+  };
 
-  function handleConfirmarPassword(e) {
-    setConfirmarPassword(e.target.value);
-  }
+  const handleConfirmarPassword = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+    setError(false);
+  };
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (
+      email.trim() === "" ||
+      password.trim() === "" ||
+      confirmarPassword.trim() === ""
+    ) {
+      setError("Todos los campos son obligatorios");
+      return;
+    }
+    if (password.length < 8) {
+      setError("La contraseña debe tener al menos 8 caracteres");
+      return;
+    }
     if (password !== confirmarPassword) {
       setError("Las contraseñas no coinciden");
-    } else if (password.length < 8) {
-      setError("La contraseña debe tener al menos 6 caracteres");
-    } else {
-      setError(false);
+      return;
     }
+    setError(false);
   }
 
   return (
@@ -40,6 +61,8 @@ export default function FormularioRegistro() {
               id="email"
               placeholder="Escribe aqui tu email"
               className="input"
+              value={email}
+              onChange={handleInputChange}
             />
           </div>
           <div className="campo input-campo">

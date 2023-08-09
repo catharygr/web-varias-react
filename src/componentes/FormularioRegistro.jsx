@@ -8,45 +8,15 @@ export default function FormularioRegistro() {
     password: "",
     confirmarPassword: "",
   });
-  const [error, setError] = useState(false);
-
-  const { email, password, confirmarPassword } = form;
-
-  const handleInputChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-    setError(false);
-  };
-
-  const handleConfirmarPassword = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-    setError(false);
-  };
+  console.log(form);
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (
-      email.trim() === "" ||
-      password.trim() === "" ||
-      confirmarPassword.trim() === ""
-    ) {
-      setError("Todos los campos son obligatorios");
-      return;
-    }
-    if (password.length < 8) {
-      setError("La contraseña debe tener al menos 8 caracteres");
-      return;
-    }
-    if (password !== confirmarPassword) {
-      setError("Las contraseñas no coinciden");
-      return;
-    }
-    setError(false);
+    setForm({
+      email: e.target.email.value,
+      password: e.target.password.value,
+      confirmarPassword: e.target.confirmarPassword.value,
+    });
   }
 
   return (
@@ -62,8 +32,8 @@ export default function FormularioRegistro() {
               id="email"
               placeholder="Escribe aqui tu email"
               className="input"
-              value={email}
-              onChange={handleInputChange}
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
             />
           </div>
           <div className="campo input-campo">
@@ -75,22 +45,24 @@ export default function FormularioRegistro() {
               min={8}
               placeholder="Crear contraseña"
               className="password"
-              value={password}
-              onChange={handleInputChange}
+              value={form.password}
+              onChange={(e) => setForm({ ...form, password: e.target.value })}
             />
           </div>
-          {error && <div className="error">{error}</div>}
+
           <div className="campo input-campo">
             <label htmlFor="password">Confirmar contraseña:</label>
             <input
               type="password"
-              name="password"
+              name="confirmarPassword"
               id="password"
               min={8}
               placeholder="Confirmar contraseña"
               className="password"
-              value={confirmarPassword}
-              onChange={handleConfirmarPassword}
+              value={form.confirmarPassword}
+              onChange={(e) =>
+                setForm({ ...form, confirmarPassword: e.target.value })
+              }
             />
           </div>
           <div className="campo btn-campo">

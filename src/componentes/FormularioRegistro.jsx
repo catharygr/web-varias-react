@@ -1,5 +1,6 @@
 import "./Formulario.css";
 import { useState } from "react";
+import { Facebook } from "react-feather";
 
 export default function FormularioRegistro() {
   const [form, setForm] = useState({
@@ -108,18 +109,22 @@ export default function FormularioRegistro() {
       <div className="linea"></div>
       <div className="media-opcion">
         <a href="#" className="campo facebook">
-          <i className="bx bxl-facebook-icon"></i>
-          <span>Iniciar sección con Facebook</span>
+          <div className="span-facebook">
+            <Facebook size={30} />
+            <span>Iniciar sección con Facebook</span>
+          </div>
         </a>
       </div>
       <div className="media-opcion">
         <a href="#" className="campo google">
-          <img
-            src="/assets/imagenes/formulario/google.png"
-            alt="Logo de Google"
-            className="google-img"
-          />
-          <span>Iniciar sección con Gmail</span>
+          <div>
+            <img
+              src="/assets/imagenes/formulario/google.png"
+              alt="Logo de Google"
+              className="google-img"
+            />
+            <span>Iniciar sección con Gmail</span>
+          </div>
         </a>
       </div>
     </div>

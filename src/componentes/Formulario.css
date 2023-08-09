@@ -173,6 +173,13 @@ img.google-img {
   transform: translateY(-50%);
 }
 
+.span-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
 img.google-img {
   height: 20px;
   width: 20px;

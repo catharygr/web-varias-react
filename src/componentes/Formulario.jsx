@@ -1,5 +1,6 @@
 import "./Formulario.css";
 import FormularioRegistro from "./FormularioRegistro";
+import { Facebook } from "react-feather";
 
 export default function Formulario() {
   return (

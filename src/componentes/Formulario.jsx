@@ -25,7 +25,7 @@ export default function Formulario() {
                 type="password"
                 name="password"
                 id="password"
-                placeholder="Contrase˜ã"
+                placeholder="Escribe tu contraseña"
                 className="password"
               />
               <i className="bx bx-ocultar eye-icon"></i>
@@ -51,7 +51,7 @@ export default function Formulario() {
         <div className="linea"></div>
         <div className="media-opcion">
           <a href="#" className="campo facebook">
-            <i className="bx bxl-facebook-icon"></i>
+            <Facebook size={30} />
             <span>Iniciar sección con Facebook</span>
           </a>
         </div>

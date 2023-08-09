@@ -117,14 +117,12 @@ export default function FormularioRegistro() {
       </div>
       <div className="media-opcion">
         <a href="#" className="campo google">
-          <div>
-            <img
-              src="/assets/imagenes/formulario/google.png"
-              alt="Logo de Google"
-              className="google-img"
-            />
-            <span>Iniciar sección con Gmail</span>
-          </div>
+          <img
+            src="/assets/imagenes/formulario/google.png"
+            alt="Logo de Google"
+            className="google-img"
+          />
+          <span>Iniciar sección con Gmail</span>
         </a>
       </div>
     </div>

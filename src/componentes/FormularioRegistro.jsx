@@ -8,21 +8,33 @@ export default function FormularioRegistro() {
     password: "",
     confirmarPassword: "",
   });
-  console.log(form);
+
+  const [isLogin, setIsLogin] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    setForm({
-      email: e.target.email.value,
-      password: e.target.password.value,
-      confirmarPassword: e.target.confirmarPassword.value,
-    });
+    if (!isLogin) {
+      setForm({
+        email: e.target.email.value,
+        password: e.target.password.value,
+        confirmarPassword: e.target.confirmarPassword.value,
+      });
+    } else {
+      const entrarEmail = e.target.email.value;
+      const entrarPassword = e.target.password.value;
+      if (entrarEmail === form.email && entrarPassword === form.password) {
+        alert("Bienvenido");
+      } else {
+        alert("Usuario o contraseña incorrecta");
+      }
+    }
   }
+  console.log(form);
 
   return (
     <div className="form inscribirse">
       <div className="form-contenido">
-        <header>Registrarse</header>
+        <header>{isLogin ? "Iniciar sesión" : "Registrarse"}</header>
         <form onSubmit={handleSubmit}>
           <div className="campo input-campo">
             <label htmlFor="email">Email:</label>
@@ -37,13 +49,17 @@ export default function FormularioRegistro() {
             />
           </div>
           <div className="campo input-campo">
-            <label htmlFor="password">Contraseña:</label>
+            <label htmlFor="password">
+              {isLogin ? "Contraseña" : "Crear contraseña"}:
+            </label>
             <input
               type="password"
               name="password"
               id="password"
               min={8}
-              placeholder="Crear contraseña"
+              placeholder={
+                isLogin ? "Ingresa tu contraseña" : "Crear contraseña"
+              }
               className="password"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
@@ -66,14 +82,19 @@ export default function FormularioRegistro() {
             />
           </div>
           <div className="campo btn-campo">
-            <button>Regístrate</button>
+            <button>{isLogin ? "Iniciar sesión" : "Regístrate"}</button>
           </div>
         </form>
         <div className="form-link">
           <span>
-            ¿Ya tienes una cuenta?
-            <a href="#" className="link loguear-link">
-              Iniciar sección
+            {isLogin ? "¿No tienes una cuenta?" : "¿Ya tienes una cuenta?"}
+
+            <a
+              href="#"
+              className="link loguear-link"
+              onClick={() => setIsLogin(!setIsLogin)}
+            >
+              {isLogin ? "Regístrate" : "Iniciar sesión"}
             </a>
           </span>
         </div>

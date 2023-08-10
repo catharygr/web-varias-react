@@ -29,7 +29,6 @@ export default function FormularioRegistro() {
       }
     }
   }
-  console.log(form);
 
   return (
     <div className="form inscribirse">

@@ -15,7 +15,7 @@
   column-gap: 30px;
 }
 
-/* .form {
+.form {
   position: absolute;
   max-width: 430px;
   width: 100%;
@@ -24,7 +24,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-top: 30px;
-} */
+}
 
 header {
   font-size: 2rem;
@@ -64,17 +64,6 @@ form {
 .campo input:focus {
   border-bottom-width: 2px;
 }
-
-/* .eye-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: #8b8b8b;
-  cursor: pointer;
-  padding: 0.5rem;
-} */
 
 .campo button {
   background-color: #0171d3;

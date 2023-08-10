@@ -11,6 +11,11 @@ export default function Formulario() {
 
   // Estado para el proceso de recuperación de contraseña
   const [recuperarPassword, setRecuperarPassword] = useState(false);
+  const [modo, setModo] = useState("login");
+
+  function hadleNuevoModo(nuevoModo) {
+    setModo(nuevoModo);
+  }
 
   function handleChange(e) {
     setForm({
@@ -87,7 +92,7 @@ export default function Formulario() {
               </a>
             </div>
             <div className="campo btn-campo">
-              <button>Iniciar sección</button>
+              <button onClick={hadleNuevoModo}>Iniciar sección</button>
             </div>
           </form>
           <div className="form-link">
@@ -117,7 +122,9 @@ export default function Formulario() {
           </a>
         </div>
       </div>
-      <FormularioRegistro />
+      {modo === "login" && (
+        <FormularioRegistro hadleNuevoModo={hadleNuevoModo} />
+      )}
     </section>
   );
 }

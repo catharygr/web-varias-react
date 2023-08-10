@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Formulario.css";
 import { useEffect, useState } from "react";
 import { Facebook } from "react-feather";
@@ -13,21 +14,6 @@ export default function FormularioRegistro({ hadleNuevoModo }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!isLogin) {
-      setForm({
-        email: e.target.email.value,
-        password: e.target.password.value,
-        confirmarPassword: e.target.confirmarPassword.value,
-      });
-    } else {
-      const entrarEmail = e.target.email.value;
-      const entrarPassword = e.target.password.value;
-      if (entrarEmail === form.email && entrarPassword === form.password) {
-        alert("Bienvenido");
-      } else {
-        alert("Usuario o contraseña incorrecta");
-      }
-    }
   }
 
   useEffect(() => {

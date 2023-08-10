@@ -3,7 +3,7 @@ import "./Formulario.css";
 import { useEffect, useState } from "react";
 import { Facebook } from "react-feather";
 
-export default function FormularioRegistro({ hadleNuevoModo }) {
+export default function FormularioRegistro() {
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -77,9 +77,7 @@ export default function FormularioRegistro({ hadleNuevoModo }) {
             />
           </div>
           <div className="campo btn-campo">
-            <button onClick={() => hadleNuevoModo("login")}>
-              {isLogin ? "Iniciar sesión" : "Regístrate"}
-            </button>
+            <button>{isLogin ? "Iniciar sesión" : "Regístrate"}</button>
           </div>
         </form>
         <div className="form-link">

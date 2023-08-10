@@ -51,8 +51,8 @@ export default function Formulario() {
         <div className="linea"></div>
         <div className="media-opcion">
           <a href="#" className="campo facebook">
-            <Facebook size={30} />
-            <span>Iniciar sección con Facebook</span>
+            <Facebook size={30} className="icono-facebook" />
+            <span>Iniciar con Facebook</span>
           </a>
         </div>
         <div className="media-opcion">

@@ -1,6 +1,5 @@
 import "./Formulario.css";
 import FormularioRegistro from "./FormularioRegistro";
-import emailjs from "emailjs-com"; // Importa la librería Email.js
 import { Facebook } from "react-feather";
 import { useState } from "react";
 
@@ -9,40 +8,9 @@ export default function Formulario() {
     email: "",
     password: "",
   });
-  const [forgotPasswordEmail, setForgotPasswordEmail] = useState("");
-  const [isPasswordResetSent, setIsPasswordResetSent] = useState(false);
 
-  function handleForgotPasswordSubmit(e) {
-    e.preventDefault();
-
-    if (forgotPasswordEmail) {
-      // Configura tu cuenta de Email.js
-      const emailService = "YOUR_EMAIL_SERVICE_ID";
-      const emailTemplate = "YOUR_EMAIL_TEMPLATE_ID";
-      const userID = "YOUR_USER_ID";
-
-      // Envía el correo de restablecimiento
-      emailjs
-        .send(
-          emailService,
-          emailTemplate,
-          { to_email: forgotPasswordEmail },
-          userID
-        )
-        .then((response) => {
-          console.log("Correo de restablecimiento enviado:", response);
-          setIsPasswordResetSent(true); // Cambia el estado para mostrar el mensaje de éxito
-        })
-        .catch((error) => {
-          console.error(
-            "Error al enviar el correo de restablecimiento:",
-            error
-          );
-        });
-    } else {
-      console.log("Por favor ingresa un correo electrónico válido.");
-    }
-  }
+  // Estado para el proceso de recuperación de contraseña
+  const [recuperarPassword, setRecuperarPassword] = useState(false);
 
   function handleChange(e) {
     setForm({
@@ -50,7 +18,6 @@ export default function Formulario() {
       [e.target.name]: e.target.value,
     });
   }
-  console.log(form);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -58,6 +25,13 @@ export default function Formulario() {
     const entrarPassword = e.target.password.value;
     if (entrarEmail === form.email && entrarPassword === form.password) {
       alert("Bienvenido");
+    } else {
+      alert("Usuario o contraseña incorrecta");
+    }
+    if (recuperarPassword) {
+      alert(
+        "Se ha enviado un correo electronico para restablecer tu contraseña"
+      );
     } else {
       alert("Usuario o contraseña incorrecta");
     }
@@ -98,9 +72,9 @@ export default function Formulario() {
               <a
                 href="#"
                 className="olvidaste-password"
-                onClick={() => setIsPasswordResetSent(false)}
+                onClick={() => setRecuperarPassword(true)}
               >
-                ¿Has olvidado tu contraseña
+                ¿Has olvidado tu contraseña?
               </a>
             </div>
             <div className="campo btn-campo">

@@ -1,5 +1,5 @@
 import "./Formulario.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Facebook } from "react-feather";
 
 export default function FormularioRegistro() {
@@ -29,6 +29,16 @@ export default function FormularioRegistro() {
       }
     }
   }
+
+  useEffect(() => {
+    if (isLogin) {
+      setForm({
+        email: "",
+        password: "",
+        confirmarPassword: "",
+      });
+    }
+  }, [isLogin]);
 
   return (
     <div className="form inscribirse">

@@ -1,7 +1,7 @@
 import "./Formulario.css";
 import FormularioRegistro from "./FormularioRegistro";
 import { Facebook } from "react-feather";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Formulario() {
   const [form, setForm] = useState({
@@ -36,6 +36,15 @@ export default function Formulario() {
       alert("Usuario o contraseña incorrecta");
     }
   }
+
+  useEffect(() => {
+    if (recuperarPassword) {
+      setForm({
+        email: "",
+        password: "",
+      });
+    }
+  }, [recuperarPassword]);
 
   return (
     <section className="container forms">

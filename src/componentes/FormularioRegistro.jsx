@@ -101,7 +101,7 @@ export default function FormularioRegistro() {
       </div>
       <div className="linea"></div>
       <div className="media-opcion">
-        <a href="htts//faceboo.com" className="campo facebook">
+        <a href="https://es-es.facebook.com" className="campo facebook">
           <div className="span-facebook">
             <Facebook size={30} className="icono-facebook" />
             <span>Iniciar sección con Facebook</span>
@@ -109,7 +109,7 @@ export default function FormularioRegistro() {
         </a>
       </div>
       <div className="media-opcion">
-        <a href="" className="campo google">
+        <a href="https://accounts.google.com" className="campo google">
           <img
             src="/assets/imagenes/formulario/google.png"
             alt="Logo de Google"

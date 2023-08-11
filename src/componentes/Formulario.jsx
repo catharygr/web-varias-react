@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import "./Formulario.css";
 
 import { Facebook } from "react-feather";
 import { useEffect, useState } from "react";
 
-export default function Formulario() {
+export default function Formulario({ hadleNuevoModo }) {
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -87,7 +88,9 @@ export default function Formulario() {
               </a>
             </div>
             <div className="campo btn-campo">
-              <button>Iniciar sección</button>
+              <button onClick={() => hadleNuevoModo("login")}>
+                Iniciar sección
+              </button>
             </div>
           </form>
           <div className="form-link">

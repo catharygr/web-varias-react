@@ -3,15 +3,17 @@ import { useState } from "react";
 import FormularioRegistro from "./componentes/FormularioRegistro";
 
 function App() {
-  // const [modo, setModo] = useState("login");
+  const [modo, setModo] = useState("login");
 
-  // function hadleNuevoModo(nuevoModo) {
-  //   setModo(nuevoModo);
-  // }
+  function hadleNuevoModo(nuevoModo) {
+    setModo(nuevoModo);
+  }
   return (
     <>
-      <Formulario />
-      <FormularioRegistro />
+      {modo === "login" && <Formulario hadleNuevoModo={hadleNuevoModo} />}
+      {modo === "registrarse" && (
+        <FormularioRegistro hadleNuevoModo={hadleNuevoModo} />
+      )}
     </>
   );
 }

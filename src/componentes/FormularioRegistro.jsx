@@ -1,35 +1,34 @@
-/* eslint-disable react/prop-types */
 import "./Formulario.css";
-import { useEffect, useState } from "react";
 import { Facebook } from "react-feather";
+import { useState } from "react";
 
-export default function FormularioRegistro({ hadleNuevoModo }) {
-  const [form, setForm] = useState({
+export default function FormularioRegistro() {
+  // Lógica para registrar un usuario
+  const [formulario, setFormulario] = useState({
     email: "",
     password: "",
     confirmarPassword: "",
   });
 
-  const [isLogin, setIsLogin] = useState(false);
+  console.log(formulario);
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  function handleChange(evento) {
+    const { name, value } = evento.target;
+    setFormulario({
+      ...formulario,
+      [name]: value,
+    });
   }
 
-  useEffect(() => {
-    if (isLogin) {
-      setForm({
-        email: "",
-        password: "",
-        confirmarPassword: "",
-      });
-    }
-  }, [isLogin]);
+  function handleSubmit(evento) {
+    evento.preventDefault();
+    console.log("Formulario enviado");
+  }
 
   return (
     <div className="form inscribirse">
       <div className="form-contenido">
-        <header>{isLogin ? "Iniciar sesión" : "Registrarse"}</header>
+        <header>Registrarse</header>
         <form onSubmit={handleSubmit}>
           <div className="campo input-campo">
             <label htmlFor="email">Email:</label>
@@ -39,25 +38,21 @@ export default function FormularioRegistro({ hadleNuevoModo }) {
               id="email"
               placeholder="Escribe aqui tu email"
               className="input"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
+              onChange={handleChange}
+              value={formulario.email}
             />
           </div>
           <div className="campo input-campo">
-            <label htmlFor="password">
-              {isLogin ? "Contraseña" : "Crear contraseña"}:
-            </label>
+            <label htmlFor="password">Crear contraseña</label>
             <input
               type="password"
               name="password"
               id="password"
               min={8}
-              placeholder={
-                isLogin ? "Ingresa tu contraseña" : "Crear contraseña"
-              }
+              placeholder="Crear contraseña"
               className="password"
-              value={form.password}
-              onChange={(e) => setForm({ ...form, password: e.target.value })}
+              onChange={handleChange}
+              value={formulario.password}
             />
           </div>
 
@@ -70,28 +65,19 @@ export default function FormularioRegistro({ hadleNuevoModo }) {
               min={8}
               placeholder="Confirmar contraseña"
               className="password"
-              value={form.confirmarPassword}
-              onChange={(e) =>
-                setForm({ ...form, confirmarPassword: e.target.value })
-              }
+              onChange={handleChange}
+              value={formulario.confirmarPassword}
             />
           </div>
           <div className="campo btn-campo">
-            <button onClick={hadleNuevoModo}>
-              {isLogin ? "Iniciar sesión" : "Regístrate"}
-            </button>
+            <button>Regístrate</button>
           </div>
         </form>
         <div className="form-link">
           <span>
-            {isLogin ? "¿No tienes una cuenta?" : "¿Ya tienes una cuenta?"}
-
-            <a
-              href="#"
-              className="link loguear-link"
-              onClick={() => setIsLogin(!setIsLogin)}
-            >
-              {isLogin ? "Regístrate" : "Iniciar sesión"}
+            ¿Ya tienes una cuenta?
+            <a href="#" className="link loguear-link">
+              Iniciar sesión
             </a>
           </span>
         </div>

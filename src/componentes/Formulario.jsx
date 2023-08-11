@@ -1,58 +1,14 @@
-/* eslint-disable react/prop-types */
 import "./Formulario.css";
-
 import { Facebook } from "react-feather";
-import { useEffect, useState } from "react";
+import FormularioRegistro from "./FormularioRegistro";
 
-export default function Formulario({ hadleNuevoModo }) {
-  const [form, setForm] = useState({
-    email: "",
-    password: "",
-  });
-
-  // Estado para el proceso de recuperación de contraseña
-  const [recuperarPassword, setRecuperarPassword] = useState(false);
-
-  function handleChange(e) {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const entrarEmail = e.target.email.value;
-    const entrarPassword = e.target.password.value;
-    if (entrarEmail === form.email && entrarPassword === form.password) {
-      alert("Bienvenido");
-    } else {
-      alert("Usuario o contraseña incorrecta");
-    }
-    if (recuperarPassword) {
-      alert(
-        "Se ha enviado un correo electronico para restablecer tu contraseña"
-      );
-    } else {
-      alert("Usuario o contraseña incorrecta");
-    }
-  }
-
-  useEffect(() => {
-    if (recuperarPassword) {
-      setForm({
-        email: "",
-        password: "",
-      });
-    }
-  }, [recuperarPassword]);
-
+export default function Formulario() {
   return (
     <section className="container forms">
       <div className="form loguear">
         <div className="form-contenido">
           <header>Iniciar sección</header>
-          <form onSubmit={handleSubmit}>
+          <form>
             <div className="campo  input-campo">
               <label htmlFor="email">Email:</label>
               <input
@@ -61,8 +17,6 @@ export default function Formulario({ hadleNuevoModo }) {
                 id="email"
                 placeholder="Escribe tu email aquí..."
                 className="input"
-                value={form.email}
-                onChange={handleChange}
               />
             </div>
             <div className="campo  input-campo">
@@ -73,24 +27,16 @@ export default function Formulario({ hadleNuevoModo }) {
                 id="password"
                 placeholder="Escribe tu contraseña..."
                 className="password"
-                value={form.password}
-                onChange={handleChange}
               />
               <i className="bx bx-ocultar eye-icon"></i>
             </div>
             <div className="form-link">
-              <a
-                href="#"
-                className="olvidaste-password"
-                onClick={() => setRecuperarPassword(true)}
-              >
+              <a href="#" className="olvidaste-password">
                 ¿Has olvidado tu contraseña?
               </a>
             </div>
             <div className="campo btn-campo">
-              <button onClick={() => hadleNuevoModo("login")}>
-                Iniciar sección
-              </button>
+              <button>Iniciar sección</button>
             </div>
           </form>
           <div className="form-link">
@@ -120,6 +66,7 @@ export default function Formulario({ hadleNuevoModo }) {
           </a>
         </div>
       </div>
+      <FormularioRegistro />
     </section>
   );
 }

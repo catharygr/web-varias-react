@@ -77,7 +77,7 @@ export default function FormularioRegistro({ hadleNuevoModo }) {
             />
           </div>
           <div className="campo btn-campo">
-            <button onClick={() => hadleNuevoModo("registrarse")}>
+            <button onClick={hadleNuevoModo}>
               {isLogin ? "Iniciar sesión" : "Regístrate"}
             </button>
           </div>

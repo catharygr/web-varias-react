@@ -1,6 +1,6 @@
 import Formulario from "./componentes/Formulario";
-import { useState } from "react";
 import FormularioRegistro from "./componentes/FormularioRegistro";
+import { useState } from "react";
 
 function App() {
   const [modo, setModo] = useState("login");

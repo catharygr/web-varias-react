@@ -1,5 +1,5 @@
 import "./Formulario.css";
-import FormularioRegistro from "./FormularioRegistro";
+
 import { Facebook } from "react-feather";
 import { useEffect, useState } from "react";
 
@@ -11,11 +11,6 @@ export default function Formulario() {
 
   // Estado para el proceso de recuperación de contraseña
   const [recuperarPassword, setRecuperarPassword] = useState(false);
-  const [modo, setModo] = useState("login");
-
-  function hadleNuevoModo(nuevoModo) {
-    setModo(nuevoModo);
-  }
 
   function handleChange(e) {
     setForm({
@@ -53,79 +48,75 @@ export default function Formulario() {
 
   return (
     <section className="container forms">
-      {modo === "login" ? (
-        <div className="form loguear">
-          <div className="form-contenido">
-            <header>Iniciar sección</header>
-            <form onSubmit={handleSubmit}>
-              <div className="campo  input-campo">
-                <label htmlFor="email">Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Escribe aqui tu email"
-                  className="input"
-                  value={form.email}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="campo  input-campo">
-                <label htmlFor="password">Contraseña:</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Escribe tu contraseña"
-                  className="password"
-                  value={form.password}
-                  onChange={handleChange}
-                />
-                <i className="bx bx-ocultar eye-icon"></i>
-              </div>
-              <div className="form-link">
-                <a
-                  href="#"
-                  className="olvidaste-password"
-                  onClick={() => setRecuperarPassword(true)}
-                >
-                  ¿Has olvidado tu contraseña?
-                </a>
-              </div>
-              <div className="campo btn-campo">
-                <button onClick={hadleNuevoModo}>Iniciar sección</button>
-              </div>
-            </form>
-            <div className="form-link">
-              <span>
-                ¿No tienes una cuenta?
-                <a href="#" className="link inscrirse-link">
-                  Registrate
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="linea"></div>
-          <div className="media-opcion">
-            <a href="https://es-es.facebook.com" className="campo facebook">
-              <Facebook size={30} className="icono-facebook" />
-              <span>Iniciar con Facebook</span>
-            </a>
-          </div>
-          <div className="media-opcion">
-            <a href="https://es-es.facebook.com" className="campo google">
-              <img
-                src="/assets/imagenes/formulario/google.png"
-                alt="Logo de Google"
-                className="google-img"
+      <div className="form loguear">
+        <div className="form-contenido">
+          <header>Iniciar sección</header>
+          <form onSubmit={handleSubmit}>
+            <div className="campo  input-campo">
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Escribe tu email aquí..."
+                className="input"
+                value={form.email}
+                onChange={handleChange}
               />
-              <span>Iniciar sección con Gmail</span>
-            </a>
+            </div>
+            <div className="campo  input-campo">
+              <label htmlFor="password">Contraseña:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Escribe tu contraseña..."
+                className="password"
+                value={form.password}
+                onChange={handleChange}
+              />
+              <i className="bx bx-ocultar eye-icon"></i>
+            </div>
+            <div className="form-link">
+              <a
+                href="#"
+                className="olvidaste-password"
+                onClick={() => setRecuperarPassword(true)}
+              >
+                ¿Has olvidado tu contraseña?
+              </a>
+            </div>
+            <div className="campo btn-campo">
+              <button>Iniciar sección</button>
+            </div>
+          </form>
+          <div className="form-link">
+            <span>
+              ¿No tienes una cuenta?
+              <a href="#" className="link inscrirse-link">
+                Registrate
+              </a>
+            </span>
           </div>
         </div>
-      ) : (
-        <FormularioRegistro hadleNuevoModo={hadleNuevoModo} />
-      )}
+        <div className="linea"></div>
+        <div className="media-opcion">
+          <a href="https://es-es.facebook.com" className="campo facebook">
+            <Facebook size={30} className="icono-facebook" />
+            <span>Iniciar con Facebook</span>
+          </a>
+        </div>
+        <div className="media-opcion">
+          <a href="https://es-es.facebook.com" className="campo google">
+            <img
+              src="/assets/imagenes/formulario/google.png"
+              alt="Logo de Google"
+              className="google-img"
+            />
+            <span>Iniciar sección con Gmail</span>
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

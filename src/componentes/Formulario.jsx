@@ -1,8 +1,15 @@
 import "./Formulario.css";
 import { Facebook } from "react-feather";
 import FormularioRegistro from "./FormularioRegistro";
+import { useState } from "react";
 
 export default function Formulario() {
+  const [loguear, setLoguear] = useState(true);
+
+  function handleLoguear() {
+    setLoguear(!loguear);
+  }
+
   return (
     <section className="container forms">
       <div className="form loguear">
@@ -36,7 +43,7 @@ export default function Formulario() {
               </a>
             </div>
             <div className="campo btn-campo">
-              <button>Iniciar sección</button>
+              <button onClick={handleLoguear}>Iniciar sección</button>
             </div>
           </form>
           <div className="form-link">

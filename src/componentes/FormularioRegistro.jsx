@@ -9,7 +9,7 @@ export default function FormularioRegistro() {
     password: "",
     confirmarPassword: "",
   });
-  const [tienesCuenta, setTienesCuenta] = useState(false);
+  const [tienesCuenta, setTienesCuenta] = useState(true);
 
   function handleChange(evento) {
     const { name, value } = evento.target;
@@ -21,8 +21,6 @@ export default function FormularioRegistro() {
 
   function handleSubmit(evento) {
     evento.preventDefault();
-    // Proceso  inicio de sesión
-    console.log(formulario);
   }
 
   function handleTienesCuenta() {
@@ -32,7 +30,7 @@ export default function FormularioRegistro() {
   return (
     <div className="form inscribirse">
       <div className="form-contenido">
-        <header>{tienesCuenta ? "Iniciar sección" : "Registrarse"}</header>
+        <header>Registrarse</header>
         <form onSubmit={handleSubmit}>
           <div className="campo input-campo">
             <label htmlFor="email">Email:</label>

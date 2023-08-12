@@ -1,6 +1,6 @@
 import "./Formulario.css";
 import { Facebook } from "react-feather";
-import FormularioRegistro from "./FormularioRegistro";
+
 import { useState } from "react";
 
 export default function Formulario() {
@@ -73,7 +73,6 @@ export default function Formulario() {
           </a>
         </div>
       </div>
-      <FormularioRegistro />
     </section>
   );
 }

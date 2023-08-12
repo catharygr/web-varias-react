@@ -43,7 +43,11 @@ export default function Formulario({ handleModo }) {
             <i className="bx bx-ocultar eye-icon"></i>
           </div>
           <div className="form-link">
-            <a onClick={handleModo} href="#" className="olvidaste-password">
+            <a
+              onClick={handleOlvidastePassword}
+              href="#"
+              className="olvidaste-password"
+            >
               ¿Has olvidado tu contraseña?
             </a>
           </div>

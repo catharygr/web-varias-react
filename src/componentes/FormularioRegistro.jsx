@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Formulario.css";
 import { Facebook } from "react-feather";
 import { useState } from "react";
@@ -75,16 +76,18 @@ export default function FormularioRegistro({ handleModo }) {
           </div>
         </form>
         <div className="form-link">
-          <span>
-            ¿Ya tienes una cuenta?
-            <a
-              onClick={handleTienesCuenta}
-              href="#"
-              className="link loguear-link"
-            >
-              Iniciar sesión
-            </a>
-          </span>
+          {tienesCuenta && (
+            <span>
+              ¿Ya tienes una cuenta?
+              <a
+                onClick={handleTienesCuenta}
+                href="#"
+                className="link loguear-link"
+              >
+                Iniciar sesión
+              </a>
+            </span>
+          )}
         </div>
       </div>
       <div className="linea"></div>

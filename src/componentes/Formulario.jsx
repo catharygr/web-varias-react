@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Formulario.css";
 import { Facebook } from "react-feather";
 
@@ -5,6 +6,15 @@ import { useState } from "react";
 
 export default function Formulario({ handleModo }) {
   const [loguear, setLoguear] = useState(true);
+  const [olvidastePassword, setOlvidastePassword] = useState(false);
+
+  function handleOlvidastePassword() {
+    setOlvidastePassword(!olvidastePassword);
+  }
+
+  function handleLoguear() {
+    setLoguear(!loguear);
+  }
 
   return (
     <div className="form loguear">
@@ -33,7 +43,7 @@ export default function Formulario({ handleModo }) {
             <i className="bx bx-ocultar eye-icon"></i>
           </div>
           <div className="form-link">
-            <a href="#" className="olvidaste-password">
+            <a onClick={handleModo} href="#" className="olvidaste-password">
               ¿Has olvidado tu contraseña?
             </a>
           </div>
@@ -44,7 +54,7 @@ export default function Formulario({ handleModo }) {
         <div className="form-link">
           <span>
             ¿No tienes una cuenta?
-            <a href="#" className="link inscrirse-link">
+            <a onClick={handleLoguear} href="#" className="link inscrirse-link">
               Registrate
             </a>
           </span>

@@ -9,23 +9,24 @@ export default function FormularioRegistro({ handleModo }) {
     password: "",
     confirmarPassword: "",
   });
-  const [tienesCuenta, setTienesCuenta] = useState(true);
 
   function handleChange(evento) {
     const { name, value } = evento.target;
-    setFormulario({
-      ...formulario,
+    setFormulario((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
   }
 
-  function handleSubmit(evento) {
-    evento.preventDefault();
-  }
-
-  function handleTienesCuenta() {
-    setTienesCuenta(!tienesCuenta);
-  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (formulario.password === formulario.confirmarPassword) {
+      localStorage.setItem("userData", JSON.stringify(formulario));
+      alert("Registro exitoso");
+    } else {
+      alert("Las contraseñas no coinciden");
+    }
+  };
 
   return (
     <div className="form inscribirse">
@@ -35,6 +36,7 @@ export default function FormularioRegistro({ handleModo }) {
           <div className="campo input-campo">
             <label htmlFor="email">Email:</label>
             <input
+              required
               type="email"
               name="email"
               id="email"
@@ -47,6 +49,7 @@ export default function FormularioRegistro({ handleModo }) {
           <div className="campo input-campo">
             <label htmlFor="password">Crear contraseña</label>
             <input
+              required
               type="password"
               name="password"
               id="password"
@@ -61,6 +64,7 @@ export default function FormularioRegistro({ handleModo }) {
           <div className="campo input-campo">
             <label htmlFor="confirmar-password">Confirmar contraseña:</label>
             <input
+              required
               type="password"
               name="confirmarPassword"
               id="confirmar-password"
@@ -76,18 +80,12 @@ export default function FormularioRegistro({ handleModo }) {
           </div>
         </form>
         <div className="form-link">
-          {tienesCuenta && (
-            <span>
-              ¿Ya tienes una cuenta?
-              <a
-                onClick={handleTienesCuenta}
-                href="#"
-                className="link loguear-link"
-              >
-                Iniciar sesión
-              </a>
-            </span>
-          )}
+          <span>
+            ¿Ya tienes una cuenta?
+            <a href="#" className="link loguear-link">
+              Iniciar sesión
+            </a>
+          </span>
         </div>
       </div>
       <div className="linea"></div>

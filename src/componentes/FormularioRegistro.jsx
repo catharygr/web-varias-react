@@ -12,8 +12,8 @@ export default function FormularioRegistro({ handleModo }) {
 
   function handleChange(evento) {
     const { name, value } = evento.target;
-    setFormulario((prevData) => ({
-      ...prevData,
+    setFormulario((oldData) => ({
+      ...oldData,
       [name]: value,
     }));
   }

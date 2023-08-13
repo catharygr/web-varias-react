@@ -7,7 +7,8 @@ function App() {
   const [modo, setModo] = useState("registro");
 
   function handleModo() {
-    setModo(modo === "login" ? "registro" : "login");
+    // setModo(modo === "login" ? "registro" : "login");
+    setModo((prevModo) => (prevModo === "registro" ? "inicio" : "registro"));
   }
 
   return (

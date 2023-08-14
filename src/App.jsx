@@ -1,9 +1,9 @@
-import Subcripciones from "./componentes/Subcripciones";
+import Subscripciones from "./componentes/Subscripciones";
 
 function App() {
   return (
     <div className="App">
-      <Subcripciones />
+      <Subscripciones />
     </div>
   );
 }

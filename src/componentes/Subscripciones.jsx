@@ -12,15 +12,24 @@ export default function Subscripciones() {
           </p>
           <ul className="lista">
             <li className="lista-articulo">
-              <img src="./assets/images/icon-list.svg" alt="" />
+              <img
+                src="/assets/imagenes/subscripciones/icon-list.svg"
+                alt="Icono"
+              />
               Descubrimiento de productos y construcción de lo que importa.
             </li>
             <li className="lista-articulo">
-              <img src="./assets/images/icon-list.svg" alt="" />
+              <img
+                src="/assets/imagenes/subscripciones/icon-list.svg"
+                alt="Icono"
+              />
               Midiendo para asegurar que las actualizaciones sean un éxito.
             </li>
             <li className="lista-articulo">
-              <img src="./assets/images/icon-list.svg" alt="" />
+              <img
+                src="/assets/imagenes/subscripciones/icon-list.svg"
+                alt="Icono"
+              />
               ¡Y mucho más!
             </li>
           </ul>
@@ -34,9 +43,7 @@ export default function Subscripciones() {
             id="email"
             placeholder="email@company.com"
           ></input>
-          <button className="subscribirse">
-            Subscríbete al boletín mensual
-          </button>
+          <button className="subscribe">Subscríbete al boletín mensual</button>
         </div>
         <div className="flex-container-articulo2">
           <img

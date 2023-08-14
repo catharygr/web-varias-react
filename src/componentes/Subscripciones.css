@@ -4,12 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&family=PT+Sans&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&family=PT+Sans&family=Roboto&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -20,14 +17,14 @@ body {
   color: hsl(231, 7%, 60%);
   font-size: 16px;
 }
-body .main {
+body .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   visibility: visible;
 }
-body .main .flex-container {
+body .container .flex-container {
   border-radius: 15px;
   box-shadow: 10px;
   background-color: hsl(0, 0%, 100%);
@@ -35,7 +32,7 @@ body .main .flex-container {
   gap: 60px;
   padding: 20px;
 }
-body .main .flex-container-item1 {
+body .container .flex-container-ariculo1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -43,47 +40,47 @@ body .main .flex-container-item1 {
   margin-left: 20px;
   max-width: 400px;
 }
-body .main .flex-container-item1 h1 {
+body .container .flex-container-articulo1 h1 {
   color: hsl(234, 29%, 20%);
   font-weight: 700;
   font-size: 60px;
   margin: 0;
 }
-body .main .flex-container-item1 ul {
+body .container .flex-container-articulo1 ul {
   list-style: none;
   margin: 0px;
 }
-body .main .flex-container-item1 ul li {
+body .container .flex-container-articulo1 ul li {
   margin-left: -40px;
   margin-bottom: 10px;
 }
-body .main .flex-container-item1 ul li img {
+body .container .flex-container-articulo1 ul li img {
   margin-right: 20px;
 }
-body .main .flex-container-item1 .email-error {
+body .container .flex-container-articulo1 .email-error {
   font-size: 15px;
   font-weight: 700;
 }
-body .main .flex-container-item1 .email-error .email {
+body .container .flex-container-articulo1 .email-error .email {
   color: hsl(234, 29%, 20%);
   float: left;
 }
-body .main .flex-container-item1 .email-error .error {
+body .container .flex-container-articulo1 .email-error .error {
   color: red;
   float: right;
   visibility: hidden;
 }
-body .main .flex-container-item1 #email {
+body .container .flex-container-articulo1 #email {
   padding: 15px;
 }
-body .main .flex-container-item1 .subscribe {
+body .container .flex-container-articulo1 .subscribe {
   padding: 15px;
   border-radius: 7px;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
-body .main .flex-container-item1 .subscribe:hover {
+body .container .flex-container-articulo1 .subscribe:hover {
   background-color: hsl(4, 100%, 67%);
   cursor: pointer;
 }
@@ -125,20 +122,20 @@ body .thanks-message .dismiss:hover {
   body .thanks-message .dismiss {
     margin-top: 70px;
   }
-  .main {
+  .container {
     height: 100vh !important;
     display: block !important;
   }
-  .main .flex-container {
+  .container .flex-container {
     border-radius: 0 !important;
     flex-direction: column;
     height: 100%;
     padding: 0% !important;
     gap: 20px !important;
   }
-  .main .flex-container-item1 {
+  .container .flex-container-articulo1 {
     gap: 25px !important;
     width: 100% !important;
     margin-left: 10% !important;
   }
-} /*# sourceMappingURL=style.css.map */
+}

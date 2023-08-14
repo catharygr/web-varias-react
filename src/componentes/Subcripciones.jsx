@@ -26,6 +26,21 @@ export default function Subcripciones() {
             <p>Dirección de correo</p>
             <p>Tu email es incorrecto</p>
           </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          ></input>
+          <button className="subscribirse">
+            Subscríbete al boletín mensual
+          </button>
+        </div>
+        <div>
+          <img
+            src="/assets/imagenes/subscripciones/ilustracion-sign-up-desktop.svg"
+            alt=""
+          />
         </div>
       </div>
     </main>

@@ -29,3 +29,13 @@ Tecnologías Utilizadas:
 React: Biblioteca JavaScript para construir interfaces de usuario.
 CSS: Lenguaje de estilo utilizado para el diseño de la interfaz.
 npm/yarn: Gestor de paquetes para instalar dependencias.
+
+## ChatApp
+
+El componente ChatApp es parte de una interfaz de usuario forma parte de una aplicación de reserva de paseos para perros. Esta interfaz permite a los usuarios comunicarse con los paseadores de perros, discutir acuerdos y hacer reservas a través de un chat. El componente está escrito en JavaScript y utiliza estilos CSS para dar formato a la interfaz y con componentes de React.
+
+Características
+
+1- Chat en tiempo real: Permite a los usuarios interactuar con los paseadores de perros en tiempo real a través de un chat integrado en la interfaz.
+2- Reserva sencilla: Los usuarios pueden discutir los detalles de la reserva con los paseadores y realizar reservas directamente a través del chat.
+3- Valoración de paseadores: Una vez que el paseo haya sido completado, los usuarios pueden calificar a los paseadores y realizar nuevas reservas desde el chat.

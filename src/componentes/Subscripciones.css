@@ -110,30 +110,33 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 675px) {
+@media (max-width: 675px) {
   body {
     background-color: white;
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
   }
-  .thanks-message {
+  /* .thanks-message {
     left: 10%;
-  }
-  .thanks-message .dismiss {
+  } */
+  /* .thanks-message .dismiss {
     margin-top: 70px;
-  }
+  } */
   .container {
-    height: 100vh !important;
-    display: block !important;
+    height: 100vh;
+    display: block;
   }
   .container .flex-container {
-    border-radius: 0 !important;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    border-radius: 0;
     height: 100%;
-    padding: 0% !important;
-    gap: 20px !important;
+    padding: 0%;
+    gap: 1.5rem;
   }
   .container .flex-container-articulo1 {
-    gap: 25px !important;
-    width: 100% !important;
-    margin-left: 10% !important;
+    gap: 2rem;
+    width: 100%;
+    /* margin-left: 10%; */
   }
 }

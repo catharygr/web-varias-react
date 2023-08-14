@@ -10,22 +10,22 @@ export default function Subscripciones() {
             Únete a más de 60,000 gerentes de productos que reciben
             actualizaciones mensuales sobre:
           </p>
-          <ul className="lista">
-            <li className="lista-articulo">
+          <ul>
+            <li>
               <img
                 src="/assets/imagenes/subscripciones/icon-list.svg"
                 alt="Icono"
               />
               Descubrimiento de productos y construcción de lo que importa.
             </li>
-            <li className="lista-articulo">
+            <li>
               <img
                 src="/assets/imagenes/subscripciones/icon-list.svg"
                 alt="Icono"
               />
               Midiendo para asegurar que las actualizaciones sean un éxito.
             </li>
-            <li className="lista-articulo">
+            <li>
               <img
                 src="/assets/imagenes/subscripciones/icon-list.svg"
                 alt="Icono"
@@ -45,7 +45,7 @@ export default function Subscripciones() {
           ></input>
           <button className="subscribe">Subscríbete al boletín mensual</button>
         </div>
-        <div className="flex-container-articulo2">
+        <div className="flex-container-articulo1">
           <img
             src="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
             alt=""

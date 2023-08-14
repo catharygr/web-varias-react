@@ -1,90 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&family=PT+Sans&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&family=PT+Sans&family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&family=PT+Sans&family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&family=PT+Sans&family=Roboto&display=swap");
-
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   background-color: hsl(235, 18%, 26%);
   color: hsl(231, 7%, 60%);
   font-size: 16px;
 }
-body .container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   visibility: visible;
+  padding: 2rem;
+  gap: 1rem;
 }
-body .container .flex-container {
+.container .flex-container {
   border-radius: 15px;
   box-shadow: 10px;
   background-color: hsl(0, 0%, 100%);
   display: flex;
-  gap: 60px;
-  padding: 20px;
+  gap: 2rem;
+  padding: 2rem;
 }
-body .container .flex-container-ariculo1 {
+.container .flex-container-ariculo1 {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding-block: 40px;
-  margin-left: 20px;
+  gap: 1.9rem;
+  padding-block: 2rem;
+  margin-left: 1.5rem;
   max-width: 400px;
 }
-body .container .flex-container-articulo1 h1 {
+.container .flex-container-articulo1 h1 {
   color: hsl(234, 29%, 20%);
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3rem;
   margin: 0;
 }
-body .container .flex-container-articulo1 ul {
+.container .flex-container-articulo1 ul {
   list-style: none;
-  margin: 0px;
+  margin: 0;
 }
-body .container .flex-container-articulo1 ul li {
-  margin-left: -40px;
-  margin-bottom: 10px;
+.container .flex-container-articulo1 ul li {
+  /* margin-left: 40px; */
+  margin-bottom: 0.8rem;
 }
-body .container .flex-container-articulo1 ul li img {
-  margin-right: 20px;
+.container .flex-container-articulo1 ul li img {
+  margin-right: 0.5rem;
 }
-body .container .flex-container-articulo1 .email-error {
-  font-size: 15px;
+.container .flex-container-articulo1 .email-error {
+  font-size: 1rem;
   font-weight: 700;
 }
-body .container .flex-container-articulo1 .email-error .email {
+.container .flex-container-articulo1 .email-error .email {
   color: hsl(234, 29%, 20%);
   float: left;
 }
-body .container .flex-container-articulo1 .email-error .error {
+.container .flex-container-articulo1 .email-error .error {
   color: red;
   float: right;
   visibility: hidden;
 }
-body .container .flex-container-articulo1 #email {
-  padding: 15px;
+.container .flex-container-articulo1 #email {
+  padding: 1rem;
 }
-body .container .flex-container-articulo1 .subscribe {
-  padding: 15px;
+.container .flex-container-articulo1 .subscribe {
+  padding: 1rem;
   border-radius: 7px;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
 }
-body .container .flex-container-articulo1 .subscribe:hover {
+.container .flex-container-articulo1 .subscribe:hover {
   background-color: hsl(4, 100%, 67%);
   cursor: pointer;
 }
-body .thanks-message {
+.thanks-message {
   position: absolute;
   top: 25%;
   left: 40%;
@@ -96,18 +94,18 @@ body .thanks-message {
   color: hsl(234, 29%, 20%);
   visibility: hidden;
 }
-body .thanks-message .confirmation {
-  font-size: 13px;
+.thanks-message .confirmation {
+  font-size: 1rem;
 }
-body .thanks-message .dismiss {
-  padding: 15px;
+.thanks-message .dismiss {
+  padding: 1rem;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   width: 100%;
   font-weight: 700;
   border-radius: 7px;
 }
-body .thanks-message .dismiss:hover {
+.thanks-message .dismiss:hover {
   background-color: hsl(4, 100%, 67%);
   cursor: pointer;
 }
@@ -116,10 +114,10 @@ body .thanks-message .dismiss:hover {
   body {
     background-color: white;
   }
-  body .thanks-message {
+  .thanks-message {
     left: 10%;
   }
-  body .thanks-message .dismiss {
+  .thanks-message .dismiss {
     margin-top: 70px;
   }
   .container {

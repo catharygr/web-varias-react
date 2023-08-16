@@ -45,8 +45,9 @@ export default function Subscripciones() {
           ></input>
           <button className="subscribe">Subscríbete al boletín mensual</button>
         </div>
-        <div className="flex-container-articulo1">
+        <div>
           <img
+            className="flex-container-img"
             src="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
             alt=""
           />

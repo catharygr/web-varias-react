@@ -5,7 +5,7 @@ export default function Subscripciones() {
     <main className="container">
       <div className="flex-container">
         <div className="flex-container-articulo1">
-          <h1> Mantente actualizado!</h1>
+          <h1> Actualizado!</h1>
           <p className="descriccion">
             Únete a más de 60,000 gerentes de productos que reciben
             actualizaciones mensuales sobre:

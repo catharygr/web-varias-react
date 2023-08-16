@@ -37,9 +37,7 @@ body {
   max-width: 400px;
 }
 .flex-container-articulo1 h1 {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
+  text-align: center;
   color: hsl(234, 29%, 20%);
   font-weight: 700;
   font-size: 3rem;
@@ -48,7 +46,7 @@ body {
 }
 .flex-container-articulo1 p {
   list-style: none;
-  margin-left: 1.5rem;
+  margin: 1.5rem 2rem;
 }
 .flex-container-articulo1 li {
   margin-left: 2.5rem;
@@ -71,20 +69,18 @@ body {
   visibility: hidden;
 }
 .flex-container-articulo1 #email {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
+  margin: 1rem 2rem;
+
   padding: 1rem;
   border-radius: 7px;
 }
 .flex-container-articulo1 .subscribe {
-  margin-top: 1rem;
+  margin: 0.2rem 2rem 1rem;
   padding: 1rem;
-  margin-left: 1.5rem;
   border-radius: 7px;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 .flex-container-articulo1 .subscribe:hover {
   background-color: hsl(4, 100%, 67%);
@@ -139,6 +135,9 @@ body {
     padding: 1rem 3rem;
     margin: 2rem auto;
     width: 100%;
+  }
+  .flex-container-articulo1 h1 {
+    text-align: start;
   }
   .flex-container {
     display: flex;

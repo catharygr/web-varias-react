@@ -29,8 +29,8 @@ body {
 
 .flex-container-img {
   height: 100%;
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
 }
 
 .flex-container-ariculo1 {
@@ -58,6 +58,7 @@ body {
   margin-bottom: 0.8rem;
   list-style-type: none;
   padding-left: 0;
+  width: 80%;
 }
 
 .flex-container-articulo1 ul li img {
@@ -65,7 +66,7 @@ body {
 }
 
 .email-error {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -81,7 +82,7 @@ body {
 }
 
 .email-error input {
-  width: 60%;
+  width: 80%;
 }
 
 #email {
@@ -97,7 +98,7 @@ body {
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  width: 60%;
+  width: 80%;
 }
 
 .subscribe:hover {
@@ -139,13 +140,14 @@ body {
 @media (min-width: 40rem) {
   body {
     background-color: hsl(235, 18%, 26%);
+    padding: 8rem 10rem;
   }
-  /* .thanks-message {
+  .thanks-message {
     left: 10%;
-  } */
-  /* .thanks-message .dismiss {
+  }
+  .thanks-message .dismiss {
     margin-top: 70px;
-  } */
+  }
   .container {
     visibility: visible;
     padding: 3rem 8rem;
@@ -156,15 +158,11 @@ body {
   }
   .flex-container {
     flex-direction: row-reverse;
-    padding: 4rem;
-    gap: 6rem;
     width: 100%;
   }
   .flex-container-img {
     border-radius: 15px;
-    max-width: 100%;
-    width: 100wh;
-    height: 100vh;
+    margin: 1rem 3rem 1rem 0;
   }
   .flex-container-articulo1 {
     gap: 2rem;

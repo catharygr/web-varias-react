@@ -40,7 +40,7 @@ export default function Subscripciones() {
               ¡Y mucho más!
             </li>
           </ul>
-          <div className="email-error">
+          <form className="email-error">
             <p>Dirección de correo</p>
             {/* <p>Tu email es incorrecto</p> */}
             <input
@@ -52,7 +52,7 @@ export default function Subscripciones() {
             <button className="subscribe">
               Subscríbete al boletín mensual
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </main>

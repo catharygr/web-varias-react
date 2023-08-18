@@ -42,16 +42,17 @@ export default function Subscripciones() {
           </ul>
           <div className="email-error">
             <p>Dirección de correo</p>
-            <p>Tu email es incorrecto</p>
+            {/* <p>Tu email es incorrecto</p> */}
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            ></input>
+            <button className="subscribe">
+              Subscríbete al boletín mensual
+            </button>
           </div>
-
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@company.com"
-          ></input>
-          <button className="subscribe">Subscríbete al boletín mensual</button>
         </div>
       </div>
     </main>

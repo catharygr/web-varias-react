@@ -44,6 +44,7 @@ export default function Subscripciones() {
             <p>Dirección de correo</p>
             <p>Tu email es incorrecto</p>
           </div>
+
           <input
             type="email"
             name="email"

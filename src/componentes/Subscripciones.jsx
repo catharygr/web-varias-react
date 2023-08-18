@@ -4,6 +4,13 @@ export default function Subscripciones() {
   return (
     <main className="container">
       <div className="flex-container">
+        <div>
+          <img
+            className="flex-container-img"
+            src="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        </div>
         <div className="flex-container-articulo1">
           <h1> Actualizado!</h1>
           <p className="descriccion">
@@ -44,13 +51,6 @@ export default function Subscripciones() {
             placeholder="email@company.com"
           ></input>
           <button className="subscribe">Subscríbete al boletín mensual</button>
-        </div>
-        <div>
-          <img
-            className="flex-container-img"
-            src="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
-            alt=""
-          />
         </div>
       </div>
     </main>

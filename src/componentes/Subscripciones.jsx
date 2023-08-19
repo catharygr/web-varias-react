@@ -2,7 +2,7 @@ import "./Subscripciones.css";
 
 export default function Subscripciones() {
   return (
-    <main className="container">
+    <main>
       <div className="flex-container">
         <div className="flex-container-img">
           <picture>

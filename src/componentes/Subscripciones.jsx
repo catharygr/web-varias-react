@@ -4,7 +4,7 @@ export default function Subscripciones() {
   return (
     <main className="container">
       <div className="flex-container">
-        <div>
+        <div className="flex-container-img">
           <picture>
             <source
               media="(max-width: 39.999rem)"

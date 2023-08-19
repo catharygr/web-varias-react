@@ -5,11 +5,20 @@ export default function Subscripciones() {
     <main className="container">
       <div className="flex-container">
         <div>
-          <img
-            className="flex-container-img"
-            src="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
-            alt=""
-          />
+          <picture>
+            <source
+              media="(max-width: 39.999rem)"
+              srcSet="/assets/imagenes/subscripciones/illustration-sign-up-mobile.svg"
+            />
+            <source
+              media="(min-width: 40rem)"
+              srcSet="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="/assets/images/multipaginas/pagina-corta.png"
+              alt="Imágenes de subcripciones"
+            />
+          </picture>
         </div>
         <div className="flex-container-articulo1">
           <h1> Actualizado!</h1>

@@ -17,17 +17,50 @@ export default function Subscripciones() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aquí podrías agregar la lógica para enviar el correo electrónico al servidor
-    // Por ahora, solo vamos a simular la suscripción exitosa
+
+    // Actualizar el estado para mostrar un mensaje de agradecimiento al usuario
     setIsSubscribed(true);
   };
+
+
 
   return (
     <main>
       <div className="flex-container">
-        {/* ...contenido de la página... */}
+        <div className="flex-container-img">
+          <picture>
+            <source
+              media="(max-width: 39.999rem)"
+              srcSet="/assets/imagenes/subscripciones/illustration-sign-up-mobile.svg"
+            />
+            <source
+              media="(min-width: 40rem)"
+              srcSet="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
+            />
+            <img
+              src="/assets/images/multipaginas/pagina-corta.png"
+              alt="Imágenes de subcripciones"
+            />
+          </picture>{" "}
+        </div>
         <div className="flex-container-articulo1">
-          {/* ...contenido anterior... */}
+        <div className="flex-container">
+         <div className="flex-container-img">
+           <picture>
+             <source
+               media="(max-width: 39.999rem)"
+               srcSet="/assets/imagenes/subscripciones/illustration-sign-up-mobile.svg"
+             />
+             <source
+               media="(min-width: 40rem)"
+               srcSet="/assets/imagenes/subscripciones/illustration-sign-up-desktop.svg"
+             />
+             <img
+               src="/assets/images/multipaginas/pagina-corta.png"
+               alt="Imágenes de subcripciones"
+           />
+         </picture>
+        </div>
           <form className="email-error" onSubmit={handleSubmit}>
             <input
               type="email"
@@ -49,8 +82,9 @@ export default function Subscripciones() {
           )}
         </div>
       </div>
+      </div>
     </main>
-  );
+  );  
 }
 
 // import "./Subscripciones.css";
@@ -75,35 +109,35 @@ export default function Subscripciones() {
 //             />
 //           </picture>
 //         </div>
-//         <div className="flex-container-articulo1">
-//           <h1> Actualizado!</h1>
-//           <p className="descriccion">
-//             Únete a más de 60,000 gerentes de productos que reciben
-//             actualizaciones mensuales sobre:
-//           </p>
-//           <ul>
-//             <li>
-//               <img
-//                 src="/assets/imagenes/subscripciones/icon-list.svg"
-//                 alt="Icono"
-//               />
-//               Descubrimiento de productos y construcción de lo que importa.
-//             </li>
-//             <li>
-//               <img
-//                 src="/assets/imagenes/subscripciones/icon-list.svg"
-//                 alt="Icono"
-//               />
-//               Midiendo para asegurar que las actualizaciones sean un éxito.
-//             </li>
-//             <li>
-//               <img
-//                 src="/assets/imagenes/subscripciones/icon-list.svg"
-//                 alt="Icono"
-//               />
-//               ¡Y mucho más!
-//             </li>
-//           </ul>
+        <div className="flex-container-articulo1">
+          <h1> Actualizado!</h1>
+          <p className="descriccion">
+            Únete a más de 60,000 gerentes de productos que reciben
+            actualizaciones mensuales sobre:
+          </p>
+          <ul>
+            <li>
+              <img
+                src="/assets/imagenes/subscripciones/icon-list.svg"
+                alt="Icono"
+              />
+              Descubrimiento de productos y construcción de lo que importa.
+            </li>
+            <li>
+              <img
+                src="/assets/imagenes/subscripciones/icon-list.svg"
+                alt="Icono"
+              />
+              Midiendo para asegurar que las actualizaciones sean un éxito.
+            </li>
+            <li>
+              <img
+                src="/assets/imagenes/subscripciones/icon-list.svg"
+                alt="Icono"
+              />
+              ¡Y mucho más!
+            </li>
+          </ul>
 //           <form className="email-error">
 //             <input
 //               type="email"

@@ -50,8 +50,6 @@ export default function Subscripciones() {
             </li>
           </ul>
           <form className="email-error">
-            <p>Dirección de correo</p>
-            {/* <p>Tu email es incorrecto</p> */}
             <input
               type="email"
               name="email"

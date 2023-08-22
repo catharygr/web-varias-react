@@ -16,7 +16,6 @@ body {
 
 .flex-container {
   background: #fff;
-  border-radius: 30px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -135,10 +134,10 @@ body {
 }
 
 @media (min-width: 40rem) {
-  /* body {
+  body {
     background-color: hsl(235, 18%, 26%);
     padding: 8rem 10rem;
-  } */
+  }
   .thanks-message {
     left: 10%;
   }
@@ -150,15 +149,16 @@ body {
     text-align: start;
   }
   .flex-container {
+    border-radius: 30px;
     visibility: visible;
-    padding: 3rem;
-    margin: 2rem auto;
-    width: 1000px;
+    margin: 0 auto;
+    /* width: 1000px; */
     flex-direction: row-reverse;
+    align-items: center;
   }
   .flex-container-img {
     border-radius: 15px;
-    margin: 1rem 3rem 1rem 0;
+    margin: 1rem auto;
     flex-basis: 50%;
   }
   .flex-container-articulo1 {

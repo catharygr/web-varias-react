@@ -61,7 +61,7 @@ export default function Subscripciones() {
               type="email"
               name="email"
               id="email"
-              placeholder="email@company.com"
+              placeholder="Escribe tu correo electrónico"
               value={email}
               onChange={handleEmailChange}
             ></input>

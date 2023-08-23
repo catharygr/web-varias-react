@@ -48,7 +48,9 @@ export default function Subscripciones() {
           <ul>
             {features.map((feature, index) => (
               <li key={index}>
+                {/* Buscar como sustituir esta imagen poniendola como bolean en li */}
                 <img
+                  className="icon-list"
                   src="/assets/imagenes/subscripciones/icon-list.svg"
                   alt="Icono"
                 />

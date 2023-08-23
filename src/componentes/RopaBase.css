@@ -17,6 +17,11 @@ body {
   margin: 2rem auto;
 }
 
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-logo {
   background-color: rgb(255, 253 254);
   height: 60px;
@@ -28,10 +33,28 @@ body {
 }
 
 .logo {
-  width: 30%;
+  width: 80%;
 }
 
-.hero-mobile {
+.contenido:not(:last-child) {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 42px;
+  letter-spacing: 10.825px;
+  text-transform: uppercase;
+  color: rgb(194, 155, 153);
+}
+
+.contenido span {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 10.825px;
+}
+
+.hero-picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -39,7 +62,13 @@ body {
 
 @media (min-width: 42rem) {
   .container {
-    flex-basis: 50%;
     flex-direction: row;
+  }
+  .container-nav {
+    flex-basis: 50%;
+    flex-direction: column;
+  }
+  .logo {
+    width: 150px;
   }
 }

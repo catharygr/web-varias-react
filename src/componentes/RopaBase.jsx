@@ -3,7 +3,7 @@ import "./RopaBase.css";
 export default function RopaBase() {
   return (
     <main className="container">
-      <div>
+      <div className="container-nav">
         <nav className="nav-logo">
           <img
             className="logo"
@@ -11,10 +11,12 @@ export default function RopaBase() {
             alt="Logo de la empresa"
           />
         </nav>
-        <h1>We are coming soon</h1>
+        <h1 className="contenido">
+          We are <span>Coming soon</span>
+        </h1>
       </div>
       <section>
-        <div className="hero-mobile">
+        <div className="hero-picture">
           <picture>
             <source
               media="(max-width: 41.999 )"

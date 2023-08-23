@@ -1,9 +1,9 @@
-import Subscripciones from "./componentes/Subscripciones";
+import RopaBase from "./componentes/RopaBase";
 
 function App() {
   return (
     <div className="App">
-      <Subscripciones />
+      <RopaBase />
     </div>
   );
 }

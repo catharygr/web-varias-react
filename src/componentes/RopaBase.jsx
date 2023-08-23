@@ -1,9 +1,21 @@
+import "./RopaBase.css";
+
 export default function RopaBase() {
   return (
-    <>
-      <nav>
-        <img src="" alt="Logo de la empresa" />
+    <main className="container">
+      <nav className="nav-logo">
+        <img
+          src="/assets/imagenes/ropa-base/logo.svg"
+          alt="Logo de la empresa"
+        />
       </nav>
-    </>
+      <section>
+        <img
+          className="hero-mobile"
+          src="/assets/imagenes/ropa-base/hero-mobile.jpg"
+          alt="Imagen de una modelo"
+        />
+      </section>
+    </main>
   );
 }

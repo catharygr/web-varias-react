@@ -74,13 +74,16 @@ span {
 
 @media (min-width: 42rem) {
   .container {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto auto;
+    grid-column: 1 / 2;
   }
-  .container-nav {
+
+  /* .container-nav {
     flex-basis: 2;
     flex-direction: column;
   }
   .logo {
     width: 150px;
-  }
+  } */
 }

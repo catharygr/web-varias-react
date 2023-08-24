@@ -9,12 +9,11 @@ body {
 }
 
 .container {
-  display: flex;
+  display: grid;
   background-color: rgb(253, 245, 245);
-  flex-direction: column;
-  align-items: flex-start;
+  grid-template-columns: 1fr;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .container-nav {
@@ -25,7 +24,6 @@ body {
 .header-logo {
   background-color: rgb(255, 253 254);
   height: 60px;
-  width: 100%;
   display: flex;
   align-items: center;
   margin: 1rem 1rem;
@@ -36,21 +34,23 @@ body {
   width: 80%;
 }
 
-.contenido:not(:last-child) {
+.contenido {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 42px;
   letter-spacing: 10.825px;
   text-transform: uppercase;
+  color: rgb(194, 155, 153);
+  text-align: center;
 }
 
-.contenido span {
-  color: rgb(194, 155, 153);
+span {
   font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 42px;
   letter-spacing: 10.825px;
+  text-align: center;
 }
 
 .hero-picture {

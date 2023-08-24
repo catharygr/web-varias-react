@@ -73,7 +73,6 @@ span {
 } */
 
 .btn-contenido {
-  margin-right: 1rem;
 }
 
 .btn {
@@ -89,11 +88,8 @@ span {
 .flecha {
   background: #f8bfbf;
   border-radius: 50%;
-  /* width: 25px; */
-
-  /* margin-left: 0.5rem;
-   */
-  padding: 0.3rem;
+  margin-left: 0 0.5rem;
+  padding: 0.2rem 0.4rem;
 }
 
 @media (min-width: 42rem) {
@@ -104,6 +100,7 @@ span {
     grid-column: 1 / 2;
     grid-row: 1/2;
     width: 150px;
+    margin: 4rem;
   }
 
   .contenido-escrito {

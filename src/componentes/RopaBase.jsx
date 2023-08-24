@@ -4,13 +4,13 @@ export default function RopaBase() {
   return (
     <main className="container">
       <div className="container-nav">
-        <nav className="nav-logo">
+        <header className="header-logo">
           <img
             className="logo"
             src="/assets/imagenes/ropa-base/logo.svg"
             alt="Logo de la empresa"
           />
-        </nav>
+        </header>
         <h1 className="contenido">
           We are <span>Coming soon</span>
         </h1>

@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-.nav-logo {
+.header-logo {
   background-color: rgb(255, 253 254);
   height: 60px;
   width: 100%;
@@ -42,13 +42,12 @@ body {
   line-height: 42px;
   letter-spacing: 10.825px;
   text-transform: uppercase;
-  color: rgb(194, 155, 153);
 }
 
 .contenido span {
+  color: rgb(194, 155, 153);
   font-size: 2.5rem;
   text-transform: uppercase;
-  display: block;
   font-weight: 600;
   line-height: 42px;
   letter-spacing: 10.825px;
@@ -65,7 +64,7 @@ body {
     flex-direction: row;
   }
   .container-nav {
-    flex-basis: 50%;
+    flex-basis: 2;
     flex-direction: column;
   }
   .logo {

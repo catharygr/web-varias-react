@@ -73,20 +73,27 @@ span {
 } */
 
 .btn-contenido {
+  margin-right: 1rem;
+}
+
+.btn {
   padding: 0.4rem 4rem;
-  font-size: 0.8rem;
   background-color: transparent;
   border: 0.8px solid rgb(194, 155, 153);
   border-radius: 24px;
-  text-align: center;
   color: rgb(194, 155, 153);
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+  display: block;
 }
 .flecha {
   background: #f8bfbf;
-  border-radius: 25%;
-  width: 15px;
-  height: 15px;
-  margin-left: 2rem auto;
+  border-radius: 50%;
+  /* width: 25px; */
+
+  /* margin-left: 0.5rem;
+   */
+  padding: 0.3rem;
 }
 
 @media (min-width: 42rem) {

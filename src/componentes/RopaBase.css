@@ -73,8 +73,20 @@ span {
 } */
 
 .btn-contenido {
-  width: 100px;
-  height: 30px;
+  padding: 0.4rem 4rem;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 0.8px solid rgb(194, 155, 153);
+  border-radius: 24px;
+  text-align: center;
+  color: rgb(194, 155, 153);
+}
+.flecha {
+  background: #f8bfbf;
+  border-radius: 25%;
+  width: 15px;
+  height: 15px;
+  margin-left: 2rem auto;
 }
 
 @media (min-width: 42rem) {
@@ -88,7 +100,7 @@ span {
   }
 
   .contenido-escrito {
-    grid-column: 2/ 2;
+    grid-column: 1/ 2;
     grid-row: 2/3;
   }
   .hero-picture {

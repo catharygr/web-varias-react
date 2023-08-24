@@ -38,8 +38,9 @@ export default function RopaBase() {
           store. Add your email below to stay up-to-date with announcements and
           our launch deals.
         </p>
-        <button className="bg-contenido">
+        <button className="btn-contenido">
           <img
+            className="flecha"
             src="/assets/imagenes/ropa-base/icon-arrow.svg"
             alt="Flecha derecha"
           />

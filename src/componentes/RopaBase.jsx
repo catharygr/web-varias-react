@@ -38,7 +38,13 @@ export default function RopaBase() {
           store. Add your email below to stay up-to-date with announcements and
           our launch deals.
         </p>
-        <button className="btn-contenido">Email Adress</button>
+        <button className="bg-contenido">
+          <img
+            src="/assets/imagenes/ropa-base/icon-arrow.svg"
+            alt="Flecha derecha"
+          />
+          Email Adress
+        </button>
       </div>
     </main>
   );

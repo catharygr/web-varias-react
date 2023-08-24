@@ -13,7 +13,7 @@ body {
   background-color: rgb(253, 245, 245);
   flex-direction: column;
   align-items: flex-start;
-  width: 420px;
+  max-width: 800px;
   margin: 2rem auto;
 }
 

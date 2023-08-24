@@ -11,15 +11,6 @@ export default function RopaBase() {
             alt="Logo de la empresa"
           />
         </header>
-        <div className="contenido-section">
-          <h1 className="contenido">We are</h1>
-          <span>Coming soon</span>
-          <p>
-            Hello fellow shoppers! We are currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-        </div>
       </div>
 
       <div className="hero-picture">
@@ -38,6 +29,15 @@ export default function RopaBase() {
             alt="Imagen de la empresa"
           />
         </picture>
+      </div>
+      <div className="contenido-escrito">
+        <h1 className="contenido">We are</h1>
+        <span>Coming soon</span>
+        <p>
+          Hello fellow shoppers! We are currently building our new fashion
+          store. Add your email below to stay up-to-date with announcements and
+          our launch deals.
+        </p>
       </div>
     </main>
   );

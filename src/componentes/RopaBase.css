@@ -100,7 +100,7 @@ span {
     grid-column: 1 / 2;
     grid-row: 1/2;
     width: 150px;
-    margin: 4rem;
+    margin: 3rem;
   }
 
   .contenido-escrito {

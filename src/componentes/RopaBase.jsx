@@ -31,13 +31,14 @@ export default function RopaBase() {
         </picture>
       </div>
       <div className="contenido-escrito">
-        <h1 className="contenido">We are</h1>
+        <h1 className="titulo">We are</h1>
         <span>Coming soon</span>
         <p>
           Hello fellow shoppers! We are currently building our new fashion
           store. Add your email below to stay up-to-date with announcements and
           our launch deals.
         </p>
+        <button className="btn-contenido">Email Adress</button>
       </div>
     </main>
   );

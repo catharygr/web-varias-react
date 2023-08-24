@@ -38,7 +38,7 @@ body {
   padding: 3rem;
 }
 
-.contenido {
+.titulo {
   font-size: 2.5rem;
   font-weight: 100;
   line-height: 42px;
@@ -66,10 +66,15 @@ span {
   letter-spacing: 1.9px;
 }
 
-.hero-picture {
+/* .hero-picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+.btn-contenido {
+  width: 100px;
+  height: 30px;
 }
 
 @media (min-width: 42rem) {
@@ -79,11 +84,12 @@ span {
   .logo {
     grid-column: 1 / 2;
     grid-row: 1/2;
+    width: 150px;
   }
 
   .contenido-escrito {
     grid-column: 2/ 2;
-    grid-row: 1/3;
+    grid-row: 2/3;
   }
   .hero-picture {
     grid-column: 2 / 3;

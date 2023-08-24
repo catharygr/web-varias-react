@@ -11,35 +11,34 @@ export default function RopaBase() {
             alt="Logo de la empresa"
           />
         </header>
-      </div>
-      <section>
-        <div className="hero-picture">
-          <picture>
-            <source
-              media="(max-width: 41.999 )"
-              srcSet="/assets/imagenes/ropa-base/hero-mobile.jpg"
-            />
-            <source
-              media="(min-width: 42rem )"
-              srcSet="/assets/imagenes/ropa-base/hero-desktop.jpg"
-            />
-            <img
-              className="hero"
-              src="/assets/imagenes/ropa-base/hero-mobile.jpg"
-              alt="Imagen de la empresa"
-            />
-          </picture>
-          <div className="contenido-section">
-            <h1 className="contenido">We are</h1>
-            <span>Coming soon</span>
-            <p>
-              Hello fellow shoppers! We are currently building our new fashion
-              store. Add your email below to stay up-to-date with announcements
-              and our launch deals.
-            </p>
-          </div>
+        <div className="contenido-section">
+          <h1 className="contenido">We are</h1>
+          <span>Coming soon</span>
+          <p>
+            Hello fellow shoppers! We are currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
         </div>
-      </section>
+      </div>
+
+      <div className="hero-picture">
+        <picture>
+          <source
+            media="(max-width: 41.999 )"
+            srcSet="/assets/imagenes/ropa-base/hero-mobile.jpg"
+          />
+          <source
+            media="(min-width: 42rem )"
+            srcSet="/assets/imagenes/ropa-base/hero-desktop.jpg"
+          />
+          <img
+            className="hero"
+            src="/assets/imagenes/ropa-base/hero-mobile.jpg"
+            alt="Imagen de la empresa"
+          />
+        </picture>
+      </div>
     </main>
   );
 }

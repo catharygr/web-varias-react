@@ -38,7 +38,7 @@ export default function RopaBase() {
           store. Add your email below to stay up-to-date with announcements and
           our launch deals.
         </p>
-        <div>
+        <div className="input">
           <input className="btn-input" type="text" placeholder="Email Adress" />
           <button className="btn">
             <img

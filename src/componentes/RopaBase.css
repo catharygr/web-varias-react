@@ -130,7 +130,7 @@ span {
 
 .error-input {
   border: 2px solid var(--color-red-error);
-  opacity: 1;z
+  opacity: 1;
 }
 
 @media (min-width: 42rem) {

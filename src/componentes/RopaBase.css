@@ -72,33 +72,67 @@ span {
   object-fit: cover;
 }
 
-.form-input {
-  padding: 0.5rem 2rem;
-  background-color: transparent;
-  border: 2px solid rgb(194, 155, 154);
-  border-radius: 20px;
-  cursor: pointer;
-}
-qq .form-input ::placeholder {
-  color: rgb(194, 155, 153);
-  font-size: 0.8rem;
-  text-align: center;
-  letter-spacing: 1.9px;
+.form-container {
+  position: relative;
+  text-align: start;
+  margin-bottom: 5.75rem;
 }
 
-.form-btn {
-  display: flex;
-  align-items: center;
-  border: none;
+.form-input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 28px;
+  border: 1px solid var(--color-red-desaturated);
+  opacity: 0.5;
+  height: 48px;
+  text-align: left;
+  color: #423a3a;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
 }
-.flecha {
-  width: 30px;
-  height: 30px;
-  /* margin-right: 10px; */
-  background: #f8bfbf;
-  border-radius: 50%;
-  /* margin-left:  0.5rem; */
-  /* padding: 1rem 2rem; */
+
+.form-container input::placeholder {
+  color: var(--color-red-desaturated);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.form-submit-button {
+  all: unset;
+  width: 64px;
+  height: 48px;
+  background: linear-gradient(#f8bfbf, #ee8b8b);
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+.input-error-image {
+  position: absolute;
+  top: 12px;
+  right: 70px;
+  display: none;
+}
+
+.input-error-message {
+  color: var(--color-red-error);
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 1.5rem;
+  display: none;
+}
+
+.error-show {
+  display: block;
+}
+
+.error-input {
+  border: 2px solid var(--color-red-error);
+  /* opacity: 1;z */
 }
 
 @media (min-width: 42rem) {

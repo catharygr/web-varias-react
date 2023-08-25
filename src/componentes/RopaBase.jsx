@@ -51,7 +51,7 @@ export default function RopaBase() {
               src="/assets/imagenes/ropa-base/icon-error.svg"
               alt=""
             />
-            <button type="submit" className="form-submit-button" formNoValidate>
+            <button type="submit" className="form-btn" formNoValidate>
               <img
                 src="/assets/imagenes/ropa-base/icon-arrow.svg"
                 alt="Flecha a la derecha"

@@ -79,27 +79,25 @@ span {
 }
 
 .form-input {
-  all: unset;
-  box-sizing: border-box;
   width: 100%;
   border-radius: 28px;
-  border: 1px solid var(--color-red-desaturated);
+  border: 1px solid rgb(194, 155, 153);
   opacity: 0.5;
   height: 48px;
   text-align: left;
-  color: #423a3a;
+  color: rgb(194, 155, 153);
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .form-container input::placeholder {
-  color: var(--color-red-desaturated);
+  color: rgb(194, 155, 153);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 28px;
 }
 
-.form-submit-button {
+.form-btn {
   all: unset;
   width: 64px;
   height: 48px;
@@ -119,7 +117,7 @@ span {
 }
 
 .input-error-message {
-  color: var(--color-red-error);
+  color: red;
   font-size: 13px;
   font-weight: 400;
   margin-left: 1.5rem;
@@ -132,7 +130,7 @@ span {
 
 .error-input {
   border: 2px solid var(--color-red-error);
-  /* opacity: 1;z */
+  opacity: 1;z
 }
 
 @media (min-width: 42rem) {

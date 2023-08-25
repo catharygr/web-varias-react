@@ -72,28 +72,21 @@ span {
   object-fit: cover;
 }
 
-.input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.input ::placeholder {
-  color: rgb(194, 155, 153);
-  font-size: 0.8rem;
-  text-align: center;
-  letter-spacing: 1.9px;
-}
-
-.btn-input {
+.form-input {
   padding: 0.5rem 2rem;
   background-color: transparent;
   border: 2px solid rgb(194, 155, 154);
   border-radius: 20px;
   cursor: pointer;
 }
+qq .form-input ::placeholder {
+  color: rgb(194, 155, 153);
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 1.9px;
+}
 
-.btn {
+.form-btn {
   display: flex;
   align-items: center;
   border: none;

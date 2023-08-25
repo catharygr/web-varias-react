@@ -38,16 +38,17 @@ export default function RopaBase() {
           store. Add your email below to stay up-to-date with announcements and
           our launch deals.
         </p>
-        <div className="input">
-          <input className="btn-input" type="text" placeholder="Email Adress" />
-          <button className="btn">
-            <img
-              className="flecha"
-              src="/assets/imagenes/ropa-base/icon-arrow.svg"
-              alt="Flecha derecha"
-            />
+        <form>
+          <input
+            className="form-input"
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+          <button type="submit" className="form-btn">
+            <img src="./images/icon-arrow.svg" alt="Flecha a la derecha" />
           </button>
-        </div>
+        </form>
       </div>
     </main>
   );

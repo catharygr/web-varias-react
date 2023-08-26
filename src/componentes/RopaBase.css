@@ -38,6 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3rem;
+  /* gap: 1rem; */
 }
 
 .titulo {
@@ -65,12 +66,14 @@ span {
   color: rgb(194, 155, 153);
   text-align: center;
   letter-spacing: 1.9px;
+  margin-top: 1rem;
 }
 
 .form-container {
   position: relative;
   text-align: start;
   margin-bottom: 5.75rem;
+  margin-top: 1rem;
 }
 
 .form-input {
@@ -85,12 +88,12 @@ span {
   margin-bottom: 0.5rem;
 }
 
-/* .form-container input::placeholder {
+.form-container input::placeholder {
   color: rgb(194, 155, 153);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 28px;
-} */
+}
 
 .form-btn {
   all: unset;
@@ -153,12 +156,6 @@ span {
   .titulo {
     line-height: 20px;
     letter-spacing: 6.825px;
-  }
-
-  span {
-    line-height: 22px;
-    letter-spacing: 10.825px;
-    text-transform: uppercase;
   }
 
   .hero-picture {

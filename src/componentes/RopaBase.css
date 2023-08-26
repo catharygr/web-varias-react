@@ -35,6 +35,8 @@ body {
 }
 
 .contenido-escrito {
+  display: flex;
+  flex-direction: column;
   padding: 3rem;
 }
 
@@ -59,7 +61,6 @@ span {
 }
 
 .contenido-escrito p {
-  margin: 1.5rem;
   font-size: 0.8rem;
   color: rgb(194, 155, 153);
   text-align: center;
@@ -84,12 +85,12 @@ span {
   margin-bottom: 0.5rem;
 }
 
-.form-container input::placeholder {
+/* .form-container input::placeholder {
   color: rgb(194, 155, 153);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 28px;
-}
+} */
 
 .form-btn {
   all: unset;
@@ -135,16 +136,29 @@ span {
     grid-column: 1/2;
     grid-row: 1/2;
     width: 150px;
-    margin: 3rem;
+    /* margin: 3rem; */
   }
 
   .contenido-escrito {
     grid-column: 1/ 2;
     grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    /* justify-content: flex-start; */
+    gap: 1rem;
+  }
+
+  .contenido-escrito p {
+    text-align: start;
+  }
+
+  .titulo {
+    line-height: 20px;
+    letter-spacing: 6.825px;
+  }
+
+  span {
+    line-height: 22px;
+    letter-spacing: 10.825px;
+    text-transform: uppercase;
   }
 
   .hero-picture {

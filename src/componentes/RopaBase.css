@@ -153,6 +153,10 @@ span {
     text-align: start;
   }
 
+  span {
+    letter-spacing: 1px;
+  }
+
   .titulo {
     line-height: 20px;
     letter-spacing: 6.825px;

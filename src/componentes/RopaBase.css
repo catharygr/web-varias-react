@@ -38,7 +38,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  /* gap: 1rem; */
+  gap: 1rem;
 }
 
 .titulo {
@@ -139,7 +139,7 @@ span {
     grid-column: 1/2;
     grid-row: 1/2;
     width: 150px;
-    /* margin: 3rem; */
+    margin: 3rem;
   }
 
   .contenido-escrito {

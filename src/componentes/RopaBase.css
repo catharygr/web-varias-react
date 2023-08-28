@@ -71,6 +71,7 @@ span {
   text-align: center;
   letter-spacing: 1.9px;
   margin-top: 1rem;
+  font-family: cursive;
 }
 
 .form-container {
@@ -157,15 +158,19 @@ span {
   .contenido-escrito p {
     text-align: start;
     font-size: 1rem;
+    letter-spacing: 0.5px;
   }
 
   span {
-    letter-spacing: 1px;
+    letter-spacing: 20.825px;
+    text-align: start;
+    font-size: 3rem;
   }
 
   .titulo {
     line-height: 20px;
     letter-spacing: 6.825px;
+    font-size: 3rem;
   }
 
   .hero-picture {
@@ -174,7 +179,6 @@ span {
   }
 
   .hero {
-    width: 35svw;
   }
 
   .form-container {

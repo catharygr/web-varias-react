@@ -1,9 +1,9 @@
-import RopaBase from "./componentes/RopaBase";
+import VistaPreviaArticulo from "./componentes/VistaPreviaArticulo";
 
 function App() {
   return (
     <div className="App">
-      <RopaBase />
+      <VistaPreviaArticulo />
     </div>
   );
 }

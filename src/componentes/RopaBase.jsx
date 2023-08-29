@@ -1,16 +1,30 @@
+import { useState } from "react";
 import "./RopaBase.css";
 
 export default function RopaBase() {
-  const [form, setForm] = useState({
-    email: "",
-  });
+  const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(true);
 
-  function handleChange(event) {
-    setForm({
-      ...form,
-      [event.target.name]: event.target.value,
-    });
+  function handleEmailChange(event) {
+    const newEmail = event.target.value;
+
+    setEmail(newEmail);
   }
+
+  function handleClick() {
+    const isValid = validateEmail(email);
+    console.log(isValid);
+
+    setIsValidEmail(isValid);
+  }
+
+  function validateEmail(email) {
+    const regex = /\S+@\S+\.\S+/;
+    const isValid = regex.test(email);
+
+    return isValid;
+  }
+
   return (
     <main className="container">
       <div className="container-nav">
@@ -40,9 +54,12 @@ export default function RopaBase() {
           />
         </picture>
       </div>
+
       <div className="contenido-escrito">
         <h1 className="titulo">We are</h1>
+
         <span>Coming soon</span>
+
         <p>
           Hello fellow shoppers! We are currently building our new fashion
           store. Add your email below to stay up-to-date with announcements and
@@ -55,24 +72,27 @@ export default function RopaBase() {
               className="form-input"
               type="email"
               placeholder="Email Address"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
+              value={email}
+              onChange={handleEmailChange}
             />
+
             <img
               className="input-error-image"
               src="/assets/imagenes/ropa-base/icon-error.svg"
               alt=""
             />
-            <button type="submit" className="form-btn" formNoValidate>
+
+            <button onClick={handleClick} type="submit" className="form-btn">
               <img
                 src="/assets/imagenes/ropa-base/icon-arrow.svg"
                 alt="Flecha a la derecha"
               />
             </button>
-            <span className="input-error-message">
-              Please provide a valid email
-            </span>
+            {!isValidEmail && (
+              <span className="input-error-message">
+                Please provide a valid email
+              </span>
+            )}
           </form>
         </div>
       </div>

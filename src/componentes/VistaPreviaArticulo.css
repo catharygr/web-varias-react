@@ -24,10 +24,7 @@ body {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
-  margin-top: 74px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 89px;
+  margin: 74px auto 89px auto;
   width: 87%;
   max-width: 730px;
 }

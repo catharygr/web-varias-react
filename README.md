@@ -47,3 +47,13 @@ Este proyecto implementa un componente de suscripciones en React que permite a l
 Tecnologías Utilizadas:
 React: Biblioteca de JavaScript para construir interfaces de usuario.
 CSS: Se utiliza para dar estilo al componente.
+
+## RopaBase - Tienda de Moda en Construcción
+
+Este proyecto representa la página de inicio de una tienda de moda en construcción, implementada en React. La dirección de correo electrónico ingresada se valida para asegurarse de que cumple con un formato de correo electrónico válido.
+
+## Tecnologías Utilizadas
+
+- React
+- HTML
+- CSS

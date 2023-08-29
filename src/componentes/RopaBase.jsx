@@ -1,6 +1,16 @@
 import "./RopaBase.css";
 
 export default function RopaBase() {
+  const [form, setForm] = useState({
+    email: "",
+  });
+
+  function handleChange(event) {
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
+  }
   return (
     <main className="container">
       <div className="container-nav">
@@ -41,10 +51,13 @@ export default function RopaBase() {
         <div className="form-container">
           <form>
             <input
+              required
               className="form-input"
               type="email"
               placeholder="Email Address"
-              required
+              name="email"
+              value={form.email}
+              onChange={handleChange}
             />
             <img
               className="input-error-image"

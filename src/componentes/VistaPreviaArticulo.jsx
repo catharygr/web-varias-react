@@ -3,7 +3,11 @@ import "./VistaPreviaArticulo.css";
 export default function VistaPreviaArticulo() {
   return (
     <main className="container">
-      <img src="images/drawers.jpg" alt="drawers" className="article-img" />
+      <img
+        src="/assets/imagenes/vista-previa/drawers.jpg"
+        alt="drawers"
+        className="article-img"
+      />
       <section className="article-details">
         <div className="article-wrapper">
           <h1 className="article-heading">
@@ -36,7 +40,7 @@ export default function VistaPreviaArticulo() {
               />
               <div className="tooltip-detail">
                 <div className="tooltip-wrapper">
-                  <p className="share">Compartir</p>
+                  <p className="share">COMPARTIR</p>
                   <ul className="icon-list">
                     <li className="icon-item">
                       <a

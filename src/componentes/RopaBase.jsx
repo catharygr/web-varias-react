@@ -13,13 +13,13 @@ export default function RopaBase() {
 
   function handleClick() {
     const isValid = validateEmail(email);
-    console.log(isValid);
 
     setIsValidEmail(isValid);
   }
 
   function validateEmail(email) {
     const regex = /\S+@\S+\.\S+/;
+
     const isValid = regex.test(email);
 
     return isValid;
@@ -57,9 +57,7 @@ export default function RopaBase() {
 
       <div className="contenido-escrito">
         <h1 className="titulo">We are</h1>
-
         <span>Coming soon</span>
-
         <p>
           Hello fellow shoppers! We are currently building our new fashion
           store. Add your email below to stay up-to-date with announcements and

@@ -32,50 +32,6 @@ export default function VistaPreviaArticulo() {
                 <p className="dato-editado">28 Jun 2020</p>
               </div>
             </div>
-            <div className="link-para-compartir herramienta" href="#">
-              <img
-                className="icon-compartir"
-                src="/assets/imagenes/vista-previa/icon-share.svg"
-                alt="link para compartir"
-              />
-              <div className="herramienta-detalle">
-                <div className="herramienta-envoltura">
-                  <p className="compartir">COMPARTIR</p>
-                  <ul className="icon-lista">
-                    <li className="icon-item">
-                      <a
-                        className="icon-link"
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fa-marcas fa-cuadrado-facebook fa-2x"></i>
-                      </a>
-                    </li>
-                    <li className="icon-item">
-                      <a
-                        className="icon-link"
-                        href="https://twitter.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fa-marcas fa-twitter fa-2x"></i>
-                      </a>
-                    </li>
-                    <li className="icon-item">
-                      <a
-                        className="icon-link"
-                        href="https://www.pinterest.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="fa-marcas fa-pinterest fa-2x"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </section>
         </div>
       </section>

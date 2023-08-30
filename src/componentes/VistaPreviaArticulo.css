@@ -162,7 +162,7 @@ body {
     justify-content: center;
   }
   .container {
-    margin: 0;
+    /* margin: 0; */
     flex-direction: row;
     gap: 2rem;
     padding: 2rem;
@@ -171,6 +171,7 @@ body {
     max-width: 285px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
+    margin: 0;
   }
   .articulo-detalle {
     padding-top: 32px;

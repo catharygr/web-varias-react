@@ -27,6 +27,8 @@ body {
   margin: 74px auto 89px auto;
   width: 87%;
   max-width: 730px;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .articulo-img {
@@ -98,7 +100,7 @@ body {
   display: none;
   position: absolute;
   padding: 10px;
-  font-size: 12px;
+  font-size: 0.6rem;
   line-height: 1.6em;
   color: #fff;
   border-radius: 5px;
@@ -181,5 +183,8 @@ body {
   }
   .editor-detalle-grupo {
     margin-top: 20px;
+  }
+  .link-para-compartir {
+    background-color: rgb(108, 123, 149);
   }
 }

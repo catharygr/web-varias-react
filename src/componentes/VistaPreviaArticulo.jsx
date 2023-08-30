@@ -1,7 +1,7 @@
 import "./VistaPreviaArticulo.css";
 
 export default function VistaPreviaArticulo() {
-  const articleData = {
+  const articuloData = {
     titulo:
       "Cambia la apariencia general y la sensación al añadir estos maravillosos toques a los muebles en tu hogar.",
     parrafo:
@@ -20,8 +20,8 @@ export default function VistaPreviaArticulo() {
       />
       <section className="articulo-detalles">
         <div className="articulo-envoltura">
-          <h1 className="articulo-titulo">{articleData.titulo}</h1>
-          <p className="articulo-parrafo">{articleData.parrafo}</p>
+          <h1 className="articulo-titulo">{articuloData.titulo}</h1>
+          <p className="articulo-parrafo">{articuloData.parrafo}</p>
           <section className="editor-detalle-grupo">
             <div className="editor-info-grupo">
               <img
@@ -30,8 +30,8 @@ export default function VistaPreviaArticulo() {
                 className="img-michelle"
               />
               <div className="editor-detalle">
-                <h2 className="editor-nombre">{articleData.autor}</h2>
-                <p className="dato-editado">{articleData.fecha}</p>
+                <h2 className="editor-nombre">{articuloData.autor}</h2>
+                <p className="dato-editado">{articuloData.fecha}</p>
               </div>
             </div>
             <div className="link-para-compartir herramienta" href="#">
@@ -51,7 +51,11 @@ export default function VistaPreviaArticulo() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-marcas fa-cuadrado-facebook fa-2x"></i>
+                        <img
+                          className="fa-marcas fa-cuadrado-facebook fa-2x"
+                          src="/assets/imagenes/vista-previa/icon-facebook.svg"
+                          alt="Enlace de Facebook"
+                        />
                       </a>
                     </li>
                     <li className="icon-item">
@@ -61,7 +65,12 @@ export default function VistaPreviaArticulo() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-marcas fa-twitter fa-2x"></i>
+                        {/* <i className="fa-marcas fa-twitter fa-2x"></i> */}
+                        <img
+                          className="fa-marcas fa-twitter fa-2x"
+                          src="/assets/imagenes/vista-previa/icon-twitter.svg"
+                          alt="Enlace de Facebook"
+                        />
                       </a>
                     </li>
                     <li className="icon-item">

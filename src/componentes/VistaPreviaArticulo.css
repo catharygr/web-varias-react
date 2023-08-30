@@ -169,29 +169,3 @@ body {
 .icon-link i {
   color: #fff;
 }
-
-@media (min-width: 768px) {
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container {
-    margin: 0;
-    flex-direction: row;
-  }
-  .articulo-img {
-    max-width: 285px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-  }
-  .articulo-detalle {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-  .editor-detalle-grupo {
-    margin-top: 20px;
-  }
-}

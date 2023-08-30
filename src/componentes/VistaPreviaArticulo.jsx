@@ -65,7 +65,6 @@ export default function VistaPreviaArticulo() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {/* <i className="fa-marcas fa-twitter fa-2x"></i> */}
                         <img
                           className="fa-marcas fa-twitter fa-2x"
                           src="/assets/imagenes/vista-previa/icon-twitter.svg"

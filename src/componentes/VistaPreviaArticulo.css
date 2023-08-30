@@ -44,6 +44,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.015em;
   padding: 1rem;
+  margin-top: 0.5rem;
 }
 
 .articulo-parrafo {
@@ -52,15 +53,15 @@ body {
   font-weight: 500;
   line-height: 1.53;
   letter-spacing: 0.122px;
-  /* margin-top: 0.5rem; */
   padding: 1rem;
+  margin-top: 0;
 }
 
 .editor-detalle-grupo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .img-michelle {

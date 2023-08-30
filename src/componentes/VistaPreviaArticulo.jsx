@@ -68,7 +68,7 @@ export default function VistaPreviaArticulo() {
                         <img
                           className="fa-marcas fa-twitter fa-2x"
                           src="/assets/imagenes/vista-previa/icon-twitter.svg"
-                          alt="Enlace de Facebook"
+                          alt="Enlace de twitter"
                         />
                       </a>
                     </li>
@@ -79,7 +79,12 @@ export default function VistaPreviaArticulo() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <i className="fa-marcas fa-pinterest fa-2x"></i>
+                        {/* <i className="fa-marcas fa-pinterest fa-2x"></i> */}
+                        <img
+                          className="fa-marcas fa-pinterest fa-2x"
+                          src="/assets/imagenes/vista-previa/icon-pinterest.svg"
+                          alt="Enlace de pinterest"
+                        />
                       </a>
                     </li>
                   </ul>

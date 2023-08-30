@@ -27,6 +27,7 @@ body {
   margin: 74px auto 89px auto;
   width: 87%;
   max-width: 730px;
+  gap: 1rem;
 }
 
 .articulo-img {
@@ -34,8 +35,15 @@ body {
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* gap: 2rem;
-  padding: 2rem; */
+}
+
+.articulo-titulo {
+  color: rgb(75, 85, 104);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.015em;
+  padding: 1rem;
 }
 
 .articulo-parrafo {
@@ -44,7 +52,8 @@ body {
   font-weight: 500;
   line-height: 1.53;
   letter-spacing: 0.122px;
-  margin-top: 12px;
+  /* margin-top: 0.5rem; */
+  padding: 1rem;
 }
 
 .editor-detalle-grupo {

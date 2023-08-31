@@ -45,18 +45,18 @@ body {
 }
 
 .articulo-titulo {
+  font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
   color: rgb(75, 85, 104);
-  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.33;
-  letter-spacing: 0.015em;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
   padding: 1rem;
   margin-top: 0.5rem;
 }
 
 .articulo-parrafo {
   color: rgb(112, 126, 148);
-  font-size: 0.8125rem;
+  font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.53;
   letter-spacing: 0.122px;
@@ -93,6 +93,22 @@ body {
   letter-spacing: 0.122px;
 }
 
+.editor-nombre {
+  color: rgb(75, 85, 104);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.53;
+  letter-spacing: 0.122px;
+}
+
+.dato-editado {
+  color: var(--grayish-blue);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.53;
+  letter-spacing: 0.122px;
+}
+
 .link-para-compartir {
   width: 32px;
   height: 32px;
@@ -100,6 +116,10 @@ body {
   /* padding-left: 8px; */
   border-radius: 32px;
 }
+
+/* .link-to-share:hover {
+  /* opacity: 0.6; */
+/* transition: 0.1s ease-in; */
 
 .herramienta {
   position: relative;
@@ -116,8 +136,18 @@ body {
   color: #fff;
   border-radius: 5px;
   background: rgb(75, 85, 104);
-  /* filter: drop-shadow(0px 10px 10px rgba(201, 213, 225, 0.5)); */
+  filter: drop-shadow(0px 10px 10px rgba(201, 213, 225, 0.5));
   width: 250px;
+}
+
+.herramienta-detalle::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 15px solid transparent;
+  border-top: 15px solid rgb(75, 85, 104);
+  margin-left: -15px;
 }
 
 .herramienta:hover .herramienta-detalle {

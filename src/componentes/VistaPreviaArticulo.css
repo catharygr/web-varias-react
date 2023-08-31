@@ -57,6 +57,25 @@ body {
   margin-top: 0;
 }
 
+.editor-detalle-grupo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.img-michelle {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 16px;
+}
+
+.editor-info-grupo {
+  display: flex;
+  align-items: center;
+}
+
 .editor-nombre {
   color: rgb(75, 85, 104);
   font-size: 0.8125rem;

@@ -37,12 +37,12 @@ body {
   border-top-right-radius: 10px;
 }
 
-.articulo-detalle {
+/* .articulo-detalle {
   padding-top: 46px;
   padding-bottom: 20px;
   padding-right: calc((32 / 327) * 100%);
   padding-left: calc((32 / 327) * 100%);
-}
+} */
 
 .articulo-titulo {
   color: rgb(75, 85, 104);

@@ -143,13 +143,13 @@ body {
   letter-spacing: 5px;
 }
 
-/* .icon-link:hover {
+.icon-link:hover {
   opacity: 0.8;
-} */
+}
 
-/* .icon-link i {
+.icon-link i {
   color: #fff;
-} */
+}
 
 @media (min-width: 768px) {
   body {

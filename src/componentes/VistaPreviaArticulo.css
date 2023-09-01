@@ -117,10 +117,6 @@ body {
   border-radius: 32px;
 }
 
-/* .link-to-share:hover {
-  /* opacity: 0.6; */
-/* transition: 0.1s ease-in; */
-
 .herramienta {
   position: relative;
   cursor: pointer;
@@ -181,7 +177,8 @@ body {
 }
 
 .compartir-libreria {
-  text-align: center;
+  font-size: 1rem;
+  padding: 0.2rem;
 }
 
 /* .icon-link:hover {

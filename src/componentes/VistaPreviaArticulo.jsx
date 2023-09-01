@@ -36,7 +36,7 @@ export default function VistaPreviaArticulo() {
               </div>
             </div>
             <div className="link-para-compartir herramienta" href="#">
-              <Share className="compartir-libreria" size={20} />
+              <Share className="compartir-libreria" />
               <div className="herramienta-detalle">
                 <div className="herramienta-envoltura">
                   <p className="compartir">COMPARTIR</p>

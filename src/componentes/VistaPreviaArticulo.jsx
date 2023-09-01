@@ -2,6 +2,16 @@ import "./VistaPreviaArticulo.css";
 import { Share } from "react-feather";
 
 export default function VistaPreviaArticulo() {
+  const articuloData = {
+    titulo:
+      "Cambia la apariencia general y la sensación al añadir estos maravillosos toques a los muebles en tu hogar.",
+    parrafo:
+      "¿Alguna vez has estado en una habitación y has sentido que faltaba algo? Quizás parecía un poco vacía y poco acogedora. Tengo algunos consejos simples para ayudarte a hacer que cualquier habitación se sienta completa.",
+    autor: "Michelle Appleton",
+    fecha: "28 Jun 2020",
+    avatar: "/assets/imagenes/vista-previa/avatar-michelle.jpg",
+  };
+
   return (
     <main className="container">
       <img

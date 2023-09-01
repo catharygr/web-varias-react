@@ -1,4 +1,5 @@
 import "./VistaPreviaArticulo.css";
+import { Share } from "react-feather";
 
 export default function VistaPreviaArticulo() {
   const articuloData = {
@@ -35,11 +36,12 @@ export default function VistaPreviaArticulo() {
               </div>
             </div>
             <div className="link-para-compartir herramienta" href="#">
-              <img
+              {/* <img
                 className="icon-compartir"
                 src="/assets/imagenes/vista-previa/icon-share.svg"
                 alt="link para compartir"
-              />
+              /> */}
+              <Share className="compartir-libreria" size={20} />
               <div className="herramienta-detalle">
                 <div className="herramienta-envoltura">
                   <p className="compartir">COMPARTIR</p>

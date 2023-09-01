@@ -13,6 +13,37 @@ html {
   height: 100%;
 }
 
+body {
+  height: 100%;
+  background-color: rgb(237, 242, 247);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+  margin: 74px auto 89px auto;
+  width: 87%;
+  max-width: 730px;
+  gap: 1rem;
+}
+
+.articulo-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.articulo-detalle {
+  padding-top: 46px;
+  padding-bottom: 20px;
+  padding-right: calc((32 / 327) * 100%);
+  padding-left: calc((32 / 327) * 100%);
+}
+
 .articulo-titulo {
   font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
   color: rgb(75, 85, 104);

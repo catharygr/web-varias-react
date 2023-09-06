@@ -30,7 +30,7 @@ React: Biblioteca JavaScript para construir interfaces de usuario.
 CSS: Lenguaje de estilo utilizado para el diseño de la interfaz.
 npm/yarn: Gestor de paquetes para instalar dependencias.
 
-### ChatApp
+## ChatApp
 
 El componente ChatApp es parte de una interfaz de usuario forma parte de una aplicación de reserva de paseos para perros. Esta interfaz permite a los usuarios comunicarse con los paseadores de perros, discutir acuerdos y hacer reservas a través de un chat. El componente está escrito en JavaScript y utiliza estilos CSS para dar formato a la interfaz y con componentes de React.
 

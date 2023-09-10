@@ -1,3 +1,5 @@
+import "./NotificacionesPaginas.css";
+
 export default function NotificacionesPaginas() {
   return (
     <main className="main-block">

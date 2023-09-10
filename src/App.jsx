@@ -1,9 +1,9 @@
-import VistaPreviaArticulo from "./componentes/VistaPreviaArticulo";
+import NotificacionesPaginas from "./componentes/NotificacionesPaginas";
 
 function App() {
   return (
     <div className="App">
-      <VistaPreviaArticulo />
+      <NotificacionesPaginas />
     </div>
   );
 }

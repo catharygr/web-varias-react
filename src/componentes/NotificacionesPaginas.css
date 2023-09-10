@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  texto-decoration: none;
 }
 
 /**********************************/
@@ -73,18 +73,18 @@ body {
   padding-bottom: 14px;
 }
 
-.block-header__notifications {
+.block-header__notificaciones {
   display: flex;
   align-items: center;
 }
 
-.block-header__notifications-text {
+.block-header__notificaciones-texto {
   font-size: 1.2rem;
   font-weight: 800;
   margin-right: 5px;
 }
 
-.block-header__notifications-number {
+.block-header__notificaciones-numero {
   width: 20px;
   height: 16px;
   border-radius: 3px;
@@ -97,17 +97,17 @@ body {
   align-items: center;
 }
 
-.block-header__markall {
+.block-header__marcar-todo {
   color: var(--dark-grayish-blue);
   align-self: center;
   cursor: pointer;
 }
 
 /**********************************/
-/*  Notifications
+/*  Notificatificaciones
 /**********************************/
 
-.block-notifications__type01 {
+.block-notificaciones__tipo01 {
   padding: 0.85rem;
   display: flex;
   border-radius: 5px;
@@ -116,7 +116,7 @@ body {
   align-items: center;
 }
 
-.block-notifications__type01:nth-child(5) {
+.block-notificaciones__tipo01:nth-child(5) {
   padding: 0.85rem;
   display: flex;
   border-radius: 5px;
@@ -125,11 +125,11 @@ body {
   align-items: center;
 }
 
-.block-notifications--notread {
+.block-notificaticaciones--no-leido {
   background: var(--light-grayish-blue-01);
 }
 
-.block-notifications--read {
+.block-notificaticaciones--leido {
   background: none;
 }
 
@@ -272,7 +272,7 @@ body {
 .user-name:hover,
 .user-post:hover,
 .user-group:hover,
-.block-header__markall:hover {
+.block-header__marcar-todo:hover {
   color: var(--blue);
 }
 

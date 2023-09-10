@@ -10,7 +10,7 @@ export default function NotificacionesPaginas() {
           </span>
           <span className="block-header__notifications-number">3</span>
         </span>
-        <span className="block-header__markall">Mark all as read</span>
+        <span className="block-header__markall">Marcar todo como leído.</span>
       </header>
 
       <div className="block-notifications__type01 block-notifications--notread">

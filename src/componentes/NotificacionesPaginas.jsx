@@ -6,7 +6,7 @@ export default function NotificacionesPaginas() {
       <header className="block-header">
         <span className="block-header__notifications">
           <span className="block-header__notifications-text">
-            Notifications
+            Notificaciones
           </span>
           <span className="block-header__notifications-number">3</span>
         </span>

@@ -20,7 +20,7 @@ Características:
 
 Tecnologías Utilizadas: React, JavaScript (ES6+), CSS
 
-## PortaPapeles
+# PortaPapeles
 
 PortaPapeles es una aplicación web que permite rastrear y organizar los elementos copiados en el portapapeles. La aplicación tiene una interfaz de usuario interactiva y fácil de usar, y está desarrollada con React.
 
@@ -30,7 +30,7 @@ React: Biblioteca JavaScript para construir interfaces de usuario.
 CSS: Lenguaje de estilo utilizado para el diseño de la interfaz.
 npm/yarn: Gestor de paquetes para instalar dependencias.
 
-## ChatApp
+# ChatApp
 
 El componente ChatApp es parte de una interfaz de usuario forma parte de una aplicación de reserva de paseos para perros. Esta interfaz permite a los usuarios comunicarse con los paseadores de perros, discutir acuerdos y hacer reservas a través de un chat. El componente está escrito en JavaScript y utiliza estilos CSS para dar formato a la interfaz y con componentes de React.
 
@@ -58,7 +58,7 @@ Este proyecto representa la página de inicio de una tienda de moda en construcc
 - HTML
 - CSS
 
-# Vista previa de articulos
+## Vista previa de articulos
 
 El componente `VistaPreviaArticulo` se utiliza para mostrar una vista previa de un artículo en un sitio web. Incluye información esencial como el título del artículo, un párrafo introductorio, el autor y la fecha de publicación. Además, ofrece una opción para compartir el artículo en redes sociales.
 

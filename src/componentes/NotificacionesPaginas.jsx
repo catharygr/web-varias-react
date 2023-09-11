@@ -3,6 +3,16 @@ import "./NotificacionesPaginas.css";
 export default function NotificacionesPaginas() {
   return (
     <main className="main-block">
+      <header className="block-header">
+        <span className="block-header__notificaticaciones">
+          <span className="block-header__notificatificaciones-texto">
+            Notificaciones
+          </span>
+          <span className="block-header__notificatificaciones-numero">3</span>
+        </span>
+        <span className="block-header__marcar-todo">Marcar todo com leído</span>
+      </header>
+
       <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
         <div className="usar-img-01"></div>
         <div>

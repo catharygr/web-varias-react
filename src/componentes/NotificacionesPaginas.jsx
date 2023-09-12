@@ -14,12 +14,7 @@ export default function NotificacionesPaginas() {
       </header>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
-        <div className="usar-img-01">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/avatar-mark-webber.webp"
-            alt="Foto de perfil de Mark Webber"
-          />
-        </div>
+        <div className="usar-img-01"></div>
         <div>
           <p>
             <span className="usar-nombre">Mark Webber</span>
@@ -34,12 +29,7 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
-        <div className="usar-img-02">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/avatar-angela-gray.webp"
-            alt="Foto de perfil de Angela Gray"
-          />
-        </div>
+        <div className="usar-img-02"></div>
         <div>
           <p>
             <span className="usar-nombre">Angela Gray</span>
@@ -64,12 +54,7 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-04">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/avatar-jacob-thompson.webp"
-            alt="Foto de perfil de Jacob Thompson"
-          />
-        </div>
+        <div className="usar-img-04"></div>
         <div>
           <p>
             <span className="usar-nombre">Rizky Hasanuddin</span>
@@ -88,12 +73,7 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-05">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/avatar-rizky-hasanuddin.webp"
-            alt="Foto de perfin de Rizky Hasanuddin"
-          />
-        </div>
+        <div className="usar-img-05"></div>
         <div>
           <p>
             <span className="usar-nombre">Kimberly Smith</span>
@@ -102,21 +82,11 @@ export default function NotificacionesPaginas() {
           </p>
           <p className="usar-dato">Hace 1 semana.</p>
         </div>
-        <div className="usar-img-08">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/image-chess.webp"
-            alt="Imagen de ajedrez"
-          />
-        </div>
+        <div className="usar-img-08"></div>
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-06">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/avatar-kimberly-smith.webp"
-            alt="Foto de perfil de Kimberly Smith"
-          />
-        </div>
+        <div className="usar-img-06"></div>
         <div>
           <div>
             <span className="usar-nombre">Nathan Peterson</span>
@@ -135,12 +105,7 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-07">
-          <img
-            src="/assets/imagenes/notificaciones-paginas/avatar-nathan-peterson.webp"
-            alt="Foto de perfil de Kimberly Smith"
-          />
-        </div>
+        <div className="usar-img-07"></div>
         <div>
           <p>
             <span className="usar-nombre">Anna Kim</span>

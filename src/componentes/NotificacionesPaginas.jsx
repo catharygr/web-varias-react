@@ -102,16 +102,16 @@ export default function NotificacionesPaginas() {
           </p>
           <p className="usar-dato">Hace 1 semana.</p>
         </div>
-        <div className="usar-img-08">
+        <div className="usar-img-08"></div>
+      </div>
+
+      <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
+        <div className="usar-img-06">
           <img
             src="/assets/imagenes/notificaciones-paginas/avatar-kimberly-smith.webp"
             alt="Foto de perfil de Kimberly Smith"
           />
         </div>
-      </div>
-
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-06"></div>
         <div>
           <div>
             <span className="usar-nombre">Nathan Peterson</span>
@@ -130,7 +130,12 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-07"></div>
+        <div className="usar-img-07">
+          <img
+            src="/assets/imagenes/notificaciones-paginas/avatar-nathan-peterson.webp"
+            alt="Foto de perfil de Kimberly Smith"
+          />
+        </div>
         <div>
           <p>
             <span className="usar-nombre">Anna Kim</span>

@@ -155,7 +155,7 @@ body {
 /*  User-configs
 /**********************************/
 
-.user-img-01 {
+.usar-img-01 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-mark-webber.webp");
@@ -165,7 +165,7 @@ body {
   background-position: center center;
 }
 
-.user-img-02 {
+.usar-img-02 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-angela-gray.webp");
@@ -175,7 +175,7 @@ body {
   background-position: center center;
 }
 
-.user-img-03 {
+.usar-img-03 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-jacob-thompson.webp");
@@ -185,7 +185,7 @@ body {
   background-position: center center;
 }
 
-.user-img-04 {
+.usar-img-04 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-rizky-hasanuddin.webp");
@@ -195,7 +195,7 @@ body {
   background-position: center center;
 }
 
-.user-img-05 {
+.usar-img-05 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-kimberly-smith.webp");
@@ -205,7 +205,7 @@ body {
   background-position: center center;
 }
 
-.user-img-06 {
+.usar-img-06 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-nathan-peterson.webp");
@@ -215,7 +215,7 @@ body {
   background-position: center center;
 }
 
-.user-img-07 {
+.usar-img-07 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-anna-kim.webp");
@@ -225,7 +225,7 @@ body {
   background-position: center center;
 }
 
-.user-img-08 {
+.usar-img-08 {
   width: 2.063rem;
   height: 2.063rem;
   background-image: url("../assets/images/image-chess.webp");
@@ -236,12 +236,12 @@ body {
   margin-right: 15px;
 }
 
-.user-name {
+.usar-name {
   font-weight: 800;
   margin-right: 0.313rem;
 }
 
-.user-action {
+.usar-action {
   color: var(--dark-grayish-blue);
   margin-right: 0.313rem;
 }
@@ -257,19 +257,19 @@ body {
   margin-left: 0.2rem;
 }
 
-.user-post,
-.user-group {
+.usar-post,
+.usar-group {
   font-weight: 800;
   color: var(--dark-grayish-blue);
 }
 
-.user-date {
+.usar-date {
   color: var(--grayish-blue);
 }
 
-.user-name:hover,
-.user-post:hover,
-.user-group:hover,
+.usar-name:hover,
+.usar-post:hover,
+.usar-group:hover,
 .block-header__marcar-todo:hover {
   color: var(--blue);
 }

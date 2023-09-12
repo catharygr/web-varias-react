@@ -102,7 +102,12 @@ export default function NotificacionesPaginas() {
           </p>
           <p className="usar-dato">Hace 1 semana.</p>
         </div>
-        <div className="usar-img-08"></div>
+        <div className="usar-img-08">
+          <img
+            src="/assets/imagenes/notificaciones-paginas/avatar-kimberly-smith.webp"
+            alt="Foto de perfil de Kimberly Smith"
+          />
+        </div>
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">

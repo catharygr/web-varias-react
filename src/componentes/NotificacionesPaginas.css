@@ -155,7 +155,7 @@ body {
 /*  User-configs
 /**********************************/
 
-.usar-img-01 {
+.usa-img-01 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-mark-webber.webp");
@@ -165,7 +165,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-02 {
+.usa-img-02 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-angela-gray.webp");
@@ -175,7 +175,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-03 {
+.usa-img-03 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-jacob-thompson.webp");
@@ -185,7 +185,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-04 {
+.usa-img-04 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-rizky-hasanuddin.webp");
@@ -195,7 +195,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-05 {
+.usa-img-05 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-kimberly-smith.webp");
@@ -205,7 +205,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-06 {
+.usa-img-06 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-nathan-peterson.webp");
@@ -215,7 +215,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-07 {
+.usa-img-07 {
   min-width: 2.063rem;
   min-height: 2.063rem;
   background-image: url("../assets/images/avatar-anna-kim.webp");
@@ -225,7 +225,7 @@ body {
   background-position: center center;
 }
 
-.usar-img-08 {
+.usa-img-08 {
   width: 2.063rem;
   height: 2.063rem;
   background-image: url("../assets/images/image-chess.webp");
@@ -236,12 +236,12 @@ body {
   margin-right: 15px;
 }
 
-.usar-name {
+.usa-name {
   font-weight: 800;
   margin-right: 0.313rem;
 }
 
-.usar-action {
+.usa-action {
   color: var(--dark-grayish-blue);
   margin-right: 0.313rem;
 }
@@ -257,14 +257,21 @@ body {
   margin-left: 0.2rem;
 }
 
-.usar-post,
-.usar-group {
+.usa-post,
+.usa-group {
   font-weight: 800;
   color: var(--dark-grayish-blue);
 }
 
-.usar-date {
+.usa-date {
   color: var(--grayish-blue);
+}
+
+.usa-name:hover,
+.usa-post:hover,
+.usa-group:hover,
+.block-header__marcar-todo:hover {
+  color: var(--blue);
 }
 
 @media screen and (max-width: 450px) {

@@ -64,7 +64,12 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-04"></div>
+        <div className="usar-img-04">
+          <img
+            src="/assets/imagenes/notificaciones-paginas/avatar-jacob-thompson.webp"
+            alt="Foto de perfil de Jacob Thompson"
+          />
+        </div>
         <div>
           <p>
             <span className="usar-nombre">Rizky Hasanuddin</span>
@@ -83,7 +88,12 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
-        <div className="usar-img-05"></div>
+        <div className="usar-img-05">
+          <img
+            src="/assets/imagenes/notificaciones-paginas/avatar-rizky-hasanuddin.webp"
+            alt="Foto de perfin de Rizky Hasanuddin"
+          />
+        </div>
         <div>
           <p>
             <span className="usar-nombre">Kimberly Smith</span>

@@ -34,7 +34,12 @@ export default function NotificacionesPaginas() {
       </div>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
-        <div className="usar-img-02"></div>
+        <div className="usar-img-02">
+          <img
+            src="/assets/imagenes/notificaciones-paginas/avatar-angela-gray.webp"
+            alt="Foto de perfil de Angela Gray"
+          />
+        </div>
         <div>
           <p>
             <span className="usar-nombre">Angela Gray</span>

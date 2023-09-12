@@ -11,6 +11,21 @@
 /*  Variables
 /**********************************/
 
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red: #f65351;
+  --blue: #0a317b;
+  --very-light-grayish-blue: #f7fafd;
+  --light-grayish-blue-01: #e5effa;
+  --light-grayish-blue-02: #dde7ee;
+  --grayish-blue: #939dae;
+  --dark-grayish-blue: #5e6778;
+  --very-dark-blue: #1c202b;
+
+  --primary-font: "Plus Jakarta Sans", sans-serif;
+}
+
 /**********************************/
 /*  General-Config
 /**********************************/

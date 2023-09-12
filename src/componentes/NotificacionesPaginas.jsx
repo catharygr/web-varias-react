@@ -14,7 +14,12 @@ export default function NotificacionesPaginas() {
       </header>
 
       <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
-        <div className="usar-img-01"></div>
+        <div className="usar-img-01">
+          <img
+            src="/assets/imagenes/notificaciones-paginas/avatar-mark-webber.webp"
+            alt="Foto de perfil de Mark Webber"
+          />
+        </div>
         <div>
           <p>
             <span className="usar-nombre">Mark Webber</span>

@@ -267,13 +267,6 @@ body {
   color: var(--grayish-blue);
 }
 
-.usar-name:hover,
-.usar-post:hover,
-.usar-group:hover,
-.block-header__marcar-todo:hover {
-  color: var(--blue);
-}
-
 @media screen and (max-width: 450px) {
   body {
     align-items: flex-start;

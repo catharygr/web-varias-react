@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  texto-decoration: none;
+  /* texto-decoration: none; */
 }
 
 /**********************************/
@@ -22,7 +22,6 @@
   --grayish-blue: #939dae;
   --dark-grayish-blue: #5e6778;
   --very-dark-blue: #1c202b;
-
   --primary-font: "Plus Jakarta Sans", sans-serif;
 }
 

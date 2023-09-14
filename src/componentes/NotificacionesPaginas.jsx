@@ -39,6 +39,7 @@ const notificacionesData = [
     accion: "comentó en tu foto.",
     tiempo: "Hace 1 semana",
     leido: true,
+    fotoURL: "08",
   },
   {
     id: "06",
@@ -168,18 +169,18 @@ export default function NotificacionesPaginas() {
   //       </div>
   //     </div>
 
-  //     <div className="block-notificaciones__tipo01 block-notificaciones--read">
-  //       <div className="usar-img-05"></div>
-  //       <div>
-  //         <p>
-  //           <span className="usar-nombre">Kimberly Smith </span>
-  //           <span className="usar-accion"> comentó en tu foto.</span>
-  //           <span className="red-marcar"></span>
-  //         </p>
-  //         <p className="usar-dato">Hace 1 semana.</p>
-  //       </div>
-  //       <div className="usar-img-08"></div>
-  //     </div>
+  // <div className="block-notificaciones__tipo01 block-notificaciones--read">
+  //   <div className="usar-img-05"></div>
+  //   <div>
+  //     <p>
+  //       <span className="usar-nombre">Kimberly Smith </span>
+  //       <span className="usar-accion"> comentó en tu foto.</span>
+  //       <span className="red-marcar"></span>
+  //     </p>
+  //     <p className="usar-dato">Hace 1 semana.</p>
+  //   </div>
+  //   <div className="usar-img-08"></div>
+  // </div>;
 
   //     <div className="block-notificaciones__tipo01 block-notificaciones--read">
   //       <div className="usar-img-06"></div>

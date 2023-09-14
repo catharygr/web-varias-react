@@ -4,18 +4,18 @@ export default function NotificacionesPaginas() {
   return (
     <main className="main-block">
       <header className="block-header">
-        <span className="block-header__notificaticaciones">
-          <span className="block-header__notificatificaciones-texto">
-            Notificaciones
+        <span className="block-header__notificaciones">
+          <span className="block-header__notificaciones-texto">
+            Notificaciones{" "}
           </span>
-          <span className="block-header__notificatificaciones-numero">3</span>
+          <span className="block-header__notificaciones-numero">3</span>
         </span>
         <span className="block-header__marcar-todo">
           Marcar todo como leído
         </span>
       </header>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
+      <div className="block-notificaciones__tipo01 block-notificaciones--no-leido">
         <div className="usar-img-01"></div>
         <div>
           <p>
@@ -30,7 +30,7 @@ export default function NotificacionesPaginas() {
         </div>
       </div>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
+      <div className="block-notificaciones__tipo01 block-notificaciones--no-leido">
         <div className="usar-img-02"></div>
         <div>
           <p>
@@ -42,7 +42,7 @@ export default function NotificacionesPaginas() {
         </div>
       </div>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--no-leido">
+      <div className="block-notificaciones__tipo01 block-notificaciones--no-leido">
         <div className="usar-img-03"></div>
         <div>
           <p>
@@ -55,7 +55,7 @@ export default function NotificacionesPaginas() {
         </div>
       </div>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
+      <div className="block-notificaciones__tipo01 block-notificaciones--read">
         <div className="usar-img-04"></div>
         <div>
           <p>
@@ -74,7 +74,7 @@ export default function NotificacionesPaginas() {
         </div>
       </div>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
+      <div className="block-notificaciones__tipo01 block-notificaciones--read">
         <div className="usar-img-05"></div>
         <div>
           <p>
@@ -87,7 +87,7 @@ export default function NotificacionesPaginas() {
         <div className="usar-img-08"></div>
       </div>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
+      <div className="block-notificaciones__tipo01 block-notificaciones--read">
         <div className="usar-img-06"></div>
         <div>
           <div>
@@ -106,7 +106,7 @@ export default function NotificacionesPaginas() {
         </div>
       </div>
 
-      <div className="block-notificatificaciones__tipo01 block-notificaciones--read">
+      <div className="block-notificaciones__tipo01 block-notificaciones--read">
         <div className="usar-img-07"></div>
         <div>
           <p>

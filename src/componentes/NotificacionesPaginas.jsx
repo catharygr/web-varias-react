@@ -98,13 +98,7 @@ export default function NotificacionesPaginas() {
             </p>
             <p className="usar-dato">{notificacion.tiempo}</p>
           </div>
-          {notificacion.fotoURL && (
-            <img
-              src={notificacion.fotoURL}
-              alt="Foto comentada"
-              className="foto-comentada"
-            />
-          )}
+          {notificacion.fotoURL && <div className="foto-comentada"></div>}
           {notificacion.mensajePrivado && (
             <div className="block-notifications__type02-c">
               <div className="block-notifications__type02 block-notificaciones--read">

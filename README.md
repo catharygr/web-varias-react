@@ -67,3 +67,15 @@ El componente `VistaPreviaArticulo` se utiliza para mostrar una vista previa de 
 - React: El componente está construido utilizando la biblioteca de React para la interfaz de usuario.
 - HTML y CSS: Se utilizan para estructurar y diseñar la página web.
 - react-feather: Se utiliza la librería `react-feather` para incorporar iconos de compartir de redes sociales.
+
+# Aplicación de Notificaciones de Páginas
+
+## Características
+
+- Muestra notificaciones dinámicas a partir de un conjunto de datos.
+- Calcula automáticamente el número de notificaciones no leídas.
+- Puede mostrar imágenes asociadas con algunas notificaciones.
+
+## Personalización
+
+Puedes personalizar la aplicación agregando más datos de notificación o ajustando el formato de las notificaciones en el archivo NotificacionesPaginas.js. Además, puedes agregar imágenes asociadas a las notificaciones editando el campo fotoURL en los datos de notificación correspondientes.

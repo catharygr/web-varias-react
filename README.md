@@ -58,7 +58,7 @@ Este proyecto representa la página de inicio de una tienda de moda en construcc
 - HTML
 - CSS
 
-## Vista previa de articulos
+# Vista previa de articulos
 
 El componente `VistaPreviaArticulo` se utiliza para mostrar una vista previa de un artículo en un sitio web. Incluye información esencial como el título del artículo, un párrafo introductorio, el autor y la fecha de publicación. Además, ofrece una opción para compartir el artículo en redes sociales.
 

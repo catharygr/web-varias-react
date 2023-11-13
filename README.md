@@ -52,7 +52,7 @@ CSS: Se utiliza para dar estilo al componente.
 
 Este proyecto representa la página de inicio de una tienda de moda en construcción, implementada en React. La dirección de correo electrónico ingresada se valida para asegurarse de que cumple con un formato de correo electrónico válido.
 
-## Tecnologías Utilizadas
+# Tecnologías Utilizadas
 
 - React
 - HTML

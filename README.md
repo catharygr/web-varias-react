@@ -70,7 +70,7 @@ El componente `VistaPreviaArticulo` se utiliza para mostrar una vista previa de 
 
 # Aplicación de Notificaciones de Páginas
 
-## Características
+# Características
 
 - Muestra notificaciones dinámicas a partir de un conjunto de datos.
 - Calcula automáticamente el número de notificaciones no leídas.

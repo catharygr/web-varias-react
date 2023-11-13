@@ -40,7 +40,7 @@ Características
 2- Reserva sencilla: Los usuarios pueden discutir los detalles de la reserva con los paseadores y realizar reservas directamente a través del chat.
 3- Valoración de paseadores: Una vez que el paseo haya sido completado, los usuarios pueden calificar a los paseadores y realizar nuevas reservas desde el chat.
 
-## Subcripciones
+# Subcripciones
 
 Este proyecto implementa un componente de suscripciones en React que permite a los usuarios ingresar su dirección de correo electrónico para suscribirse a actualizaciones mensuales. El componente también muestra una lista de características y un mensaje de confirmación una vez que el usuario se suscribe con éxito.
 

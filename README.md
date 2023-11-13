@@ -76,6 +76,6 @@ El componente `VistaPreviaArticulo` se utiliza para mostrar una vista previa de 
 - Calcula automáticamente el número de notificaciones no leídas.
 - Puede mostrar imágenes asociadas con algunas notificaciones.
 
-## Personalización
+# Personalización
 
 Puedes personalizar la aplicación agregando más datos de notificación o ajustando el formato de las notificaciones en el archivo NotificacionesPaginas.js. Además, puedes agregar imágenes asociadas a las notificaciones editando el campo fotoURL en los datos de notificación correspondientes.

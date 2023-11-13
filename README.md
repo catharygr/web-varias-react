@@ -62,7 +62,7 @@ Este proyecto representa la página de inicio de una tienda de moda en construcc
 
 El componente `VistaPreviaArticulo` se utiliza para mostrar una vista previa de un artículo en un sitio web. Incluye información esencial como el título del artículo, un párrafo introductorio, el autor y la fecha de publicación. Además, ofrece una opción para compartir el artículo en redes sociales.
 
-## Tecnologías Utilizadas
+# Tecnologías Utilizadas
 
 - React: El componente está construido utilizando la biblioteca de React para la interfaz de usuario.
 - HTML y CSS: Se utilizan para estructurar y diseñar la página web.

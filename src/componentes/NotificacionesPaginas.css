@@ -272,3 +272,14 @@ body {
 .block-header__marcar-todo:hover {
   color: var(--blue);
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    align-items: flex-start;
+    background: var(--white);
+  }
+
+  .main-block {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+}

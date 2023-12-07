@@ -62,6 +62,10 @@ export default function Resultados() {
           </span>
           <span className="fraccion">72 / 100</span>
         </div>
+
+        <button>
+          <a href="#">Continuar</a>
+        </button>
       </section>
     </main>
   );

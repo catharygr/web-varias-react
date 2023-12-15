@@ -82,7 +82,16 @@ export default function PortaFooter() {
           </div>
         </div>
         <div className="atribucion-container">
-          <p className="atribucion"></p>
+          <p className="atribucion">
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+            >
+              Frontend Mentor
+            </a>
+
+            <a href="https://bubulazi.com/"> bubulazi.com</a>
+          </p>
         </div>
       </footer>
     </>
